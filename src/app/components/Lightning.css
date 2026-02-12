@@ -1,0 +1,10 @@
+/* Make Lightning fill the parent absolutely for background effect */
+.lightning-container {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  pointer-events: none;
+}
