@@ -1,10 +1,12 @@
 .shuffle-parent {
-  display: inline-block;
+  display: block;
+  width: 100%;
+  text-align: center;
   white-space: normal;
   word-wrap: break-word;
   will-change: transform;
   line-height: 1;
-  font-size: 6rem;
+  font-size: 3.2rem;
   font-family: 'Casco', 'Press Start 2P', sans-serif;
   text-transform: uppercase;
   visibility: visible;
@@ -25,25 +27,25 @@
 }
 
 .shuffle-large {
-  font-size: 5rem;
+  font-size: 3.2rem;
 }
 
 @media (min-width: 640px) {
   .shuffle-large {
-    font-size: 9rem;
+    font-size: 5rem;
   }
 }
 
 @media (min-width: 768px) {
   .shuffle-large {
-    font-size: 11rem;
+    font-size: 9rem;
   }
 }
 
 .shuffle-char-wrapper {
   display: inline-block;
   overflow: hidden;
-  vertical-align: baseline;
+  vertical-align: bottom;
   position: relative;
 }
 

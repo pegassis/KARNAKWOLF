@@ -7,8 +7,8 @@ import { EventForm } from '../components/EventForm';
 import { VideoModal } from '../components/VideoModal';
 import Lightning from '../components/Lightning';
 import LetterGlitch from '../components/LetterGlitch';
-import ElectricBorder from '../components/ElectricBorder';
 import GridMotion from '../components/GridMotion';
+import Vid from '../components/vid';
 
 import { useAdmin } from '../context/AdminContext';
 import { getApiUrl, checkBackendHealth } from '../utils/apiConfig';
@@ -330,6 +330,7 @@ export function DepartmentEventsPage() {
   const [showEventModal, setShowEventModal] = useState(false);
   const [isEditingModal, setIsEditingModal] = useState(false);
   const [editFormData, setEditFormData] = useState<any>(null);
+  const [isMobile, setIsMobile] = useState(typeof window !== 'undefined' && window.innerWidth < 768);
 
   const department = departmentId ? departmentEvents[departmentId] : null;
 
@@ -339,6 +340,16 @@ export function DepartmentEventsPage() {
       setShowVideoModal(true);
     }
   }, [departmentId]);
+
+  // Handle window resize for responsive background
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+    
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
 
   // Initialize localStorage with mock data once on component mount
   useEffect(() => {
@@ -578,8 +589,8 @@ export function DepartmentEventsPage() {
 
   return (
     <div className="min-h-screen pt-24 lg:pt-32 pb-16 relative">
-      {/* Lightning Background for Electronics Department */}
-      {departmentId === 'electronics' && (
+      {/* Lightning Background for Electrical Department */}
+      {departmentId === 'electrical' && (
         <div className="fixed inset-0 w-full h-full z-0 pointer-events-none">
           <Lightning
             hue={30}
@@ -652,6 +663,44 @@ export function DepartmentEventsPage() {
           />
         </div>
       )}
+            {/* Video Background for Electronics Department */}
+      {departmentId === 'electronics' && (
+        <div className="fixed inset-0 w-full h-full z-0 pointer-events-none">
+          <Vid />
+          {/* dark overlay so text is readable */}
+          <div className="absolute inset-0 bg-black/60"></div>
+        </div>
+      )}
+
+      {/* Image Background for Mechanical Department */}
+      {departmentId === 'mechanical' && (
+        <div className="fixed inset-0 w-full h-full z-0 pointer-events-none">
+          <img 
+            src={isMobile ? '/public/moferrari.jpg' : '/public/winferrari.jpg'}
+            alt="Mechanical Department Background"
+            className="w-full h-full object-cover"
+          />
+          {/* dark overlay so text is readable */}
+          <div className="absolute inset-0 bg-black/60"></div>
+        </div>
+      )}
+
+      {/* Video Background for General Department */}
+      {departmentId === 'general' && (
+        <div className="fixed inset-0 w-full h-full z-0 pointer-events-none">
+          <video
+            autoPlay
+            loop
+            muted
+            className="w-full h-full object-cover"
+          >
+            <source src="/caback.mp4" type="video/mp4" />
+          </video>
+          {/* dark overlay so text is readable */}
+          <div className="absolute inset-0 bg-black/60"></div>
+        </div>
+      )}
+
      
       {/* Video Modal for Mechanical Department */}
       <VideoModal
@@ -767,7 +816,7 @@ export function DepartmentEventsPage() {
                   </>
                 )}
 
-                {/* Border glow on hover */}
+               
                 <div 
                   className="absolute inset-0 rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none"
                   style={{ boxShadow: `inset 0 0 0 2px ${department.color}40` }}
@@ -783,18 +832,7 @@ export function DepartmentEventsPage() {
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 className="group relative"
               >
-                {departmentId === 'electrical' ? (
-                  <ElectricBorder
-                    color="#00D9FF"
-                    speed={1}
-                    chaos={0.12}
-                    borderRadius={24}
-                  >
-                    {eventCard}
-                  </ElectricBorder>
-                ) : (
-                  eventCard
-                )}
+                {eventCard}
               </motion.div>
             );
           })}
@@ -914,7 +952,8 @@ export function DepartmentEventsPage() {
                       {/* Prize */}
                       <div className="flex flex-col gap-2">
                         <div className="flex items-center gap-2 text-[#C65D3B]">
-                          <span className="text-sm font-semibold">Prize</span>
+                          <span className="text-sm font-semibold">Prize
+                           Pool</span>
                         </div>
                         <p className="text-sm text-[#6B6B6B] font-semibold">{selectedEvent.prize || 'TBA'}</p>
                       </div>

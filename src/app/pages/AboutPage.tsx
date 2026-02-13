@@ -87,7 +87,7 @@ export function AboutPage() {
                   <Users className="w-5 h-5 text-[#5BA3A3]" />
                 </div>
                 <div>
-                  <div className="text-sm text-[#6B6B6B]">5000+</div>
+                  <div className="text-sm text-[#6B6B6B]">500+</div>
                   <div className="text-[#2A2A2A]">Participants</div>
                 </div>
               </div>

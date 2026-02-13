@@ -34,7 +34,7 @@ export function MainEventPage() {
       {showReveal && (
         <RevealLoader
           text="MAIN EVENTS"
-          textSize="80px"
+          textSize={isMobile ? "70px" : "120px"}
           textColor="#ff0000"
           bgColors={["#1a0000", "#750202", "#b82001"]}
           angle={120}

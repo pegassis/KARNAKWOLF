@@ -23,7 +23,7 @@ const Shuffle = ({
   shuffleTimes = 1,
   animationMode = 'evenodd',
   loop = false,
-  loopDelay = 0,
+  loopDelay = 0.5,
   stagger = 0.03,
   scrambleCharset = '',
   colorFrom,
