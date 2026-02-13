@@ -616,44 +616,38 @@ export function DepartmentEventsPage() {
 
       {/* GridMotion Background for Civil Department */}
       {departmentId === 'civil' && (
-        <div className="fixed inset-0 top-0 left-0 w-full h-full z-0 pointer-events-none">
+        <div className="fixed inset-0 top-0 left-0 w-full h-full z-0  opacity-35 pointer-events-none">
           <GridMotion
             items={[
-              'https://wallpapercat.com/w/full/c/8/5/30761-3840x2160-desktop-4k-seven-wonders-wallpaper-photo.jpg',
-              'https://wallpapercat.com/w/full/c/8/5/30761-3840x2160-desktop-4k-seven-wonders-wallpaper-photo.jpg',
-              'https://wallpapercat.com/w/full/c/8/5/30761-3840x2160-desktop-4k-seven-wonders-wallpaper-photo.jpg',
-              'https://wallpapercat.com/w/full/c/8/5/30761-3840x2160-desktop-4k-seven-wonders-wallpaper-photo.jpg',
-              'https://wallpapercat.com/w/full/c/8/5/30761-3840x2160-desktop-4k-seven-wonders-wallpaper-photo.jpg',
-              'https://wallpapercat.com/w/full/c/8/5/30761-3840x2160-desktop-4k-seven-wonders-wallpaper-photo.jpg',
-              'https://wallpapercat.com/w/full/c/8/5/30761-3840x2160-desktop-4k-seven-wonders-wallpaper-photo.jpg',
-              'https://wallpapercat.com/w/full/c/8/5/30761-3840x2160-desktop-4k-seven-wonders-wallpaper-photo.jpg',
-              'https://wallpapercat.com/w/full/c/8/5/30761-3840x2160-desktop-4k-seven-wonders-wallpaper-photo.jpg',
-              'https://wallpapercat.com/w/full/c/8/5/30761-3840x2160-desktop-4k-seven-wonders-wallpaper-photo.jpg',
-              'https://wallpapercat.com/w/full/c/8/5/30761-3840x2160-desktop-4k-seven-wonders-wallpaper-photo.jpg',
-              'https://wallpapercat.com/w/full/c/8/5/30761-3840x2160-desktop-4k-seven-wonders-wallpaper-photo.jpg',
-              'https://wallpapercat.com/w/full/c/8/5/30761-3840x2160-desktop-4k-seven-wonders-wallpaper-photo.jpg',
-              'https://wallpapercat.com/w/full/c/8/5/30761-3840x2160-desktop-4k-seven-wonders-wallpaper-photo.jpg',
-              'https://wallpapercat.com/w/full/c/8/5/30761-3840x2160-desktop-4k-seven-wonders-wallpaper-photo.jpg',
-              'https://wallpapercat.com/w/full/c/8/5/30761-3840x2160-desktop-4k-seven-wonders-wallpaper-photo.jpg',
-              'https://wallpapercat.com/w/full/c/8/5/30761-3840x2160-desktop-4k-seven-wonders-wallpaper-photo.jpg',
-              'https://wallpapercat.com/w/full/c/8/5/30761-3840x2160-desktop-4k-seven-wonders-wallpaper-photo.jpg',
-              'https://wallpapercat.com/w/full/c/8/5/30761-3840x2160-desktop-4k-seven-wonders-wallpaper-photo.jpg',
-              'https://wallpapercat.com/w/full/c/8/5/30761-3840x2160-desktop-4k-seven-wonders-wallpaper-photo.jpg',
-              'https://wallpapercat.com/w/full/c/8/5/30761-3840x2160-desktop-4k-seven-wonders-wallpaper-photo.jpg',
-              'https://wallpapercat.com/w/full/c/8/5/30761-3840x2160-desktop-4k-seven-wonders-wallpaper-photo.jpg',
-              'https://wallpapercat.com/w/full/c/8/5/30761-3840x2160-desktop-4k-seven-wonders-wallpaper-photo.jpg',
-              'https://wallpapercat.com/w/full/c/8/5/30761-3840x2160-desktop-4k-seven-wonders-wallpaper-photo.jpg',
-              'https://wallpapercat.com/w/full/c/8/5/30761-3840x2160-desktop-4k-seven-wonders-wallpaper-photo.jpg',
-              'https://wallpapercat.com/w/full/c/8/5/30761-3840x2160-desktop-4k-seven-wonders-wallpaper-photo.jpg',
-              'https://wallpapercat.com/w/full/c/8/5/30761-3840x2160-desktop-4k-seven-wonders-wallpaper-photo.jpg',
-              'https://wallpapercat.com/w/full/c/8/5/30761-3840x2160-desktop-4k-seven-wonders-wallpaper-photo.jpg',
-              'https://wallpapercat.com/w/full/c/8/5/30761-3840x2160-desktop-4k-seven-wonders-wallpaper-photo.jpg',
-              'https://wallpapercat.com/w/full/c/8/5/30761-3840x2160-desktop-4k-seven-wonders-wallpaper-photo.jpg',
-              'https://wallpapercat.com/w/full/c/8/5/30761-3840x2160-desktop-4k-seven-wonders-wallpaper-photo.jpg',
-              'https://wallpapercat.com/w/full/c/8/5/30761-3840x2160-desktop-4k-seven-wonders-wallpaper-photo.jpg',
-              'https://wallpapercat.com/w/full/c/8/5/30761-3840x2160-desktop-4k-seven-wonders-wallpaper-photo.jpg',
-              'https://wallpapercat.com/w/full/c/8/5/30761-3840x2160-desktop-4k-seven-wonders-wallpaper-photo.jpg',
-              'https://wallpapercat.com/w/full/c/8/5/30761-3840x2160-desktop-4k-seven-wonders-wallpaper-photo.jpg'
+
+              'https://images.unsplash.com/photo-1501594907352-04cda38ebc29?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+              'https://images.unsplash.com/photo-1494526585095-c41746248156?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+              'https://images.unsplash.com/photo-1552051263-6eb5bb6905b9?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTJ8fGJ1cmolMjBraGFsaWZhfGVufDB8fDB8fHww',
+              'https://i.pinimg.com/736x/2e/d5/c0/2ed5c0cbb0b48273f96b48aeca994906.jpg',
+              'https://images.unsplash.com/photo-1494526585095-c41746248156?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+              'https://images.unsplash.com/photo-1552051263-6eb5bb6905b9?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTJ8fGJ1cmolMjBraGFsaWZhfGVufDB8fDB8fHww',
+              'https://images.unsplash.com/photo-1504384308090-c894fdcc538d?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+              'https://images.unsplash.com/photo-1494526585095-c41746248156?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+              'https://i.pinimg.com/736x/2e/d5/c0/2ed5c0cbb0b48273f96b48aeca994906.jpg',
+              'https://i.pinimg.com/736x/45/35/76/4535760a5ec8fc27103dbe7c31683345.jpg',
+              'https://i.pinimg.com/1200x/3e/37/68/3e3768086639779d03ad3d697ef37131.jpg',
+              'https://images.unsplash.com/photo-1552051263-6eb5bb6905b9?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTJ8fGJ1cmolMjBraGFsaWZhfGVufDB8fDB8fHww',
+              'https://i.pinimg.com/736x/b5/54/cf/b554cf3460350df9b5015e35bfbdedb3.jpg',
+              'https://images.unsplash.com/photo-1494526585095-c41746248156?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+              'https://images.unsplash.com/photo-1552051263-6eb5bb6905b9?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTJ8fGJ1cmolMjBraGFsaWZhfGVufDB8fDB8fHww',
+              'https://images.unsplash.com/photo-1583707225662-125fe69e6656?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+              'https://images.unsplash.com/photo-1494526585095-c41746248156?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+              'https://images.unsplash.com/photo-1552051263-6eb5bb6905b9?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTJ8fGJ1cmolMjBraGFsaWZhfGVufDB8fDB8fHww',
+              'https://i.pinimg.com/736x/67/7a/a8/677aa8ffd0fd40a7d2eb5a3b9bd75695.jpg',
+              'https://images.unsplash.com/photo-1583707225662-125fe69e6656?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+              'https://images.unsplash.com/photo-1562679299-266edbefd6d7?q=80&w=1173&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+              'https://images.unsplash.com/photo-1494526585095-c41746248156?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+              'https://images.unsplash.com/photo-1552051263-6eb5bb6905b9?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTJ8fGJ1cmolMjBraGFsaWZhfGVufDB8fDB8fHww',
+              'https://images.unsplash.com/photo-1504384308090-c894fdcc538d?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+              'https://images.unsplash.com/photo-1583707225662-125fe69e6656?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+              'https://images.unsplash.com/photo-1562679299-266edbefd6d7?q=80&w=1173&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+              'https://i.pinimg.com/736x/67/7a/a8/677aa8ffd0fd40a7d2eb5a3b9bd75695.jpg'
+
             ]}
           />
         </div>
