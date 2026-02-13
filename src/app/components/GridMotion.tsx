@@ -2,7 +2,7 @@ import { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
 import './GridMotion.css';
 
-const GridMotion = ({ items = [], gradientColor = 'black' }) => {
+const GridMotion = ({ items = [], gradientColor = 'rgba(0,0,0,0.08)' }) => {
   const gridRef = useRef(null);
   const rowRefs = useRef([]);
   const mouseXRef = useRef(window.innerWidth / 2);
@@ -53,7 +53,8 @@ const GridMotion = ({ items = [], gradientColor = 'black' }) => {
       <section
         className="intro"
         style={{
-          background: `radial-gradient(circle, ${gradientColor} 0%, transparent 100%)`
+          background: `radial-gradient(circle, ${gradientColor} 0%, transparent 100%)`,
+          backgroundColor: 'transparent'
         }}
       >
         <div className="gridMotion-container">

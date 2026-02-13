@@ -48,17 +48,17 @@ export function AboutPage() {
             transition={{ duration: 0.6, delay: 0.3 }}
           >
             <h2 className="text-4xl mb-6 text-[#C65D3B]">Tech Fest</h2>
-            <p className="text-lg text-[#B0B0B0] leading-relaxed mb-4">
+            <p className="text-lg text-justify text-[#B0B0B0] leading-relaxed mb-4">
               KARNAK is amongst the most awaited techno-cultural event being organized by MBITS.  
-              KARNAK is a 6-day event that will feature music, dance, arts, cultural and technical events.
+              KARNAK is a 2-day event that will feature music, dance, arts, cultural and technical events.
               Our Tech Fest gives young minds an opportunity to showcase their skills and compete with other likeminded individuals and the best talent will emerge as the winner.
             </p>
-            <p className="text-lg text-[#B0B0B0] leading-relaxed mb-4">
+            <p className="text-lg text-justify text-[#B0B0B0] leading-relaxed mb-4">
              Sports and games not only create a lively environment in the campus, it also gives a platform for the students to develop their motor skills, 
              leadership quality, refine their respective sporting skills.
             </p>
-            <p className="text-lg text-[#B0B0B0] leading-relaxed">
-              MBITS feels proud to organize KARNAK as a successful event and would like to convey thanks to management and principal 
+            <p className="text-lg text-justify text-[#B0B0B0] leading-relaxed">
+              MBITS feels proud to organize KARNAK as a successful event and would like to convey thanks to Management, Director and Principal 
               for their timely advice and cooperation for organizing successful Fest
             </p>
 
@@ -129,14 +129,14 @@ export function AboutPage() {
             <h3 className="text-2xl mb-4 text-[#22222]">
               Mar Baselios Institute of Technology and Science
             </h3>
-            <p className="text-lg text-[#B0B0B0] leading-relaxed mb-4">
+            <p className="text-lg text-justify text-[#B0B0B0] leading-relaxed mb-4">
               Mar Baselios Institute of Technology and Science (MBITS), Kothamangalam, Cochin, Kerala was started 
               in the year 2009 upholding the motto, “Wisdom Crowns Knowledge” and aims to provide quality higher education at par with international standards.
                The institute offers various B.Tech and M.Tech courses at highly affordable fee structures and with scholarships provided by Mar Thoma Cheria pally, Kothamangalam and the Government of India. 
               The global standards set at MBITS in the field of teaching and research constantly encourage students to a relentless pursuit of excellence through highly experienced teachers.
               
             </p>
-            <p className="text-lg text-[#B0B0B0] leading-relaxed mb-6">
+            <p className="text-lg text-justify text-[#B0B0B0] leading-relaxed mb-6">
              The institute imparts innovative technical education and gives importance to discipline, result, and campus placement and prepare the students technologically superior and ethically strong.
                MBITS is equipped with the most modern facilities required for study, practice, consultancy and research centres, serving regional needs. It also promotes students’ co-curricular and extra-curricular activities. 
                We are committed to nurturing our students’ talents and providing them with the skills they need to succeed in the global workforce.

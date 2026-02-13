@@ -221,7 +221,7 @@ export function EventDetailsPage() {
                 transition={{ delay: 0.4 }}
               >
                 <h2 className="text-2xl font-bold text-[#2A2A2A] mb-4">About This Event</h2>
-                <p className="text-lg text-[#6B6B6B] leading-relaxed mb-6">{event.description}</p>
+                <p className="text-lg text-justify text-[#6B6B6B] leading-relaxed mb-6">{event.description}</p>
               </motion.div>
 
 

@@ -60,7 +60,7 @@ export function Navbar() {
     { path: '/', label: 'Home' },
     { path: '/about', label: 'About' },
     { path: '/departments', label: 'Events' },
-    { path: '/mainevent', label: 'MainEvents' },
+    { path: '/mainevent', label: 'Main_Events' },
   ];
 
   return (

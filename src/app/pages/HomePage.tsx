@@ -8,7 +8,7 @@ import { ImageWithFallback } from '../components/figma/ImageWithFallback';
 import IntroAnimation from '../components/IntroAnimation';
 import CircularGallery from '../components/CircularGallery';
 import LiquidEther from '../components/LiquidEther';
-
+import Shuffle from '../components/Shuffle';
 import RotatingBorderButton from '../components/RotatingBorderButton';
 
 // import RevealLoader from '../components/RevealLoader';
@@ -123,13 +123,29 @@ export function HomePage() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
-            <span className="inline-block px-4 py-2 bg-[#FF6B35]/10 border border-[#FF6B35]/30 rounded-full text-[#FF6B35] text-xs sm:text-sm tracking-wide mb-4">
-              MAR BASELIOS INSTITUTE OF TECHNOLOGY AND
-            </span>
+            
 
-            <h1 id="page-logo" className="text-7xl sm:text-8xl md:text-9xl mb-6 tracking-tight bg-gradient-to-br from-[#E8E8E8] to-[#FF6B35] bg-clip-text text-transparent">
-              KARNAK
-            </h1>
+            <Shuffle
+              text="KARNAK'26"
+              shuffleDirection="up"
+              duration={0.35}
+              animationMode="evenodd"
+              shuffleTimes={1}
+              ease="power3.out"
+              stagger={0.1}
+              threshold={0.1}
+              triggerOnce={true}
+              triggerOnHover
+              respectReducedMotion={true}
+              loop
+              loopDelay={1.5}
+              colorFrom="#ff0202"
+              colorTo="#ff6b35"
+              className="tracking-tight shuffle-title shuffle-large"
+              style={{
+                display: 'block'
+              }}
+            />
 
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -153,12 +169,12 @@ export function HomePage() {
                 <div className="text-xs sm:text-sm text-[#B0B0B0]">Events</div>
               </div>
               <div className="flex flex-col items-center">
-                <div className="text-2xl sm:text-3xl text-[#FFA500] mb-1">5K+</div>
-                <div className="text-xs sm:text-sm text-[#B0B0B0]">Participants</div>
+                <div className="text-2xl sm:text-3xl text-[#FFA500] mb-1">2</div>
+                <div className="text-xs sm:text-sm text-[#B0B0B0]">Days</div>
               </div>
               <div className="flex flex-col items-center">
-                <div className="text-2xl sm:text-3xl text-[#FF8C5A] mb-1">3</div>
-                <div className="text-xs sm:text-sm text-[#B0B0B0]">Days</div>
+                <div className="text-2xl sm:text-3xl text-[#FF8C5A] mb-1">500+</div>
+                <div className="text-xs sm:text-sm text-[#B0B0B0]">Participants</div>
               </div>
             </div>
 

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import RevealLoader from '../components/RevealLoader';
 import { motion } from 'motion/react';
-import { ArrowLeft, Calendar, MapPin, Users } from 'lucide-react';
+import { ArrowLeft,Lightbulb, Calendar, MapPin, Users } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 import { GridScan } from '../components/GridScan';
 import Carousel from '../components/Carousel';
@@ -145,6 +145,24 @@ export function MainEventPage() {
               </div>
             </div>
           </motion.div>
+           <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.6 }}
+          className="mt-16 p-8 bg-[#1A1A1A] rounded-3xl shadow-lg border border-[#FF6B35]/20"
+        >
+          <div className="flex items-start gap-4">
+            <div className="w-12 h-12 rounded-xl bg-[#FF6B35]/10 flex items-center justify-center flex-shrink-0">
+              <Lightbulb className="w-6 h-6 text-[#FF6B35]" />
+            </div>
+            <div>
+              <h3 className="text-xl mb-2 text-[#E8E8E8]">NEED BETTER EXPERIENCE?</h3>
+              <p className="text-[#B0B0B0] leading-relaxed">
+                ROTATE THE SCREEN(MOBILE) AND TO VIEW THE IMAGE TAP ON IT.
+              </p>
+            </div>
+          </div>
+        </motion.div>
 		</>
       )}
     </div>

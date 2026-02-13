@@ -36,77 +36,72 @@ const departmentEvents: Record<string, any> = {
     events: [
       {
         id: 1,
-        name: 'Code Sprint',
-        tagline: 'Race against time',
-        description: 'Competitive programming challenge',
-        date: 'March 15, 2026',
-        fee: '₹200',
-        venue: 'L1 - 101',
-        image: 'https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=600&q=80',
+        name: 'VR Vortex',
+       
+        description: 'Competitive programming challengeVirtual Reality redefines how we learn, create, and experience the digital world by immersing us in environments beyond physical limits.At this VR Expo, innovation meets imagination as cutting-edge technology transforms ideas into interactive realities.\n Step in, explore the future, and experience technology not just seen—but lived.',
+        date: 'February 26-27, 2026',
+        fee: '₹60',
+        venue: 'Room 130,131',
+        image: '/depfolds/comps/vrposter.jpeg',
         registrationUrl: 'https://forms.google.com/example1',
-        contact: { name: 'John Doe', phone: '9876543210' }
+        contact: [{ name: 'Adinath', phone: '8921798670' }, { name: 'Anand', phone: '6238763675' }]
       },
       {
         id: 2,
-        name: 'AI Hackathon',
-        tagline: 'Build the future',
-        description: '24-hour AI/ML hackathon',
-        date: 'March 16, 2026',
-        fee: '₹500',
-        venue: 'Central Auditorium',
-        image: 'https://images.unsplash.com/photo-1677442136019-21780ecad995?w=600&q=80',
+        name: 'GAMING_XP',
+        description: 'Experience high-performance gaming with immersive visuals in our gaming room. Play, compete, and enjoy the ultimate gaming vibe with friends.',
+        date: 'February 26-27, 2026',
+        fee: '₹60',
+        venue: 'Room 231,232',
+        image: '/depfolds/comps/GAMING_XP.jpeg',
         registrationUrl: 'https://forms.google.com/example2',
-        contact: { name: 'Jane Smith', phone: '9123456780' }
+        contact: [{ name: 'Rehab ', phone: '7907844588' }, { name: 'Fidha ', phone: '9947304940' }]
       },
       {
         id: 3,
         name: 'Web Warriors',
-        tagline: 'Design meets code',
         description: 'Full-stack web development',
-        date: 'March 17, 2026',
+        date: 'February 26-27, 2026',
         fee: '₹300',
         venue: 'L1 - 201',
         image: 'https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=600&q=80',
         registrationUrl: 'https://forms.google.com/example3',
-        contact: { name: 'Alex Lee', phone: '9988776655' }
+        contact: [{ name: 'Alex Lee', phone: '9988776655' }, { name: 'Neha Sharma', phone: '9877665544' }]
       },
       {
         id: 4,
         name: 'Cyber Quest',
-        tagline: 'Hack the planet',
         description: 'Cybersecurity CTF challenge',
-        date: 'March 18, 2026',
+        date: 'February 26-27, 2026',
         fee: 'FREE',
         venue: 'L2 - 105',
         image: 'https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=600&q=80',
         registrationUrl: 'https://forms.google.com/example4',
-        contact: { name: 'Priya Kumar', phone: '9001122334', }
-       
+        contact: [{ name: 'Priya Kumar', phone: '9001122334' }, { name: 'Arjun Verma', phone: '9112233445' }]
       },
       {
         id: 5,
         name: 'Tech Quiz',
-        tagline: 'Test your knowledge',
         description: 'Technology quiz competition',
-        date: 'March 19, 2026',
+        date: 'February 26-27, 2026',
         fee: 'FREE',
         venue: 'L1 - 301',
         image: 'https://images.unsplash.com/photo-1606326608606-aa0b62935f2b?w=600&q=80',
         registrationUrl: 'https://forms.google.com/example5',
-        contact: { name: 'Ravi Patel', phone: '9876501234' }
+        contact: [{ name: 'Ravi Patel', phone: '9876501234' }, { name: 'Shreya Desai', phone: '9765432109' }]
       },
       {
         id: 6,
         name: 'Mobile Dev Challenge',
-        tagline: 'Apps that matter',
         description: 'Cross-platform app development',
-        date: 'March 20, 2026',
+        date: 'February 26-27, 2026',
         fee: '₹400',
         venue: 'Central Lab',
         image: 'https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=600&q=80',
         registrationUrl: 'https://forms.google.com/example6',
-        contact: { name: 'Fatima Noor', phone: '9090909090' }
+        contact: [{ name: 'Fatima Noor', phone: '9090909090' }, { name: 'Vasant Rao', phone: '9101010101' }]
       }
+      
     ]
   },
   'electronics': {
@@ -116,46 +111,42 @@ const departmentEvents: Record<string, any> = {
       {
         id: 1,
         name: 'Circuit Master',
-        tagline: 'Wire your way to victory',
         description: 'Circuit design and debugging',
-        date: 'March 15, 2026',
+        date: 'February 26-27, 2026',
         fee: '₹250',
         image: 'https://images.unsplash.com/photo-1518770660439-4636190af475?w=600&q=80',
         registrationUrl: 'https://forms.google.com/example7',
-        contact: { name: 'Rahul Mehra', phone: '9812345678' }
+        contact: [{ name: 'Rahul Mehra', phone: '9812345678' }, { name: 'Isha Pandey', phone: '9723456789' }]
       },
       {
         id: 2,
         name: 'IoT Innovation',
-        tagline: 'Connect everything',
         description: 'Build smart IoT solutions',
-        date: 'March 16, 2026',
+        date: 'February 26-27, 2026',
         fee: '₹400',
         image: 'https://images.unsplash.com/photo-1558346490-a72e53ae2d4f?w=600&q=80',
         registrationUrl: 'https://forms.google.com/example8',
-        contact: { name: 'Sneha Roy', phone: '9823456781' }
+        contact: [{ name: 'Sneha Roy', phone: '9823456781' }, { name: 'Karan Singh', phone: '9834567892' }]
       },
       {
         id: 3,
         name: 'Embedded Challenge',
-        tagline: 'Code meets hardware',
         description: 'Embedded systems programming',
-        date: 'March 17, 2026',
+        date: 'February 26-27, 2026',
         fee: '₹350',
         image: 'https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=600&q=80',
         registrationUrl: 'https://forms.google.com/example9',
-        contact: { name: 'Vikram Singh', phone: '9834567812' }
+        contact: [{ name: 'Vikram Singh', phone: '9834567812' }, { name: 'Anjali Nair', phone: '9845678923' }]
       },
       {
         id: 4,
         name: 'PCB Design Contest',
-        tagline: 'Design precision boards',
         description: 'Professional PCB design',
-        date: 'March 18, 2026',
+        date: 'February 26-27, 2026',
         fee: '₹300',
         image: 'https://images.unsplash.com/photo-1530595467537-0b5996c41f2d?w=600&q=80',
         registrationUrl: 'https://forms.google.com/example10',
-        contact: { name: 'Aarti Sharma', phone: '9845678123' }
+        contact: [{ name: 'Aarti Sharma', phone: '9845678123' }, { name: 'Mohit Patel', phone: '9756789034' }]
       }
     ]
   },
@@ -166,46 +157,42 @@ const departmentEvents: Record<string, any> = {
       {
         id: 1,
         name: 'Robo Race',
-        tagline: 'Speed and precision',
         description: 'Autonomous robot racing',
-        date: 'March 15, 2026',
+        date: 'February 26-27, 2026',
         fee: '₹500',
         image: 'https://images.unsplash.com/photo-1561144257-e32e8eef8e8e?w=600&q=80',
         registrationUrl: 'https://forms.google.com/example11',
-        contact: { name: 'Suresh Babu', phone: '9856781234' }
+        contact: [{ name: 'Suresh Babu', phone: '9856781234' }, { name: 'Priya Gupta', phone: '9867892345' }]
       },
       {
         id: 2,
         name: 'CAD Master',
-        tagline: 'Design excellence',
         description: '3D modeling competition',
-        date: 'March 16, 2026',
+        date: 'February 26-27, 2026',
         fee: '₹250',
         image: 'https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=600&q=80',
         registrationUrl: 'https://forms.google.com/example12',
-        contact: { name: 'Meena Pillai', phone: '9867812345' }
+        contact: [{ name: 'Meena Pillai', phone: '9867812345' }, { name: 'Dev Yadav', phone: '9978903456' }]
       },
       {
         id: 3,
         name: 'Bridge Build',
-        tagline: 'Engineering strength',
         description: 'Build the strongest bridge',
-        date: 'March 17, 2026',
+        date: 'February 26-27, 2026',
         fee: '₹400',
         image: 'https://images.unsplash.com/photo-1587293852726-70cdb56c2866?w=600&q=80',
         registrationUrl: 'https://forms.google.com/example13',
-        contact: { name: 'Arjun Das', phone: '9878123456' }
+        contact: [{ name: 'Arjun Das', phone: '9878123456' }, { name: 'Sophia Khan', phone: '9789012367' }]
       },
       {
         id: 4,
         name: 'Hydraulic Challenge',
-        tagline: 'Pressure engineering',
         description: 'Design hydraulic systems',
-        date: 'March 18, 2026',
+        date: 'February 26-27, 2026',
         fee: '₹350',
         image: 'https://images.unsplash.com/photo-1581094794329-c8112e89af45?w=600&q=80',
         registrationUrl: 'https://forms.google.com/example14',
-        contact: { name: 'Divya Nair', phone: '9881234567' }
+        contact: [{ name: 'Divya Nair', phone: '9881234567' }, { name: 'Sameer Chopra', phone: '9890123478' }]
       }
     ]
   },
@@ -216,35 +203,33 @@ const departmentEvents: Record<string, any> = {
       {
         id: 1,
         name: 'Structure Design',
-        tagline: 'Build foundations',
         description: 'Structural engineering design',
-        date: 'March 15, 2026',
+        date: 'February 26-27, 2026',
         fee: '₹300',
         image: '/depfolds/civ/trial1.jpeg',
         registrationUrl: 'https://forms.google.com/example15',
-        contact: { name: 'Karthik Rao', phone: '9891234567' }
+        contact: [{ name: 'Karthik Rao', phone: '9891234567' }, { name: 'Divya Desai', phone: '9912345678' }]
       },
       {
         id: 2,
         name: 'City Planning',
-        tagline: 'Design tomorrow',
         description: 'Urban planning competition',
-        date: 'March 16, 2026',
+        date: 'February 26-27, 2026',
         fee: '₹250',
         image: '/depfolds/civ/trial1.jpeg',
         registrationUrl: 'https://forms.google.com/example16',
-        contact: { name: 'Shalini Menon', phone: '9901234567' }
+        contact: [{ name: 'Shalini Menon', phone: '9901234567' }, { name: 'Nikhil Bhat', phone: '9823456789' }]
       },
       {
         id: 3,
         name: 'AutoCAD Challenge',
         description: 'Technical drawing competition.JAGSJJAERBHBKFBLHBABHBIAEIRIUBBEA.&nbsp;',
-        date: 'March 17, 2026',
+        date: 'February 26, 2026',
         fee: '₹200',
         prize:'₹10,000',
         image: '/depfolds/civ/trial1.jpeg',
         registrationUrl: 'https://forms.google.com/example17',
-        contact: { name: 'Mohit Verma', phone: '9912345678' }
+        contact: [{ name: 'Mohit Verma', phone: '9912345678' }, { name: 'Ruhi Kapoor', phone: '9734567890' }]
       }
     ]
   },
@@ -255,35 +240,32 @@ const departmentEvents: Record<string, any> = {
       {
         id: 1,
         name: 'Power Grid',
-        tagline: 'Energize the future',
         description: 'Power systems design',
-        date: 'March 15, 2026',
+        date: 'February 26-27, 2026',
         fee: '₹300',
         image: '/depfolds/civ/trial1.jpeg',
         registrationUrl: 'https://forms.google.com/example18',
-        contact: { name: 'Anil Joshi', phone: '9923456781' }
+        contact: [{ name: 'Anil Joshi', phone: '9923456781' }, { name: 'Sneha Iyer', phone: '9845678901' }]
       },
       {
         id: 2,
         name: 'Motor Control',
-        tagline: 'Precision automation',
         description: 'Electric motor control systems',
-        date: 'March 16, 2026',
+        date: 'February 26-27, 2026',
         fee: '₹350',
         image: 'https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=600&q=80',
         registrationUrl: 'https://forms.google.com/example19',
-        contact: { name: 'Sunita Rao', phone: '9934567812' }
+        contact: [{ name: 'Sunita Rao', phone: '9934567812' }, { name: 'Vikrant Sinha', phone: '9756890123' }]
       },
       {
         id: 3,
         name: 'Renewable Energy',
-        tagline: 'Green solutions',
         description: 'Sustainable energy projects',
-        date: 'March 17, 2026',
+        date: 'February 26-27, 2026',
         fee: 'FREE',
         image: 'https://images.unsplash.com/photo-1509391366360-2e959784a276?w=600&q=80',
         registrationUrl: 'https://forms.google.com/example20',
-        contact: { name: 'Rakesh Gupta', phone: '9945678123' }
+        contact: [{ name: 'Rakesh Gupta', phone: '9945678123' }, { name: 'Aarav Singh', phone: '9867901234' }]
       }
     ]
   },
@@ -294,46 +276,42 @@ const departmentEvents: Record<string, any> = {
       {
         id: 1,
         name: 'Innovation Summit',
-        tagline: 'Ideas that inspire',
         description: 'Cross-domain innovation showcase',
-        date: 'March 15, 2026',
+        date: 'February 26-27, 2026',
         fee: 'FREE',
         image: 'https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=600&q=80',
         registrationUrl: 'https://forms.google.com/example21',
-        contact: { name: 'Nisha Jain', phone: '9956781234' }
+        contact: [{ name: 'Nisha Jain', phone: '9956781234' }, { name: 'Yash Mishra', phone: '9878012345' }]
       },
       {
         id: 2,
         name: 'Tech Talk Series',
-        tagline: 'Learn from experts',
         description: 'Industry expert sessions',
-        date: 'March 16-18, 2026',
+        date: 'February 26-27, 2026',
         fee: 'FREE',
         image: 'https://images.unsplash.com/photo-1475721027785-f74eccf877e2?w=600&q=80',
         registrationUrl: 'https://forms.google.com/example22',
-        contact: { name: 'Aman Kapoor', phone: '9967812345' }
+        contact: [{ name: 'Aman Kapoor', phone: '9967812345' }, { name: 'Ritu Verma', phone: '9789123456' }]
       },
       {
         id: 3,
         name: 'Paper Presentation',
-        tagline: 'Research showcase',
         description: 'Present your research',
-        date: 'March 17, 2026',
+        date: 'February 26-27, 2026',
         fee: '₹150',
         image: 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=600&q=80',
         registrationUrl: 'https://forms.google.com/example23',
-        contact: { name: 'Farhan Ali', phone: '9978123456' }
+        contact: [{ name: 'Farhan Ali', phone: '9978123456' }, { name: 'Maya Reddy', phone: '9890234567' }]
       },
       {
         id: 4,
         name: 'Startup Pitch',
-        tagline: 'From idea to reality',
         description: 'Pitch your startup idea',
-        date: 'March 18, 2026',
+        date: 'February 26-27, 2026',
         fee: '₹200',
         image: 'https://images.unsplash.com/photo-1559136555-9303baea8ebd?w=600&q=80',
         registrationUrl: 'https://forms.google.com/example24',
-        contact: { name: 'Geeta Reddy', phone: '9981234567' }
+        contact: [{ name: 'Geeta Reddy', phone: '9981234567' }, { name: 'Karan Tiwari', phone: '9901345678' }]
       }
     ]
   }
@@ -434,7 +412,6 @@ export function DepartmentEventsPage() {
     const newEvent: Event = {
       id: 0,
       name: '',
-      tagline: '',
       description: '',
       date: '',
       fee: 'FREE',
@@ -670,8 +647,14 @@ export function DepartmentEventsPage() {
               'https://wallpapercat.com/w/full/c/8/5/30761-3840x2160-desktop-4k-seven-wonders-wallpaper-photo.jpg',
               'https://wallpapercat.com/w/full/c/8/5/30761-3840x2160-desktop-4k-seven-wonders-wallpaper-photo.jpg',
               'https://wallpapercat.com/w/full/c/8/5/30761-3840x2160-desktop-4k-seven-wonders-wallpaper-photo.jpg',
+              'https://wallpapercat.com/w/full/c/8/5/30761-3840x2160-desktop-4k-seven-wonders-wallpaper-photo.jpg',
+              'https://wallpapercat.com/w/full/c/8/5/30761-3840x2160-desktop-4k-seven-wonders-wallpaper-photo.jpg',
+              'https://wallpapercat.com/w/full/c/8/5/30761-3840x2160-desktop-4k-seven-wonders-wallpaper-photo.jpg',
+              'https://wallpapercat.com/w/full/c/8/5/30761-3840x2160-desktop-4k-seven-wonders-wallpaper-photo.jpg',
+              'https://wallpapercat.com/w/full/c/8/5/30761-3840x2160-desktop-4k-seven-wonders-wallpaper-photo.jpg',
+              'https://wallpapercat.com/w/full/c/8/5/30761-3840x2160-desktop-4k-seven-wonders-wallpaper-photo.jpg',
+              'https://wallpapercat.com/w/full/c/8/5/30761-3840x2160-desktop-4k-seven-wonders-wallpaper-photo.jpg'
             ]}
-            gradientColor="black"
           />
         </div>
       )}
@@ -834,7 +817,7 @@ export function DepartmentEventsPage() {
             <Users className="w-5 h-5 text-[#FF6B35] mt-0.5 flex-shrink-0" />
             <div>
               <p className="text-[#B0B0B0]">
-                <strong className="text-[#E8E8E8]">Note:</strong> Clicking "Register Now" will redirect you to the official event description and 
+                <strong className=" text-justify text-[#E8E8E8]">Note:</strong> Clicking "Register Now" will redirect you to the official event description and 
                 event registration page. Please fill out all required information accurately. 
                 For queries, contact the event cordinators listed .
               </p>

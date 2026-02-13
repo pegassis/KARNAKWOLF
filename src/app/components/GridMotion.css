@@ -65,6 +65,16 @@
   font-size: 1.5rem;
 }
 
+/* Keep items square regardless of screen size */
+.row__item {
+  align-self: start;
+}
+
+.row__item-inner {
+  aspect-ratio: 1 / 1;
+  height: auto; /* let aspect-ratio determine height */
+}
+
 .row__item-img {
   width: 100%;
   height: 100%;
@@ -92,4 +102,49 @@
 
 .fullview .row__item-inner {
   border-radius: 0px;
+  
+}
+
+/* Responsive adjustments for small screens so the grid cells remain square */
+@media (max-width: 768px) {
+  .intro::after {
+    width:70px;
+    height:70px;
+    background-size: 80px;
+  }
+
+  .gridMotion-container {
+    width: 140vw;
+    height: auto;
+    transform: rotate(-4deg);
+  }
+
+  .row {
+    gap: 0.75rem;
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .row__item-inner {
+    border-radius: 10px;
+    font-size: 1.25rem;
+    padding: 0.5rem;
+  }
+
+  /* Extra small screens: fewer columns to make tiles larger */
+  @media (max-width: 420px) {
+    .gridMotion-container {
+      width: 160vw;
+      transform: rotate(-2deg);
+    }
+
+    .row {
+      grid-template-columns: repeat(3, 1fr);
+      gap: 0.5rem;
+    }
+
+    .row__item-inner {
+      font-size: 1rem;
+      padding: 0.6rem;
+    }
+  }
 }

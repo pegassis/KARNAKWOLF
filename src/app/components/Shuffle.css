@@ -1,0 +1,55 @@
+.shuffle-parent {
+  display: inline-block;
+  white-space: normal;
+  word-wrap: break-word;
+  will-change: transform;
+  line-height: 1;
+  font-size: 6rem;
+  font-family: 'Casco', 'Press Start 2P', sans-serif;
+  text-transform: uppercase;
+  visibility: visible;
+  margin-bottom: 1.5rem;
+  color: #FF6B35;
+  position: relative;
+  z-index: 10;
+  letter-spacing: 0.05em;
+  font-weight: bold;
+}
+
+.shuffle-parent.is-ready {
+  visibility: visible;
+}
+
+.shuffle-title {
+  color: #FF6B35;
+}
+
+.shuffle-large {
+  font-size: 5rem;
+}
+
+@media (min-width: 640px) {
+  .shuffle-large {
+    font-size: 9rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .shuffle-large {
+    font-size: 11rem;
+  }
+}
+
+.shuffle-char-wrapper {
+  display: inline-block;
+  overflow: hidden;
+  vertical-align: baseline;
+  position: relative;
+}
+
+.shuffle-char-wrapper > span {
+  display: inline-flex;
+  will-change: transform;
+  backface-visibility: hidden;
+  -webkit-font-smoothing: antialiased;
+}
