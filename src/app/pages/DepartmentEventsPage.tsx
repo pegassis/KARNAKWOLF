@@ -8,7 +8,7 @@ import { VideoModal } from '../components/VideoModal';
 import Lightning from '../components/Lightning';
 import LetterGlitch from '../components/LetterGlitch';
 import GridMotion from '../components/GridMotion';
-import Vid from '../components/vid';
+import Vid from '../components/Vid';
 
 import { useAdmin } from '../context/AdminContext';
 import { getApiUrl, checkBackendHealth } from '../utils/apiConfig';
