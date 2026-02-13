@@ -936,7 +936,7 @@ export function DepartmentEventsPage() {
                     {/* Description */}
                     <div className="mb-8">
                       <h3 className="text-lg font-bold text-[#2A2A2A] mb-3">About This Event</h3>
-                      <p className="text-[#6B6B6B] leading-relaxed whitespace-pre-line">{selectedEvent.description}</p>
+                      <p className="text-[#6B6B6B] text-justify leading-relaxed whitespace-pre-line">{selectedEvent.description}</p>
                     </div>
 
                     {/* Contact Section */}
