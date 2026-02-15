@@ -21,8 +21,9 @@ interface Event {
   tagline: string;
   description: string;
   date: string;
+  time?: string;
+  prizepool?: string;
   fee: string;
-  prize?: string;
   image: string;
   registrationUrl: string;
   venue?: string;
@@ -38,9 +39,11 @@ const departmentEvents: Record<string, any> = {
         id: 1,
         name: 'VR Vortex',
        
-        description: 'Competitive programming challengeVirtual Reality redefines how we learn, create, and experience the digital world by immersing us in environments beyond physical limits.At this VR Expo, innovation meets imagination as cutting-edge technology transforms ideas into interactive realities.\n Step in, explore the future, and experience technology not just seen—but lived.',
+        description: 'Competitive programming challengeVirtual Reality redefines how we learn, create, and experience the digital world by immersing us in environments beyond physical limits.At this VR Expo, innovation meets imagination as cutting-edge technology transforms ideas into interactive realities.\n Step in, explore the future, and experience technology not just seen—but lived.\n\n\n RULES & REGULATIONS \n >go and sit ',
         date: 'February 26-27, 2026',
-        fee: '₹60',
+        time: 'FULL DAY',
+        prizepool: '₹1000',
+        fee: '60',
         venue: 'Room 130,131',
         image: '/depfolds/comps/vrposter.jpeg',
         registrationUrl: 'https://forms.google.com/example1',
@@ -51,7 +54,9 @@ const departmentEvents: Record<string, any> = {
         name: 'GAMING_XP',
         description: 'Experience high-performance gaming with immersive visuals in our gaming room. Play, compete, and enjoy the ultimate gaming vibe with friends.',
         date: 'February 26-27, 2026',
-        fee: '₹60',
+        time: '11:30 AM - 5:30 PM',
+        prizepool: 'TBA',
+        fee: '60',
         venue: 'Room 231,232',
         image: '/depfolds/comps/GAMING_XP.jpeg',
         registrationUrl: 'https://forms.google.com/example2',
@@ -61,7 +66,9 @@ const departmentEvents: Record<string, any> = {
         id: 3,
         name: 'BLIND X CODE',
         description: 'Full-stack web development',
-        date: 'February 27, 2026,forenoon',
+        date: 'February 27, 2026,\n forenoon',
+        time: '9:00 AM - 1:00 PM',
+        prizepool: 'TBA',
         fee: '₹50',
         venue: 'Computer Lab:7',
         image: 'https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=600&q=80',
@@ -73,6 +80,8 @@ const departmentEvents: Record<string, any> = {
         name: 'Cyber Quest',
         description: 'Cybersecurity CTF challenge',
         date: 'February 26-27, 2026',
+        time: '2:00 PM - 6:00 PM',
+        prizepool: 'TBA',
         fee: 'FREE',
         venue: 'L2 - 105',
         image: 'https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=600&q=80',
@@ -84,6 +93,8 @@ const departmentEvents: Record<string, any> = {
         name: 'Tech Quiz',
         description: 'Technology quiz competition',
         date: 'February 26-27, 2026',
+        time: '3:00 PM - 4:30 PM',
+        prizepool: 'TBA',
         fee: 'FREE',
         venue: 'L1 - 301',
         image: 'https://images.unsplash.com/photo-1606326608606-aa0b62935f2b?w=600&q=80',
@@ -95,6 +106,8 @@ const departmentEvents: Record<string, any> = {
         name: 'Mobile Dev Challenge',
         description: 'Cross-platform app development',
         date: 'February 26-27, 2026',
+        time: '10:00 AM - 3:00 PM',
+        prizepool: 'TBA',
         fee: '₹400',
         venue: 'Central Lab',
         image: 'https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=600&q=80',
@@ -113,6 +126,8 @@ const departmentEvents: Record<string, any> = {
         name: 'Circuit Master',
         description: 'Circuit design and debugging',
         date: 'February 26-27, 2026',
+        time: '9:30 AM - 12:30 PM',
+        prizepool: 'TBA',
         fee: '₹250',
         image: 'https://images.unsplash.com/photo-1518770660439-4636190af475?w=600&q=80',
         registrationUrl: 'https://forms.google.com/example7',
@@ -123,6 +138,8 @@ const departmentEvents: Record<string, any> = {
         name: 'IoT Innovation',
         description: 'Build smart IoT solutions',
         date: 'February 26-27, 2026',
+        time: '1:00 PM - 5:00 PM',
+        prizepool: 'TBA',
         fee: '₹400',
         image: 'https://images.unsplash.com/photo-1558346490-a72e53ae2d4f?w=600&q=80',
         registrationUrl: 'https://forms.google.com/example8',
@@ -133,6 +150,8 @@ const departmentEvents: Record<string, any> = {
         name: 'Embedded Challenge',
         description: 'Embedded systems programming',
         date: 'February 26-27, 2026',
+        time: '10:00 AM - 1:00 PM',
+        prizepool: 'TBA',
         fee: '₹350',
         image: 'https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=600&q=80',
         registrationUrl: 'https://forms.google.com/example9',
@@ -143,6 +162,8 @@ const departmentEvents: Record<string, any> = {
         name: 'PCB Design Contest',
         description: 'Professional PCB design',
         date: 'February 26-27, 2026',
+        time: '2:30 PM - 5:30 PM',
+        prizepool: 'TBA',
         fee: '₹300',
         image: 'https://images.unsplash.com/photo-1530595467537-0b5996c41f2d?w=600&q=80',
         registrationUrl: 'https://forms.google.com/example10',
@@ -159,6 +180,8 @@ const departmentEvents: Record<string, any> = {
         name: 'Robo Race',
         description: 'Autonomous robot racing',
         date: 'February 26-27, 2026',
+        time: '11:00 AM - 4:00 PM',
+        prizepool: 'TBA',
         fee: '₹500',
         image: 'https://images.unsplash.com/photo-1561144257-e32e8eef8e8e?w=600&q=80',
         registrationUrl: 'https://forms.google.com/example11',
@@ -169,6 +192,8 @@ const departmentEvents: Record<string, any> = {
         name: 'CAD Master',
         description: '3D modeling competition',
         date: 'February 26-27, 2026',
+        time: '9:00 AM - 2:00 PM',
+        prizepool: 'TBA',
         fee: '₹250',
         image: 'https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=600&q=80',
         registrationUrl: 'https://forms.google.com/example12',
@@ -179,6 +204,8 @@ const departmentEvents: Record<string, any> = {
         name: 'Bridge Build',
         description: 'Build the strongest bridge',
         date: 'February 26-27, 2026',
+        time: '1:30 PM - 5:30 PM',
+        prizepool: 'TBA',
         fee: '₹400',
         image: 'https://images.unsplash.com/photo-1587293852726-70cdb56c2866?w=600&q=80',
         registrationUrl: 'https://forms.google.com/example13',
@@ -189,6 +216,8 @@ const departmentEvents: Record<string, any> = {
         name: 'Hydraulic Challenge',
         description: 'Design hydraulic systems',
         date: 'February 26-27, 2026',
+        time: '10:30 AM - 3:30 PM',
+        prizepool: 'TBA',
         fee: '₹350',
         image: 'https://images.unsplash.com/photo-1581094794329-c8112e89af45?w=600&q=80',
         registrationUrl: 'https://forms.google.com/example14',
@@ -205,6 +234,8 @@ const departmentEvents: Record<string, any> = {
         name: 'Structure Design',
         description: 'Structural engineering design',
         date: 'February 26-27, 2026',
+        time: '9:30 AM - 12:30 PM',
+        prizepool: 'TBA',
         fee: '₹300',
         image: '/depfolds/civ/trial1.jpeg',
         registrationUrl: 'https://forms.google.com/example15',
@@ -215,6 +246,8 @@ const departmentEvents: Record<string, any> = {
         name: 'City Planning',
         description: 'Urban planning competition',
         date: 'February 26-27, 2026',
+        time: '2:00 PM - 5:00 PM',
+        prizepool: 'TBA',
         fee: '₹250',
         image: '/depfolds/civ/trial1.jpeg',
         registrationUrl: 'https://forms.google.com/example16',
@@ -225,8 +258,9 @@ const departmentEvents: Record<string, any> = {
         name: 'AutoCAD Challenge',
         description: 'Technical drawing competition.JAGSJJAERBHBKFBLHBABHBIAEIRIUBBEA.&nbsp;',
         date: 'February 26, 2026',
+        time: '10:00 AM - 1:00 PM',
+        prizepool: '₹10,000',
         fee: '₹200',
-        prize:'₹10,000',
         image: '/depfolds/civ/trial1.jpeg',
         registrationUrl: 'https://forms.google.com/example17',
         contact: [{ name: 'Mohit Verma', phone: '9912345678' }, { name: 'Ruhi Kapoor', phone: '9734567890' }]
@@ -242,6 +276,8 @@ const departmentEvents: Record<string, any> = {
         name: 'Power Grid',
         description: 'Power systems design',
         date: 'February 26-27, 2026',
+        time: '9:00 AM - 1:00 PM',
+        prizepool: 'TBA',
         fee: '₹300',
         image: '/depfolds/civ/trial1.jpeg',
         registrationUrl: 'https://forms.google.com/example18',
@@ -252,6 +288,8 @@ const departmentEvents: Record<string, any> = {
         name: 'Motor Control',
         description: 'Electric motor control systems',
         date: 'February 26-27, 2026',
+        time: '1:30 PM - 4:30 PM',
+        prizepool: 'TBA',
         fee: '₹350',
         image: 'https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=600&q=80',
         registrationUrl: 'https://forms.google.com/example19',
@@ -262,6 +300,8 @@ const departmentEvents: Record<string, any> = {
         name: 'Renewable Energy',
         description: 'Sustainable energy projects',
         date: 'February 26-27, 2026',
+        time: '10:00 AM - 3:00 PM',
+        prizepool: 'TBA',
         fee: 'FREE',
         image: 'https://images.unsplash.com/photo-1509391366360-2e959784a276?w=600&q=80',
         registrationUrl: 'https://forms.google.com/example20',
@@ -278,6 +318,8 @@ const departmentEvents: Record<string, any> = {
         name: 'Innovation Summit',
         description: 'Cross-domain innovation showcase',
         date: 'February 26-27, 2026',
+        time: '9:00 AM - 5:00 PM',
+        prizepool: 'TBA',
         fee: 'FREE',
         image: 'https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=600&q=80',
         registrationUrl: 'https://forms.google.com/example21',
@@ -288,6 +330,8 @@ const departmentEvents: Record<string, any> = {
         name: 'Tech Talk Series',
         description: 'Industry expert sessions',
         date: 'February 26-27, 2026',
+        time: '10:00 AM - 2:00 PM',
+        prizepool: 'TBA',
         fee: 'FREE',
         image: 'https://images.unsplash.com/photo-1475721027785-f74eccf877e2?w=600&q=80',
         registrationUrl: 'https://forms.google.com/example22',
@@ -298,6 +342,8 @@ const departmentEvents: Record<string, any> = {
         name: 'Paper Presentation',
         description: 'Present your research',
         date: 'February 26-27, 2026',
+        time: '2:00 PM - 5:00 PM',
+        prizepool: 'TBA',
         fee: '₹150',
         image: 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=600&q=80',
         registrationUrl: 'https://forms.google.com/example23',
@@ -308,6 +354,8 @@ const departmentEvents: Record<string, any> = {
         name: 'Startup Pitch',
         description: 'Pitch your startup idea',
         date: 'February 26-27, 2026',
+        time: '3:00 PM - 6:00 PM',
+        prizepool: 'TBA',
         fee: '₹200',
         image: 'https://images.unsplash.com/photo-1559136555-9303baea8ebd?w=600&q=80',
         registrationUrl: 'https://forms.google.com/example24',
@@ -426,7 +474,7 @@ export function DepartmentEventsPage() {
       description: '',
       date: '',
       fee: 'FREE',
-      prize: '',
+      prizepool: '',
       image: '',
       registrationUrl: ''
     };
@@ -591,13 +639,13 @@ export function DepartmentEventsPage() {
     <div className="min-h-screen pt-24 lg:pt-32 pb-16 relative">
       {/* Lightning Background for Electrical Department */}
       {departmentId === 'electrical' && (
-        <div className="fixed inset-0 w-full h-full z-0 pointer-events-none">
+        <div className="fixed inset-0 w-full h-full z-0 pointer-events-none overflow-hidden">
           <Lightning
             hue={30}
-            xOffset={0}
+            xOffset={isMobile ? 0.8 : 0}
             speed={1}
-            intensity={1}
-            size={1}
+            intensity={isMobile ? 1.2 : 1}
+            size={isMobile ? 0.8 : 1}
           />
         </div>
       )}
@@ -673,10 +721,10 @@ export function DepartmentEventsPage() {
       )}
 
       {/* Image Background for Mechanical Department */}
-      {departmentId === 'mechanical' && (
+      {departmentId === 'mechanical' && !showVideoModal && (
         <div className="fixed inset-0 w-full h-full z-0 pointer-events-none">
           <img 
-            src={isMobile ? '/public/moferrari.jpg' : '/public/winferrari.jpg'}
+            src={isMobile ? '/moferrari.jpg' : '/winferrari.jpg'}
             alt="Mechanical Department Background"
             className="w-full h-full object-cover"
           />
@@ -694,7 +742,7 @@ export function DepartmentEventsPage() {
             muted
             className="w-full h-full object-cover"
           >
-            <source src="/caback.mp4" type="video/mp4" />
+            <source src="https://res.cloudinary.com/dts9wynrs/video/upload/v1771159169/WhatsApp_Video_2026-02-15_at_6.08.41_PM_inheww.mp4" type="video/mp4" />
           </video>
           {/* dark overlay so text is readable */}
           <div className="absolute inset-0 bg-black/60"></div>
@@ -705,7 +753,7 @@ export function DepartmentEventsPage() {
       {/* Video Modal for Mechanical Department */}
       <VideoModal
         isOpen={showVideoModal}
-        videoSrc="/mectyre.mp4"
+        videoSrc="https://res.cloudinary.com/dts9wynrs/video/upload/v1771159245/mectyre_hlffsi.mp4"
         onClose={() => setShowVideoModal(false)}
         autoPlay={true}
       />
@@ -768,6 +816,38 @@ export function DepartmentEventsPage() {
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-[#2A2A2A]/80 via-transparent to-transparent" />
+                </div>
+
+                {/* Event Details Section */}
+                <div className="p-5 bg-[#1A1A1A] flex-grow flex flex-col gap-3">
+                  <h3 className="text-lg font-bold text-white">{event.name}</h3>
+                  
+                  <div className="space-y-2 text-sm text-[#B0B0B0]">
+                    <div className="flex items-center gap-2">
+                      <Calendar className="w-4 h-4" style={{ color: department.color }} />
+                      <span>{event.date}</span>
+                    </div>
+                    {event.time && (
+                      <div className="flex items-center gap-2">
+                        <span className="text-xs font-semibold" style={{ color: department.color }}>⏰</span>
+                        <span>{event.time}</span>
+                      </div>
+                    )}
+                    {event.prizepool && (
+                      <div className="flex items-center gap-2">
+                        <span className="text-xs font-semibold" style={{ color: department.color }}>🏆</span>
+                        <span>Prize Pool: {event.prizepool}</span>
+                      </div>
+                    )}
+                  </div>
+                </div>
+
+                {/* Fee Box - Centered with Orange Border */}
+                <div className="px-4 py-1 bg-[#1A1A1A] flex-shrink-0 flex justify-center">
+                  <div className="border-2 border-[#FFA500] rounded-lg px-3 py-0.5 flex items-center gap-2" style={{ borderColor: department.color }}>
+                    <IndianRupee className="w-5 h-5" style={{ color: department.color }} />
+                    <span className="font-bold text-lg text-white">{event.fee}</span>
+                  </div>
                 </div>
 
                 {/* View Details Button - Below Card */}
@@ -933,6 +1013,15 @@ export function DepartmentEventsPage() {
                         </div>
                         <p className="text-sm text-[#6B6B6B]">{selectedEvent.date}</p>
                       </div>
+                      
+                      {/* Prize */}
+                      <div className="flex flex-col gap-2">
+                        <div className="flex items-center gap-2 text-[#C65D3B]">
+                          <span className="text-sm font-semibold">Time 
+                           </span>
+                        </div>
+                        <p className="text-sm text-[#6B6B6B] font-semibold">{selectedEvent.time || 'FULL DAY'}</p>
+                      </div>
 
                       {/* Fee */}
                       <div className="flex flex-col gap-2">
@@ -949,15 +1038,6 @@ export function DepartmentEventsPage() {
                         </p>
                       </div>
 
-                      {/* Prize */}
-                      <div className="flex flex-col gap-2">
-                        <div className="flex items-center gap-2 text-[#C65D3B]">
-                          <span className="text-sm font-semibold">Prize
-                           Pool</span>
-                        </div>
-                        <p className="text-sm text-[#6B6B6B] font-semibold">{selectedEvent.prize || 'TBA'}</p>
-                      </div>
-
                       {/* Venue */}
                       <div className="flex flex-col gap-2">
                         <div className="flex items-center gap-2 text-[#C65D3B]">
@@ -965,6 +1045,15 @@ export function DepartmentEventsPage() {
                           <span className="text-sm font-semibold">Venue</span>
                         </div>
                         <p className="text-sm text-[#6B6B6B]">{selectedEvent.venue || 'TBA'}</p>
+                      </div>
+
+                      {/* Prize */}
+                      <div className="flex flex-col gap-2">
+                        <div className="flex items-center gap-2 text-[#C65D3B]">
+                          <span className="text-sm font-semibold">Prize 
+                           Pool</span>
+                        </div>
+                        <p className="text-sm text-[#6B6B6B] font-semibold">{selectedEvent.prizepool || 'N/A'}</p>
                       </div>
                     </div>
 
@@ -1065,16 +1154,7 @@ export function DepartmentEventsPage() {
                         />
                       </div>
 
-                      <div>
-                        <label className="block text-sm font-semibold text-[#2A2A2A] mb-2">Prize</label>
-                        <input
-                          type="text"
-                          value={editFormData.prize || ''}
-                          onChange={(e) => setEditFormData({ ...editFormData, prize: e.target.value })}
-                          className="w-full px-4 py-2 border border-[#DDD] rounded-lg focus:outline-none focus:ring-2 focus:ring-[#C65D3B] text-black"
-                          placeholder="e.g., ₹500 + Certificate"
-                        />
-                      </div>
+                      
 
                       <div>
                         <label className="block text-sm font-semibold text-[#2A2A2A] mb-2">Venue</label>
@@ -1084,6 +1164,16 @@ export function DepartmentEventsPage() {
                           onChange={(e) => setEditFormData({ ...editFormData, venue: e.target.value })}
                           className="w-full px-4 py-2 border border-[#DDD] rounded-lg focus:outline-none focus:ring-2 focus:ring-[#C65D3B] text-black"
                           placeholder="e.g., Main Auditorium"
+                        />
+                      </div>
+                      <div>
+                        <label className="block text-sm font-semibold text-[#2A2A2A] mb-2">Prize Pool</label>
+                        <input
+                          type="text"
+                          value={editFormData.prizepool || ''}
+                          onChange={(e) => setEditFormData({ ...editFormData, prizepool: e.target.value })}
+                          className="w-full px-4 py-2 border border-[#DDD] rounded-lg focus:outline-none focus:ring-2 focus:ring-[#C65D3B] text-black"
+                          placeholder="e.g., ₹500 + Certificate"
                         />
                       </div>
 

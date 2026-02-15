@@ -154,7 +154,7 @@ export function AboutPage() {
                 <div className="text-sm text-[#6B6B6B]">Departments</div>
               </div>
               <div className="text-center p-4 bg-white rounded-2xl shadow-md border border-gray-100">
-                <div className="text-3xl text-[#5BA3A3] mb-1">2000+</div>
+                <div className="text-2xl text-[#5BA3A3] mb-1">2000+</div>
                 <div className="text-sm text-[#6B6B6B]">Students</div>
               </div>
             </div>

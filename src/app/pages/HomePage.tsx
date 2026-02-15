@@ -10,6 +10,7 @@ import CircularGallery from '../components/CircularGallery';
 import LiquidEther from '../components/LiquidEther';
 import Shuffle from '../components/Shuffle';
 import RotatingBorderButton from '../components/RotatingBorderButton';
+import { useIntroAnimation } from '../context/IntroAnimationContext';
 
 // import RevealLoader from '../components/RevealLoader';
 
@@ -17,7 +18,8 @@ import RotatingBorderButton from '../components/RotatingBorderButton';
 
 
 export function HomePage() {
-  const [animationComplete, setAnimationComplete] = React.useState(false);
+  const { hasShown, markAsShown } = useIntroAnimation();
+  const [animationComplete, setAnimationComplete] = React.useState(hasShown);
   // const [showReveal, setShowReveal] = React.useState(false);
   const navigate = useNavigate();
   
@@ -26,11 +28,16 @@ export function HomePage() {
     navigate('/mainevent');
   };
 
+  const handleAnimationFinish = () => {
+    setAnimationComplete(true);
+    markAsShown();
+  };
+
   return (
     <div className="min-h-screen">
       {/* Full-Screen Intro Animation Overlay */}
       {!animationComplete && (
-        <IntroAnimation onFinish={() => setAnimationComplete(true)} duration={3000} />
+        <IntroAnimation onFinish={handleAnimationFinish} duration={3000} />
       )}
 
 
