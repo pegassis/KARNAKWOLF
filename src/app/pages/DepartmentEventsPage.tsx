@@ -59,11 +59,11 @@ const departmentEvents: Record<string, any> = {
       },
       {
         id: 3,
-        name: 'Web Warriors',
+        name: 'BLIND X CODE',
         description: 'Full-stack web development',
-        date: 'February 26-27, 2026',
-        fee: '₹300',
-        venue: 'L1 - 201',
+        date: 'February 27, 2026,forenoon',
+        fee: '₹50',
+        venue: 'Computer Lab:7',
         image: 'https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=600&q=80',
         registrationUrl: 'https://forms.google.com/example3',
         contact: [{ name: 'Alex Lee', phone: '9988776655' }, { name: 'Neha Sharma', phone: '9877665544' }]
