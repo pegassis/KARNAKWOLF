@@ -47,7 +47,8 @@ export function MainEventPage() {
       {/* Background Music Player (always mounted so it starts with reveal) */}
       <audio
         ref={audioRef}
-        src="/music/mainmus.mp3"
+        src="https://res.cloudinary.com/dts9wynrs/video/upload/v1771157138/mainmus_wnpuze.mp3"
+        type="audio/mpeg"
         autoPlay
         loop
         style={{ display: 'none' }}
