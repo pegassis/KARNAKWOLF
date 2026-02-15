@@ -27,6 +27,7 @@ interface Event {
   image: string;
   registrationUrl: string;
   venue?: string;
+  badge?: number; // 1=Expo, 2=Workshop, 3=Competition, 4=Entertainment
 }
 
 // Mock events data for each department
@@ -39,14 +40,14 @@ const departmentEvents: Record<string, any> = {
         id: 1,
         name: 'VR Vortex',
        
-        description: 'Competitive programming challengeVirtual Reality redefines how we learn, create, and experience the digital world by immersing us in environments beyond physical limits.At this VR Expo, innovation meets imagination as cutting-edge technology transforms ideas into interactive realities.\n Step in, explore the future, and experience technology not just seen—but lived.\n\n\n RULES & REGULATIONS \n >go and sit ',
+        description: 'Virtual Reality redefines how we learn, create, and experience the digital world by immersing us in environments beyond physical limits.At this VR Expo, innovation meets imagination as cutting-edge technology transforms ideas into interactive realities.devStep in, explore the future, and experience technology not just seen—but lived.\n Step in, explore the future, and experience technology not just seen—but lived.\n\n\n',
         date: 'February 26-27, 2026',
         time: 'FULL DAY',
-        prizepool: '₹1000',
-        fee: '60',
+        fee: '40',
+        badge: 1,
         venue: 'Room 130,131',
         image: '/depfolds/comps/vrposter.jpeg',
-        registrationUrl: 'https://forms.google.com/example1',
+        registrationUrl: 'https://t4.ftcdn.net/jpg/17/77/94/27/360_F_1777942761_UTY0WxIs5of7FgsgrkLmzqFdCapwHHgN.jpg',
         contact: [{ name: 'Adinath', phone: '8921798670' }, { name: 'Anand', phone: '6238763675' }]
       },
       {
@@ -54,66 +55,160 @@ const departmentEvents: Record<string, any> = {
         name: 'GAMING_XP',
         description: 'Experience high-performance gaming with immersive visuals in our gaming room. Play, compete, and enjoy the ultimate gaming vibe with friends.',
         date: 'February 26-27, 2026',
-        time: '11:30 AM - 5:30 PM',
-        prizepool: 'TBA',
-        fee: '60',
+        time: 'FULL DAY',
+        prizepool: 'NA',
+        fee: '50',
+        badge: 1,
         venue: 'Room 231,232',
         image: '/depfolds/comps/GAMING_XP.jpeg',
-        registrationUrl: 'https://forms.google.com/example2',
+        registrationUrl: 'https://t4.ftcdn.net/jpg/17/77/94/27/360_F_1777942761_UTY0WxIs5of7FgsgrkLmzqFdCapwHHgN.jpg',
         contact: [{ name: 'Rehab ', phone: '7907844588' }, { name: 'Fidha ', phone: '9947304940' }]
       },
       {
         id: 3,
-        name: 'BLIND X CODE',
-        description: 'Full-stack web development',
-        date: 'February 27, 2026,\n forenoon',
-        time: '9:00 AM - 1:00 PM',
-        prizepool: 'TBA',
-        fee: '₹50',
-        venue: 'Computer Lab:7',
-        image: 'https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=600&q=80',
-        registrationUrl: 'https://forms.google.com/example3',
-        contact: [{ name: 'Alex Lee', phone: '9988776655' }, { name: 'Neha Sharma', phone: '9877665544' }]
+        name: 'PIXELIA',
+        description: 'Unleash your creativity in our pixel art competition! Design stunning pixel masterpieces and compete for glory. Whether youre a seasoned artist or a pixel enthusiast, join us for a colorful challenge that celebrates the art of pixels.\n\nRULES & REGULATIONS\n\n 1. Participants must report to the lab 15 minutes before the event starts.\n2. The poster theme/topic will be announced on the spot\n3. Only the software available on the lab computers may be used(Canva Web)\n4. Internet usage allowed only under supervision.\n5. Participants must not use pre-made templates or previously created posters.\n6. All designs must be created during the competition time only.\n7. External storage devices (pen drives, hard disks) are not allowed\n8. Posters must include a title and relevant visual elements related to the theme.\n9. Any form of copying or plagiarism will lead to disqualification.\n10. Final poster must be saved with the team/participant name and submitted before the deadline in the specified format (JPEG/PNG/PDF).\n11. Judges’ decision will  be final',
+        date: 'February 28, 2026',
+        time: 'Forenoon',
+        prizepool: '1000',
+        fee: '₹60',
+        badge: 3,
+        venue: 'Lab 3 Room 225',
+        image: '/depfolds/comps/pixelia.jpeg',
+        registrationUrl: 'https://t4.ftcdn.net/jpg/17/77/94/27/360_F_1777942761_UTY0WxIs5of7FgsgrkLmzqFdCapwHHgN.jpg',
+        contact: [{ name: 'Hail Mary', phone: '8078925526' }, { name: 'Joel George', phone: '9188492986' }]
       },
       {
         id: 4,
-        name: 'Cyber Quest',
-        description: 'Cybersecurity CTF challenge',
-        date: 'February 26-27, 2026',
-        time: '2:00 PM - 6:00 PM',
-        prizepool: 'TBA',
-        fee: 'FREE',
-        venue: 'L2 - 105',
-        image: 'https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=600&q=80',
-        registrationUrl: 'https://forms.google.com/example4',
-        contact: [{ name: 'Priya Kumar', phone: '9001122334' }, { name: 'Arjun Verma', phone: '9112233445' }]
+        name: 'Pixel Puzzle',
+        description: 'Design is where creativity meets functionality, transforming ideas into meaningful digital experiences. Showcase your UI/UX skills, push the boundaries of innovation, and bring your concepts to life through intuitive, impactful, and visually compelling designs\n\nDuration : 1.5 hours \n\nRULES AND REGULATIONS\n\n1.Team Size – Individual\n2.Time Limit – Designs must be completed and submitted within the allotted time. Late submissions will not be accepted.\n3.Original Work Only – All designs must be original. Plagiarism will lead to disqualification.\n4.Theme Adherence – Designs must strictly follow the given theme/problem statement.\n5.No Pre-made Templates– Ready-made templates or pre-designed UI kits are not allowed (unless permitted).\n6.AI Usage Policy– AI tools (like ChatGPT, Midjourney, etc.) are not allowed.\n7.Reference Materials – Only allowed resources may be used.\n8.Multiple Entries – A participant can be part of only one team.\n9.Power Backup– Organizers are not responsible for personal device technical failures.\n10.Software Installation– Required software must be pre-installed before the event.\n\n Conduct and discipline\n\n•Maintain decorum and professional behavior.\n•No disruptive behavior inside the venue.\n•Any misconduct leads to immediate disqualification.',
+        date: 'February 27, 2026',
+        time: 'Afternoon',
+        prizepool: '1500',
+        fee: '60',
+        badge: 3,
+        venue: 'Computer Lab 3',
+        image: '/depfolds/comps/puzzle.jpeg',
+        registrationUrl: 'https://t4.ftcdn.net/jpg/17/77/94/27/360_F_1777942761_UTY0WxIs5of7FgsgrkLmzqFdCapwHHgN.jpg',
+        contact: [{ name: 'Yeldho', phone: '9495171414' }, { name: 'Agnus', phone: '9544266892' }]
       },
       {
         id: 5,
-        name: 'Tech Quiz',
-        description: 'Technology quiz competition',
-        date: 'February 26-27, 2026',
-        time: '3:00 PM - 4:30 PM',
+        name: 'Splash Pitch',
+        description: 'Dive into the slippery excitement of soapy football at our event — where you don’t just play, you slip, slide, laugh, and score in a wild, foam-filled twist on classic football. Whether you’re chasing the ball, bumping into friends, or trying to stay on your feet, every moment is full of energy, surprises, and unforgettable fun.\n\nDuration : 30 minutes',
+        date: 'February 27, 2026',
+        time: 'FULL DAY',
         prizepool: 'TBA',
-        fee: 'FREE',
-        venue: 'L1 - 301',
-        image: 'https://images.unsplash.com/photo-1606326608606-aa0b62935f2b?w=600&q=80',
-        registrationUrl: 'https://forms.google.com/example5',
-        contact: [{ name: 'Ravi Patel', phone: '9876501234' }, { name: 'Shreya Desai', phone: '9765432109' }]
+        fee: '600 (per team of 4 players)',
+        badge: 4,
+        venue: 'Basketball court',
+        image: '/depfolds/comps/splash.jpeg',
+        registrationUrl: 'https://t4.ftcdn.net/jpg/17/77/94/27/360_F_1777942761_UTY0WxIs5of7FgsgrkLmzqFdCapwHHgN.jpg',
+        contact: [{ name: 'Kevin', phone: '8075723712' }, { name: 'Ryan', phone: '6238890177' }]
       },
       {
         id: 6,
-        name: 'Mobile Dev Challenge',
-        description: 'Cross-platform app development',
-        date: 'February 26-27, 2026',
-        time: '10:00 AM - 3:00 PM',
-        prizepool: 'TBA',
-        fee: '₹400',
-        venue: 'Central Lab',
-        image: 'https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=600&q=80',
-        registrationUrl: 'https://forms.google.com/example6',
-        contact: [{ name: 'Fatima Noor', phone: '9090909090' }, { name: 'Vasant Rao', phone: '9101010101' }]
-      }
+        name: 'Tech Trove',
+        description: 'Explore innovative projects, interact with new technologies and connect with creative minds. Have a project? Join us and showcase your innovation to the world!',
+        date: 'February 27-28, 2026',
+        time: 'FULL DAY',
+        prizepool: 'NA',
+        fee: '₹FREE',
+        badge: 1,
+        venue: 'Classroom 133,134',
+        image: '/depfolds/comps/techtrove.jpeg',
+        registrationUrl: 'https://t4.ftcdn.net/jpg/17/77/94/27/360_F_1777942761_UTY0WxIs5of7FgsgrkLmzqFdCapwHHgN.jpg',
+        contact: [{ name: 'Justin', phone: '7736309758' }, { name: 'Amrutha', phone: '7594907504' }]
+      },
+      {
+      id: 7,
+        name: ' Code, Predict, Conquer – Machine Learning Workshop',
+        description: 'A hands-on introduction to Machine Learning organized by IEDC MBITS, where participants explore how machines analyze data, build predictive models, and solve real-world problems. Designed for beginners, this workshop emphasizes practical learning and the fundamentals of intelligent system development.\n\nOrganized By: IEDC MBITS\nCategory: Workshop\nMode: Offline (Lab Session)\nSeats: Limited seats available \n\nBenefits\n * Certificates will be provided to all participants upon successful completion of the workshop.\n* Activity points will be awarded.\n\nRules & Regulations\n* Entry is permitted only for registered participants.\n* Certificates will be issued only after full attendance throughout the session.',
+        date: 'February 28, 2026',
+        time: '10:00 AM – 01:00 PM',
+        Organizedby:'IEDC MBITS',
+        fee: '₹FREE',
+        venue: 'Lab 8',
+        image: '/depfolds/comps/codepredict.jpeg',
+        registrationUrl: 'https://t4.ftcdn.net/jpg/17/77/94/27/360_F_1777942761_UTY0WxIs5of7FgsgrkLmzqFdCapwHHgN.jpg',
+        contact: [{ name: 'Adwaith K S', phone: '9037861197' }, { name: 'Anna Palanattu', phone: '6235432740' }],
+      
+      badge: 2
+      },
+      {
+      id: 8,
+        name: 'CODE X BLIND (Blind Coding)',
+        description: 'CODE X BLIND is a thrilling coding challenge designed to test a participant’s logical thinking, syntax accuracy, and confidence. Participants will be given a problem statement and must write the complete code within the given time without compiling or running it themselves. The competition is conducted in C programming language .Once submitted, the code will be compiled and executed by the invigilators. Accuracy matters more than retries—clean code wins.\n\n1st price : ₹1000\n2nd price : ₹500\n\nRules & Regulations\n 1. The problem statement will be provided at the start of the event.\n2. The competition is conducted strictly in C programming language.\n3. Participants must write the code within the allotted time.\n4. Compiling and execution are strictly done only by the invigilators.\n5. Participants must stop coding immediately after submission.\n6. The screen will remain visible, but no test runs are allowed.\n7. Internet access and external help are strictly prohibited.\n8. The winner will be decided based on:\n•Least number of errors\n•Correct output\n•Time taken to complete the code.\n9. Any form of malpractice will lead to immediate disqualification.\n10. Judges’ and coordinators’ decisions will be final.',
+        date: 'February 27, 2026',
+        time: 'Forenoon',
+        prizepool: '1500',
+        fee: '₹60',
+        venue: 'Computer Lab 7',
+        image: '/depfolds/comps/blindcoding.jpeg',
+        registrationUrl: 'https://t4.ftcdn.net/jpg/17/77/94/27/360_F_1777942761_UTY0WxIs5of7FgsgrkLmzqFdCapwHHgN.jpg',
+        contact: [{ name: 'Leen Leo', phone: '8075750254' }, { name: 'Emil Mareena P', phone: '6235868192' }]
+      ,
+      badge: 3
+      },
+      {
+      id: 9,
+        name: 'CODE REWIND (Reverse Coding Challenge)',
+        description: 'CODE REWIND is a unique reverse coding challenge where participants are given the expected output and must determine the correct input to generate it through a valid program.Participants may use any programming language. The event tests logical thinking, analytical skills, and problem-solving ability. If the exact output is not achieved, judges will evaluate the logic and approach used. Accuracy and clarity matter.\n\n1st price : ₹1000\n2nd price : ₹500\n\nRules & Regulations\n 1. The expected output will be provided at the start of the event.\n2. Participants must determine suitable input and write a program that produces the given output.\n3. Any programming language is allowed.\n4. The program must be completed within the allotted time.\n5. If the output does not match exactly, judges will evaluate the logic and approach.\n6. Participants may be asked to explain their code and reasoning.\n7. Internet access and external assistance are strictly prohibited.\n8. Plagiarism or copying from others will lead to immediate disqualification.\n9. Winners will be decided based on:\n• Accuracy of the output\n• Logical correctness\n• Efficiency of the solution• Explanation and clarity.\n10. The decision of the judges and coordinators will be final and binding.',
+        date: 'February 28, 2026',
+        time: 'Forenoon',
+        prizepool: '1500',
+        fee: '₹60',
+        venue: 'Computer Lab 9',
+        image: '/depfolds/comps/reversecoding.jpeg',
+        registrationUrl: 'https://t4.ftcdn.net/jpg/17/77/94/27/360_F_1777942761_UTY0WxIs5of7FgsgrkLmzqFdCapwHHgN.jpg',
+        contact: [{ name: 'Christepher C Biju', phone: '8921057348' }, { name: 'Basil Biju', phone: '7558850154' }]
+      ,
+      badge: 3
+      },
+      {
+      id: 10,
+        name: 'PROMPT TO PIXEL (AI Application Building workshop)',
+        description: 'The aim of the workshop is to teach how to design powerful prompts to get smarter, faster, and more accurate results from AI tools. This hands-on session will help you master the art of communicating with AI for content creation, coding, research, and more.\n\nRules & Regulations\n1. Participants must reach the venue on time\n2. Pen and paper will be provided.\n3. Follow instructions given by the resource person.\n4. Maintain discipline throughout the session',
+        date: 'February 28, 2026',
+        time: 'Forenoon',
+        fee: '₹60',
+        venue: 'Computer Lab 7',
+        image: '/depfolds/comps/prompt.jpeg',
+        registrationUrl: 'https://t4.ftcdn.net/jpg/17/77/94/27/360_F_1777942761_UTY0WxIs5of7FgsgrkLmzqFdCapwHHgN.jpg',
+        contact: [{ name: 'Gayathridevi K', phone: '8921169842' }, { name: 'Rinsa Fathima M A', phone: '8606033545' }]
+      ,
+      badge: 2
+      },
+      {
+        id: 11,
+        name: 'Tech Hunt',
+        description: 'Step into a treasure hunt like no other, where logic replaces luck and clues are hidden in code. The Tech Hunt challenges participants to think, decode, and solve their way through a series of mysteries. Only sharp minds, quick reasoning, and technical intuition will lead you to the final prize. Get ready to explore, analyze, and conquer the hunt.',
+        date: 'February 27, 2026',
+        time: 'Afternoon',
+        prizepool: 'NA',
+        fee: '₹20',
+        venue: 'Computer Lab 7',
+        image: '/depfolds/comps/techhunt.jpeg',
+        registrationUrl: 'https://t4.ftcdn.net/jpg/17/77/94/27/360_F_1777942761_UTY0WxIs5of7FgsgrkLmzqFdCapwHHgN.jpg',
+        contact: [{ name: 'Anudev', phone: '9778155243' }, { name: 'Anna', phone: '8714224467' }]
+      ,
+      badge: 3
+      },
+      {
+        id: 12,
+        name: 'NETRIOT',
+        description: 'Get ready to play, compete, and win! Participate in our mobile gaming event and test your skills against fellow gamers in an action-packed experience',
+        date: 'February 27-28, 2026',
+        time: 'FULL DAY',
+        prizepool: '₹3000',
+        fee: '₹40',
+        venue: 'Room 229',
+        image: '/depfolds/comps/netriot.jpeg',
+        registrationUrl: 'https://t4.ftcdn.net/jpg/17/77/94/27/360_F_1777942761_UTY0WxIs5of7FgsgrkLmzqFdCapwHHgN.jpg',
+        contact: [{ name: 'Febin', phone: '9562767233' }, { name: 'Sain', phone: '8139879470' }]
+      ,
+      badge: 3
+      },
       
     ]
   },
@@ -129,8 +224,9 @@ const departmentEvents: Record<string, any> = {
         time: '9:30 AM - 12:30 PM',
         prizepool: 'TBA',
         fee: '₹250',
+        badge: 3,
         image: 'https://images.unsplash.com/photo-1518770660439-4636190af475?w=600&q=80',
-        registrationUrl: 'https://forms.google.com/example7',
+        registrationUrl: 'https://t4.ftcdn.net/jpg/17/77/94/27/360_F_1777942761_UTY0WxIs5of7FgsgrkLmzqFdCapwHHgN.jpg',
         contact: [{ name: 'Rahul Mehra', phone: '9812345678' }, { name: 'Isha Pandey', phone: '9723456789' }]
       },
       {
@@ -141,8 +237,9 @@ const departmentEvents: Record<string, any> = {
         time: '1:00 PM - 5:00 PM',
         prizepool: 'TBA',
         fee: '₹400',
+        badge: 1,
         image: 'https://images.unsplash.com/photo-1558346490-a72e53ae2d4f?w=600&q=80',
-        registrationUrl: 'https://forms.google.com/example8',
+        registrationUrl: 'https://t4.ftcdn.net/jpg/17/77/94/27/360_F_1777942761_UTY0WxIs5of7FgsgrkLmzqFdCapwHHgN.jpg',
         contact: [{ name: 'Sneha Roy', phone: '9823456781' }, { name: 'Karan Singh', phone: '9834567892' }]
       },
       {
@@ -153,8 +250,9 @@ const departmentEvents: Record<string, any> = {
         time: '10:00 AM - 1:00 PM',
         prizepool: 'TBA',
         fee: '₹350',
+        badge: 2,
         image: 'https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=600&q=80',
-        registrationUrl: 'https://forms.google.com/example9',
+        registrationUrl: 'https://t4.ftcdn.net/jpg/17/77/94/27/360_F_1777942761_UTY0WxIs5of7FgsgrkLmzqFdCapwHHgN.jpg',
         contact: [{ name: 'Vikram Singh', phone: '9834567812' }, { name: 'Anjali Nair', phone: '9845678923' }]
       },
       {
@@ -165,8 +263,9 @@ const departmentEvents: Record<string, any> = {
         time: '2:30 PM - 5:30 PM',
         prizepool: 'TBA',
         fee: '₹300',
+        badge: 3,
         image: 'https://images.unsplash.com/photo-1530595467537-0b5996c41f2d?w=600&q=80',
-        registrationUrl: 'https://forms.google.com/example10',
+        registrationUrl: 'https://t4.ftcdn.net/jpg/17/77/94/27/360_F_1777942761_UTY0WxIs5of7FgsgrkLmzqFdCapwHHgN.jpg',
         contact: [{ name: 'Aarti Sharma', phone: '9845678123' }, { name: 'Mohit Patel', phone: '9756789034' }]
       }
     ]
@@ -183,8 +282,9 @@ const departmentEvents: Record<string, any> = {
         time: '11:00 AM - 4:00 PM',
         prizepool: 'TBA',
         fee: '₹500',
+        badge: 3,
         image: 'https://images.unsplash.com/photo-1561144257-e32e8eef8e8e?w=600&q=80',
-        registrationUrl: 'https://forms.google.com/example11',
+        registrationUrl: 'https://t4.ftcdn.net/jpg/17/77/94/27/360_F_1777942761_UTY0WxIs5of7FgsgrkLmzqFdCapwHHgN.jpg',
         contact: [{ name: 'Suresh Babu', phone: '9856781234' }, { name: 'Priya Gupta', phone: '9867892345' }]
       },
       {
@@ -195,8 +295,9 @@ const departmentEvents: Record<string, any> = {
         time: '9:00 AM - 2:00 PM',
         prizepool: 'TBA',
         fee: '₹250',
+        badge: 3,
         image: 'https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=600&q=80',
-        registrationUrl: 'https://forms.google.com/example12',
+        registrationUrl: 'https://t4.ftcdn.net/jpg/17/77/94/27/360_F_1777942761_UTY0WxIs5of7FgsgrkLmzqFdCapwHHgN.jpg',
         contact: [{ name: 'Meena Pillai', phone: '9867812345' }, { name: 'Dev Yadav', phone: '9978903456' }]
       },
       {
@@ -207,8 +308,9 @@ const departmentEvents: Record<string, any> = {
         time: '1:30 PM - 5:30 PM',
         prizepool: 'TBA',
         fee: '₹400',
+        badge: 3,
         image: 'https://images.unsplash.com/photo-1587293852726-70cdb56c2866?w=600&q=80',
-        registrationUrl: 'https://forms.google.com/example13',
+        registrationUrl: 'https://t4.ftcdn.net/jpg/17/77/94/27/360_F_1777942761_UTY0WxIs5of7FgsgrkLmzqFdCapwHHgN.jpg',
         contact: [{ name: 'Arjun Das', phone: '9878123456' }, { name: 'Sophia Khan', phone: '9789012367' }]
       },
       {
@@ -219,8 +321,9 @@ const departmentEvents: Record<string, any> = {
         time: '10:30 AM - 3:30 PM',
         prizepool: 'TBA',
         fee: '₹350',
+        badge: 2,
         image: 'https://images.unsplash.com/photo-1581094794329-c8112e89af45?w=600&q=80',
-        registrationUrl: 'https://forms.google.com/example14',
+        registrationUrl: 'https://t4.ftcdn.net/jpg/17/77/94/27/360_F_1777942761_UTY0WxIs5of7FgsgrkLmzqFdCapwHHgN.jpg',
         contact: [{ name: 'Divya Nair', phone: '9881234567' }, { name: 'Sameer Chopra', phone: '9890123478' }]
       }
     ]
@@ -237,8 +340,9 @@ const departmentEvents: Record<string, any> = {
         time: '9:30 AM - 12:30 PM',
         prizepool: 'TBA',
         fee: '₹300',
+        badge: 3,
         image: '/depfolds/civ/trial1.jpeg',
-        registrationUrl: 'https://forms.google.com/example15',
+        registrationUrl: 'https://t4.ftcdn.net/jpg/17/77/94/27/360_F_1777942761_UTY0WxIs5of7FgsgrkLmzqFdCapwHHgN.jpg',
         contact: [{ name: 'Karthik Rao', phone: '9891234567' }, { name: 'Divya Desai', phone: '9912345678' }]
       },
       {
@@ -249,8 +353,9 @@ const departmentEvents: Record<string, any> = {
         time: '2:00 PM - 5:00 PM',
         prizepool: 'TBA',
         fee: '₹250',
+        badge: 1,
         image: '/depfolds/civ/trial1.jpeg',
-        registrationUrl: 'https://forms.google.com/example16',
+        registrationUrl: 'https://t4.ftcdn.net/jpg/17/77/94/27/360_F_1777942761_UTY0WxIs5of7FgsgrkLmzqFdCapwHHgN.jpg',
         contact: [{ name: 'Shalini Menon', phone: '9901234567' }, { name: 'Nikhil Bhat', phone: '9823456789' }]
       },
       {
@@ -261,8 +366,9 @@ const departmentEvents: Record<string, any> = {
         time: '10:00 AM - 1:00 PM',
         prizepool: '₹10,000',
         fee: '₹200',
+        badge: 3,
         image: '/depfolds/civ/trial1.jpeg',
-        registrationUrl: 'https://forms.google.com/example17',
+        registrationUrl: 'https://t4.ftcdn.net/jpg/17/77/94/27/360_F_1777942761_UTY0WxIs5of7FgsgrkLmzqFdCapwHHgN.jpg',
         contact: [{ name: 'Mohit Verma', phone: '9912345678' }, { name: 'Ruhi Kapoor', phone: '9734567890' }]
       }
     ]
@@ -279,8 +385,9 @@ const departmentEvents: Record<string, any> = {
         time: '9:00 AM - 1:00 PM',
         prizepool: 'TBA',
         fee: '₹300',
+        badge: 1,
         image: '/depfolds/civ/trial1.jpeg',
-        registrationUrl: 'https://forms.google.com/example18',
+        registrationUrl: 'https://t4.ftcdn.net/jpg/17/77/94/27/360_F_1777942761_UTY0WxIs5of7FgsgrkLmzqFdCapwHHgN.jpg',
         contact: [{ name: 'Anil Joshi', phone: '9923456781' }, { name: 'Sneha Iyer', phone: '9845678901' }]
       },
       {
@@ -291,8 +398,9 @@ const departmentEvents: Record<string, any> = {
         time: '1:30 PM - 4:30 PM',
         prizepool: 'TBA',
         fee: '₹350',
+        badge: 2,
         image: 'https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=600&q=80',
-        registrationUrl: 'https://forms.google.com/example19',
+        registrationUrl: 'https://t4.ftcdn.net/jpg/17/77/94/27/360_F_1777942761_UTY0WxIs5of7FgsgrkLmzqFdCapwHHgN.jpg',
         contact: [{ name: 'Sunita Rao', phone: '9934567812' }, { name: 'Vikrant Sinha', phone: '9756890123' }]
       },
       {
@@ -303,8 +411,9 @@ const departmentEvents: Record<string, any> = {
         time: '10:00 AM - 3:00 PM',
         prizepool: 'TBA',
         fee: 'FREE',
+        badge: 1,
         image: 'https://images.unsplash.com/photo-1509391366360-2e959784a276?w=600&q=80',
-        registrationUrl: 'https://forms.google.com/example20',
+        registrationUrl: 'https://t4.ftcdn.net/jpg/17/77/94/27/360_F_1777942761_UTY0WxIs5of7FgsgrkLmzqFdCapwHHgN.jpg',
         contact: [{ name: 'Rakesh Gupta', phone: '9945678123' }, { name: 'Aarav Singh', phone: '9867901234' }]
       }
     ]
@@ -321,8 +430,9 @@ const departmentEvents: Record<string, any> = {
         time: '9:00 AM - 5:00 PM',
         prizepool: 'TBA',
         fee: 'FREE',
+        badge: 1,
         image: 'https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=600&q=80',
-        registrationUrl: 'https://forms.google.com/example21',
+        registrationUrl: 'https://t4.ftcdn.net/jpg/17/77/94/27/360_F_1777942761_UTY0WxIs5of7FgsgrkLmzqFdCapwHHgN.jpg',
         contact: [{ name: 'Nisha Jain', phone: '9956781234' }, { name: 'Yash Mishra', phone: '9878012345' }]
       },
       {
@@ -333,8 +443,9 @@ const departmentEvents: Record<string, any> = {
         time: '10:00 AM - 2:00 PM',
         prizepool: 'TBA',
         fee: 'FREE',
+        badge: 2,
         image: 'https://images.unsplash.com/photo-1475721027785-f74eccf877e2?w=600&q=80',
-        registrationUrl: 'https://forms.google.com/example22',
+        registrationUrl: 'https://t4.ftcdn.net/jpg/17/77/94/27/360_F_1777942761_UTY0WxIs5of7FgsgrkLmzqFdCapwHHgN.jpg',
         contact: [{ name: 'Aman Kapoor', phone: '9967812345' }, { name: 'Ritu Verma', phone: '9789123456' }]
       },
       {
@@ -345,8 +456,9 @@ const departmentEvents: Record<string, any> = {
         time: '2:00 PM - 5:00 PM',
         prizepool: 'TBA',
         fee: '₹150',
+        badge: 2,
         image: 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=600&q=80',
-        registrationUrl: 'https://forms.google.com/example23',
+        registrationUrl: 'https://t4.ftcdn.net/jpg/17/77/94/27/360_F_1777942761_UTY0WxIs5of7FgsgrkLmzqFdCapwHHgN.jpg',
         contact: [{ name: 'Farhan Ali', phone: '9978123456' }, { name: 'Maya Reddy', phone: '9890234567' }]
       },
       {
@@ -357,8 +469,9 @@ const departmentEvents: Record<string, any> = {
         time: '3:00 PM - 6:00 PM',
         prizepool: 'TBA',
         fee: '₹200',
+        badge: 1,
         image: 'https://images.unsplash.com/photo-1559136555-9303baea8ebd?w=600&q=80',
-        registrationUrl: 'https://forms.google.com/example24',
+        registrationUrl: 'https://t4.ftcdn.net/jpg/17/77/94/27/360_F_1777942761_UTY0WxIs5of7FgsgrkLmzqFdCapwHHgN.jpg',
         contact: [{ name: 'Geeta Reddy', phone: '9981234567' }, { name: 'Karan Tiwari', phone: '9901345678' }]
       }
     ]
@@ -476,7 +589,7 @@ export function DepartmentEventsPage() {
       fee: 'FREE',
       prizepool: '',
       image: '',
-      registrationUrl: ''
+      registrationUrl: 'https://t4.ftcdn.net/jpg/17/77/94/27/360_F_1777942761_UTY0WxIs5of7FgsgrkLmzqFdCapwHHgN.jpg'
     };
     setEditingEvent(newEvent);
     setFormOpen(true);
@@ -820,8 +933,24 @@ export function DepartmentEventsPage() {
 
                 {/* Event Details Section */}
                 <div className="p-5 bg-[#1A1A1A] flex-grow flex flex-col gap-3">
-                  <h3 className="text-lg font-bold text-white">{event.name}</h3>
-                  
+                  <div className="flex items-start justify-between">
+                    <h3 className="text-lg font-bold text-white">{event.name}</h3>
+                    <div className="ml-3">
+                        {event.badge === 1 && (
+                          <div title="Expo" className="bg-green-500 text-white px-3 py-1 rounded-full text-sm font-semibold">Expo</div>
+                        )}
+                        {event.badge === 2 && (
+                          <div title="Workshop" className="bg-yellow-400 text-black px-3 py-1 rounded-full text-sm font-semibold">Workshop</div>
+                        )}
+                        {event.badge === 3 && (
+                          <div title="Competition" className="bg-red-500 text-white px-3 py-1 rounded-full text-sm font-semibold">Competition</div>
+                        )}
+                        {event.badge === 4 && (
+                          <div title="Entertainment" className="bg-blue-500 text-white px-3 py-1 rounded-full text-sm font-semibold">Entertainment</div>
+                        )}
+                    </div>
+                  </div>
+
                   <div className="space-y-2 text-sm text-[#B0B0B0]">
                     <div className="flex items-center gap-2">
                       <Calendar className="w-4 h-4" style={{ color: department.color }} />

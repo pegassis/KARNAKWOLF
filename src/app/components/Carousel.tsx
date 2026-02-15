@@ -58,7 +58,13 @@ const DEFAULT_ITEMS = [
     description: 'Interactive drone demonstrations and hands-on workshops covering aerial surveying, mapping, and emerging UAV technologies.',
     id: 9,
     image: '/mainpic/mn9.jpeg'
-  }
+  },
+   {
+    title: 'Drone Expo & Workshops ',
+    description: 'Interactive drone demonstrations and hands-on workshops covering aerial surveying, mapping, and emerging UAV technologies.',
+    id: 10,
+    image: '/mainpic/mn1.jpeg'
+  },
 ];
 
 const DRAG_BUFFER = 0;
