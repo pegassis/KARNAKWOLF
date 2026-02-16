@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <url>
+    <loc>https://karnakmbits.com/</loc>
+    <priority>1.00</priority>
+  </url>
+
+  <url>
+    <loc>https://karnakmbits.com/events</loc>
+    <priority>0.90</priority>
+  </url>
+
+  <url>
+    <loc>https://karnakmbits.com/department-events</loc>
+    <priority>0.90</priority>
+  </url>
+
+  <url>
+    <loc>https://karnakmbits.com/workshops</loc>
+    <priority>0.90</priority>
+  </url>
+
+  <url>
+    <loc>https://karnakmbits.com/contact</loc>
+    <priority>0.80</priority>
+  </url>
+
+</urlset>
