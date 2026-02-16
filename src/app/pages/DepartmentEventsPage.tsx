@@ -565,7 +565,19 @@ export function DepartmentEventsPage() {
   const [editFormData, setEditFormData] = useState<any>(null);
   const [isMobile, setIsMobile] = useState(typeof window !== 'undefined' && window.innerWidth < 768);
 
-  const department = departmentId ? departmentEvents[departmentId] : null;
+  // Lock body scroll when event modal is open
+  useEffect(() => {
+    if (showEventModal) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'unset';
+    }
+    
+    // Cleanup on unmount
+    return () => {
+      document.body.style.overflow = 'unset';
+    };
+  }, [showEventModal]);
 
   // Show video modal only once after component mounts for mechanical department
   useEffect(() => {
@@ -573,6 +585,8 @@ export function DepartmentEventsPage() {
       setShowVideoModal(true);
     }
   }, [departmentId]);
+
+  const department = departmentId ? departmentEvents[departmentId] : null;
 
   // Handle window resize for responsive background
   useEffect(() => {
