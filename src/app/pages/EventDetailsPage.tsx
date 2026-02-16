@@ -87,7 +87,7 @@ export function EventDetailsPage() {
   }
 
   return (
-    <div className="min-h-screen pt-24 lg:pt-32 pb-16">
+    <div className="relative z-40 min-h-screen pt-24 lg:pt-32 pb-16">
       <div className="max-w-5xl mx-auto px-4 sm:px-8">
         {/* Back Button */}
         <div className="mb-8">
@@ -103,10 +103,10 @@ export function EventDetailsPage() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
-          className="space-y-8"
+          className="space-y-8 relative z-40"
         >
           {/* Event Card Section */}
-          <div className="bg-white rounded-3xl overflow-hidden shadow-2xl">
+          <div className="relative z-40 bg-white rounded-3xl overflow-hidden shadow-2xl">
             {/* Hero Image */}
             <div className="relative w-full h-96 overflow-hidden">
               <ImageWithFallback 

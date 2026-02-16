@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'motion/react';
 import { ArrowRight, Calendar, Users, Trophy } from 'lucide-react';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link, useNavigate, useLocation } from 'react-router-dom';
 import { AboutPage } from './AboutPage';
 import { DepartmentsPage } from './DepartmentsPage';
 import { ImageWithFallback } from '../components/figma/ImageWithFallback';
@@ -10,7 +10,6 @@ import CircularGallery from '../components/CircularGallery';
 import LiquidEther from '../components/LiquidEther';
 import Shuffle from '../components/Shuffle';
 import RotatingBorderButton from '../components/RotatingBorderButton';
-import { useIntroAnimation } from '../context/IntroAnimationContext';
 
 // import RevealLoader from '../components/RevealLoader';
 
@@ -18,8 +17,11 @@ import { useIntroAnimation } from '../context/IntroAnimationContext';
 
 
 export function HomePage() {
-  const { hasShown, markAsShown } = useIntroAnimation();
-  const [animationComplete, setAnimationComplete] = React.useState(hasShown);
+  const location = useLocation();
+  const [animationComplete, setAnimationComplete] = React.useState(
+    // Skip animation if navigating from navbar
+    (location.state as any)?.fromNavbar ?? false
+  );
   // const [showReveal, setShowReveal] = React.useState(false);
   const navigate = useNavigate();
   
@@ -30,7 +32,6 @@ export function HomePage() {
 
   const handleAnimationFinish = () => {
     setAnimationComplete(true);
-    markAsShown();
   };
 
   return (

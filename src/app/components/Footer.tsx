@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 export function Footer() {
   return (
-    <footer className="relative bg-[#0F0F0F] text-white mt-32 overflow-hidden">
+    <footer className="relative z-0 bg-[#0F0F0F] text-white mt-32 overflow-hidden">
       {/* Tech Pattern Overlay */}
       <div className="absolute inset-0 opacity-5">
         <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">

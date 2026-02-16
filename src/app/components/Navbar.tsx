@@ -88,6 +88,7 @@ export function Navbar() {
                     <Link
                       key={path}
                       to={path}
+                      state={{ fromNavbar: true }}
                       onClick={handleHomeClick}
                       className={`relative transition-colors duration-200 ${
                         isActive(path) ? 'text-[#C65D3B]' : 'text-[#2A2A2A] hover:text-[#C65D3B]'
@@ -202,6 +203,7 @@ export function Navbar() {
                     <Link
                       key={path}
                       to={path}
+                      state={path === '/' ? { fromNavbar: true } : {}}
                       onClick={(e) => {
                         setMobileMenuOpen(false);
                         if (path === '/') {
