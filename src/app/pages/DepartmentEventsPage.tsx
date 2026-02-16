@@ -196,7 +196,7 @@ const departmentEvents: Record<string, any> = {
       },
       {
         id: 12,
-        name: 'NETRIOT',
+        name: 'NETRIOT (LAN Gaming)',
         description: 'Get ready to play, compete, and win! Participate in our mobile gaming event and test your skills against fellow gamers in an action-packed experience',
         date: 'February 27-28, 2026',
         time: 'FULL DAY',
@@ -208,6 +208,78 @@ const departmentEvents: Record<string, any> = {
         contact: [{ name: 'Febin', phone: '9562767233' }, { name: 'Sain', phone: '8139879470' }]
       ,
       badge: 3
+      },
+      {
+        id: 13,
+        name: 'THE THINK TANk',
+        description: 'ThinkTanks is an intercollege ideathon designed to give students a platform to present innovative ideas to a wider audience. The event encourages participants to identify real-world challenges and propose creative, practical solutions that address problems faced by modern society. It is a space where critical thinking, collaboration, and imagination converge to inspire meaningful change. Join us to showcase your vision, exchange perspectives, and turn ideas into possibilities\n\nRules & Regulations\n\n1.participants must reach venue atleast 20 minutes before the event starts\n2.ensure chest number is visibly attached on one of the presenters\n3.each team is alloted 15 minutes per presentation and any longer points will be deducted',
+        date: 'February 27, 2026',
+        time: 'Forenoon',
+        prizepool: '₹1500',
+        fee: 'FREE',
+        venue: 'Computer Lab 9',
+        image: '/depfolds/comps/thinktank.jpeg',
+        registrationUrl: 'https://t4.ftcdn.net/jpg/17/77/94/27/360_F_1777942761_UTY0WxIs5of7FgsgrkLmzqFdCapwHHgN.jpg',
+        contact: [{ name: 'Samuel', phone: '8137897726' }, { name: 'Helvin', phone: '8590018466' }]
+      ,
+      badge: 3
+      },
+        {
+        id: 14,
+        name: 'LPSG InnovateX ',
+        description: 'Liquid Propulsion Systems Centre (LPSC) is one of Indian Space Research Organisation’s major research and development centres. It focuses on designing and building liquid propulsion systems (engines and related tech) that power India’s launch vehicles and spacecraft.These expos are meant to spark interest in science and help people learn about Indian space technology.',
+        date: 'February 27-28, 2026',
+        time: 'FULL DAY',
+        fee: 'FREE',
+        venue: 'Room M10',
+        image: '/depfolds/comps/lpsg.jpeg',
+        registrationUrl: 'https://t4.ftcdn.net/jpg/17/77/94/27/360_F_1777942761_UTY0WxIs5of7FgsgrkLmzqFdCapwHHgN.jpg',
+        contact: [{ name: 'Aleena', phone: '9048847676' }, { name: 'Gouripriya', phone: '9447290587' }]
+      ,
+      badge: 1
+      },
+      {
+        id: 15,
+        name: 'THE IPL AUCTION-PITCH TO POCKET',
+        description: 'Where talent meets big money! Watch franchises battle it out as cricket stars go under the hammer and dreams turn into multi-crore deals. From explosive hitters to deadly bowlers, every bid counts!Join us for the ultimate showdown of strategy, suspense, and spectacular signings. Dont miss the action — be part of the excitement!.\n\nRules & REgulations \n\n•Only 6 teams can participate.\n•Each team consisting of 4 members only\n•First 6 teams to register can only participate.\n•Teams are to report 10min prior to the event time\n•Registration fees is to be paid online.\n•Others Rules Regarding the event will be told on 27th Feb\n•Laptops can be used but only one in a team.\n•Pens and calculators will be provided (if needed).',
+        date: 'February 27, 2026',
+        time: 'Afternoon',
+        fee: '200',
+        prizepool: '₹3500',
+        venue: 'Room M229',
+        image: '/depfolds/comps/ipl.jpeg',
+        registrationUrl: 'https://t4.ftcdn.net/jpg/17/77/94/27/360_F_1777942761_UTY0WxIs5of7FgsgrkLmzqFdCapwHHgN.jpg',
+        contact: [{ name: 'Joel', phone: '7907502537' }, { name: 'Seetha', phone: '9074490518' }]
+      ,
+      badge: 3
+      },
+      {
+        id: 16,
+        name: 'Funfinity (Mini Games)',
+        description: 'Funfinity – Where Fun Has No Limits! \nFunfinity is a fun-filled mini-games zone at our Techfest, packed with exciting quick challenges. It features interactive games like Walker Bottle, Balloon Pyramid, Circle Switch, and Flip & Find — each designed to test balance, speed, focus, and memory in a thrilling way. It’s all about friendly competition, energy, and enjoying simple yet exciting challenges with endless fun!\nNo rules& regulations',
+        date: 'February 27-28, 2026',
+        time: 'FULL DAY',
+        fee: 'FREE',
+        venue: 'CSE Block Corridors',
+        image: '/depfolds/comps/ipl.jpeg',
+        registrationUrl: 'https://t4.ftcdn.net/jpg/17/77/94/27/360_F_1777942761_UTY0WxIs5of7FgsgrkLmzqFdCapwHHgN.jpg',
+        contact: [{ name: 'Vismaya', phone: '9544251901' }, { name: 'Vinayathri', phone: '9778140400' }]
+      ,
+      badge: 4
+      },
+      {
+        id: 17,
+        name: 'Funfinity (Mini Games)',
+        description: 'Mechamorphosis is a sustainable art installation that transforms electronic waste into a life-size robotic sculpture. It reimagines discarded technology as creative expression, promoting responsible recycling and sustainability.\nSymbolizing technological rebirth, it stands as a mechanical guardian, highlighting innovation, environmental awareness, and the power of reuse in the digital age',
+        date: 'February 27-28, 2026',
+        time: 'FULL DAY',
+        fee: 'FREE',
+        venue: 'Open Area CSE Block',
+        image: '/depfolds/comps/ipl.jpeg',
+        registrationUrl: 'https://t4.ftcdn.net/jpg/17/77/94/27/360_F_1777942761_UTY0WxIs5of7FgsgrkLmzqFdCapwHHgN.jpg',
+        contact: [{ name: 'Manna', phone: ' 8089581794' }]
+      ,
+      badge: 1
       },
       
     ]
@@ -431,7 +503,7 @@ const departmentEvents: Record<string, any> = {
         prizepool: 'TBA',
         fee: 'FREE',
         badge: 1,
-        image: 'https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=600&q=80',
+        image: '/depfolds/ca/efootball.jpeg',
         registrationUrl: 'https://t4.ftcdn.net/jpg/17/77/94/27/360_F_1777942761_UTY0WxIs5of7FgsgrkLmzqFdCapwHHgN.jpg',
         contact: [{ name: 'Nisha Jain', phone: '9956781234' }, { name: 'Yash Mishra', phone: '9878012345' }]
       },
@@ -444,7 +516,7 @@ const departmentEvents: Record<string, any> = {
         prizepool: 'TBA',
         fee: 'FREE',
         badge: 2,
-        image: 'https://images.unsplash.com/photo-1475721027785-f74eccf877e2?w=600&q=80',
+        image: '/depfolds/ca/qubits.jpeg',
         registrationUrl: 'https://t4.ftcdn.net/jpg/17/77/94/27/360_F_1777942761_UTY0WxIs5of7FgsgrkLmzqFdCapwHHgN.jpg',
         contact: [{ name: 'Aman Kapoor', phone: '9967812345' }, { name: 'Ritu Verma', phone: '9789123456' }]
       },
@@ -457,7 +529,7 @@ const departmentEvents: Record<string, any> = {
         prizepool: 'TBA',
         fee: '₹150',
         badge: 2,
-        image: 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=600&q=80',
+        image: '/depfolds/ca/treasurehunt.jpeg',
         registrationUrl: 'https://t4.ftcdn.net/jpg/17/77/94/27/360_F_1777942761_UTY0WxIs5of7FgsgrkLmzqFdCapwHHgN.jpg',
         contact: [{ name: 'Farhan Ali', phone: '9978123456' }, { name: 'Maya Reddy', phone: '9890234567' }]
       },
@@ -470,7 +542,7 @@ const departmentEvents: Record<string, any> = {
         prizepool: 'TBA',
         fee: '₹200',
         badge: 1,
-        image: 'https://images.unsplash.com/photo-1559136555-9303baea8ebd?w=600&q=80',
+        image: '/depfolds/ca/codequest.jpeg',
         registrationUrl: 'https://t4.ftcdn.net/jpg/17/77/94/27/360_F_1777942761_UTY0WxIs5of7FgsgrkLmzqFdCapwHHgN.jpg',
         contact: [{ name: 'Geeta Reddy', phone: '9981234567' }, { name: 'Karan Tiwari', phone: '9901345678' }]
       }
