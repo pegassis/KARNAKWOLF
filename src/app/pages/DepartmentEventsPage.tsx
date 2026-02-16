@@ -4,7 +4,7 @@ import { ArrowLeft, Calendar, IndianRupee, Users, ExternalLink, Edit, Trash, X }
 import { useState, useEffect } from 'react';
 import { ImageWithFallback } from '../components/figma/ImageWithFallback';
 import { EventForm } from '../components/EventForm';
-import { VideoModal } from '../components/VideoModal';
+
 import Lightning from '../components/Lightning';
 import LetterGlitch from '../components/LetterGlitch';
 import GridMotion from '../components/GridMotion';
@@ -896,23 +896,25 @@ export function DepartmentEventsPage() {
           />
         </div>
       )}
+      {/* Video Background for Mechanical Department */}
+      {departmentId === 'mechanical' && (
+        <div className="fixed inset-0 w-full h-full z-0 pointer-events-none">
+          <video autoPlay loop muted playsInline className="w-full h-full object-cover">
+            <source
+              src={isMobile
+                ? 'https://res.cloudinary.com/dts9wynrs/video/upload/v1771235434/mecm_xkkctt.mp4'
+                : 'https://res.cloudinary.com/dts9wynrs/video/upload/v1771237160/WhatsApp_Video_2026-02-16_at_3.48.14_PM_gnxsdd.mp4'}
+              type="video/mp4"
+            />
+          </video>
+          {/* dark overlay so text is readable */}
+          <div className="absolute inset-0 bg-black/50"></div>
+        </div>
+      )}
             {/* Video Background for Electronics Department */}
       {departmentId === 'electronics' && (
         <div className="fixed inset-0 w-full h-full z-0 pointer-events-none">
           <Vid />
-          {/* dark overlay so text is readable */}
-          <div className="absolute inset-0 bg-black/60"></div>
-        </div>
-      )}
-
-      {/* Image Background for Mechanical Department */}
-      {departmentId === 'mechanical' && !showVideoModal && (
-        <div className="fixed inset-0 w-full h-full z-0 pointer-events-none">
-          <img 
-            src={isMobile ? '/moferrari.jpg' : '/winferrari.jpg'}
-            alt="Mechanical Department Background"
-            className="w-full h-full object-cover"
-          />
           {/* dark overlay so text is readable */}
           <div className="absolute inset-0 bg-black/60"></div>
         </div>
@@ -934,14 +936,7 @@ export function DepartmentEventsPage() {
         </div>
       )}
 
-     
-      {/* Video Modal for Mechanical Department */}
-      <VideoModal
-        isOpen={showVideoModal}
-        videoSrc="https://res.cloudinary.com/dts9wynrs/video/upload/v1771159245/mectyre_hlffsi.mp4"
-        onClose={() => setShowVideoModal(false)}
-        autoPlay={true}
-      />
+  
 
       <div className="max-w-7xl mx-auto px-4 sm:px-8 relative z-10">
         {/* Header */}
