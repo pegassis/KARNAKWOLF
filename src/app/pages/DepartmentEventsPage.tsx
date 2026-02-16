@@ -41,7 +41,7 @@ const departmentEvents: Record<string, any> = {
         name: 'VR Vortex',
        
         description: 'Virtual Reality redefines how we learn, create, and experience the digital world by immersing us in environments beyond physical limits.At this VR Expo, innovation meets imagination as cutting-edge technology transforms ideas into interactive realities.devStep in, explore the future, and experience technology not just seen—but lived.\n Step in, explore the future, and experience technology not just seen—but lived.\n\n\n',
-        date: 'February 26-27, 2026',
+        date: 'February 27-28, 2026',
         time: 'FULL DAY',
         fee: '40',
         badge: 1,
@@ -54,7 +54,7 @@ const departmentEvents: Record<string, any> = {
         id: 2,
         name: 'GAMING_XP',
         description: 'Experience high-performance gaming with immersive visuals in our gaming room. Play, compete, and enjoy the ultimate gaming vibe with friends.',
-        date: 'February 26-27, 2026',
+        date: 'February 27-28, 2026',
         time: 'FULL DAY',
         prizepool: 'NA',
         fee: '50',
@@ -138,7 +138,7 @@ const departmentEvents: Record<string, any> = {
       {
       id: 8,
         name: 'CODE X BLIND (Blind Coding)',
-        description: 'CODE X BLIND is a thrilling coding challenge designed to test a participant’s logical thinking, syntax accuracy, and confidence. Participants will be given a problem statement and must write the complete code within the given time without compiling or running it themselves. The competition is conducted in C programming language .Once submitted, the code will be compiled and executed by the invigilators. Accuracy matters more than retries—clean code wins.\n\n1st price : ₹1000\n2nd price : ₹500\n\nRules & Regulations\n 1. The problem statement will be provided at the start of the event.\n2. The competition is conducted strictly in C programming language.\n3. Participants must write the code within the allotted time.\n4. Compiling and execution are strictly done only by the invigilators.\n5. Participants must stop coding immediately after submission.\n6. The screen will remain visible, but no test runs are allowed.\n7. Internet access and external help are strictly prohibited.\n8. The winner will be decided based on:\n•Least number of errors\n•Correct output\n•Time taken to complete the code.\n9. Any form of malpractice will lead to immediate disqualification.\n10. Judges’ and coordinators’ decisions will be final.',
+        description: 'CODE X BLIND is a thrilling coding challenge designed to test a participant’s logical thinking, syntax accuracy, and confidence. Participants will be given a problem statement and must write the complete code within the given time without compiling or running it themselves. The competition is conducted in C programming language .Once submitted, the code will be compiled and executed by the invigilators. Accuracy matters more than retries—clean code wins.\n\n1st price : ₹1000\n2nd price : ₹500\n\nRules & Regulations\n 1. The problem statement will be provided at the start of the event.\n2. The competition is conducted strictly in C programming language.\n3. Participants must write the code within the allotted time.\n4. Compiling and execution are strictly done only by the invigilators.\n5. Participants must stop coding immediately after submission.\n6. The screen will remain visible, but no test runs are allowed.\n7. Internet access and external help are strictly prohibited.\n8. The winner will be decided based on:\n•Least number of errors\n•Correct output\n•Time taken to complete the code.\n9. Any form of malpractice will lead to immediate disqualification.\n10. Judges and coordinators decisions will be final.',
         date: 'February 27, 2026',
         time: 'Forenoon',
         prizepool: '1500',
