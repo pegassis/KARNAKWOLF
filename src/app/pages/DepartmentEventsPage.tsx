@@ -255,6 +255,34 @@ const departmentEvents: Record<string, any> = {
       },
       {
         id: 16,
+        name: 'VIBE.EXE(Vibe Coding)',
+        description: 'Code the vibe. Build the future. ⚡💻Step into the world of fast-paced coding where creativity meets logic! Vibe Coding – vibe.exe is all about solving fun and challenging problems in a high-energy environment. Whether you are a beginner or a pro, this is your chance to test your skills, learn new tricks, and vibe with fellow coders.Think quick. Code smart. Let your vibe do the talking. 🚀\n\nRules & Regulations\n* Participants must bring their own laptops.\n* Reporting time: 27th Feb – Afternoon session.\n* The event will be conducted in Lab 8.\n* Basic guidelines and problem statements will be explained at the venue.\n* Fair play is mandatory; any malpractice may lead to disqualification.',
+        date: 'February 27, 2026',
+        time: 'Afternoon',
+        fee: '*For IEEE Members – ₹0 ( Free ) \n  *For Non-IEEE Members – ₹30',
+        venue: 'Lab 8',
+        image: '/depfolds/comps/vibe.jpeg',
+        registrationUrl: 'https://t4.ftcdn.net/jpg/17/77/94/27/360_F_1777942761_UTY0WxIs5of7FgsgrkLmzqFdCapwHHgN.jpg',
+        contact: [{ name: 'Navaneeth', phone: '8281450604' }]
+      ,
+      badge: 2
+      },
+      {
+        id: 17,
+        name: 'HACK / DEMO / DEFEND\n(Ethical Hacking Workshop)',
+        description: 'Learn to hack. Understand to defend. 🔐💻Ever wondered how hackers think and how systems are protected from attacks? HACK / DEMO / DEFEND is a hands-on ethical hacking workshop designed to give you real-world exposure to cyber security basics.From live demos of common attacks to understanding how to defend against them, this session will open your eyes to the world of ethical hacking and digital safety. Perfect for beginners who want to step into cyber security! 🛡️\n\nRules & Regulations\n* Participants must bring their own laptops.\n* Reporting time: 27th Feb – Morning session (Forenoon).\n* The workshop will be conducted in Lab 8.\n* All activities are for educational purposes only.\n* Any misuse of techniques outside the workshop is strictly discouraged.\n\nParticipation certificates will be provided 🎓',
+        date: 'February 27, 2026',
+        time: 'Forenoon',
+        fee: '*For IEEE Members – ₹0 ( Free ) \n  *For Non-IEEE Members – ₹30',
+        venue: 'Lab 8',
+        image: '/depfolds/comps/hack.jpeg',
+        registrationUrl: 'https://t4.ftcdn.net/jpg/17/77/94/27/360_F_1777942761_UTY0WxIs5of7FgsgrkLmzqFdCapwHHgN.jpg',
+        contact: [{ name: 'Navaneeth', phone: '8281450604' }]
+      ,
+      badge: 2
+      },
+      {
+        id: 18,
         name: 'Funfinity (Mini Games)',
         description: 'Funfinity – Where Fun Has No Limits! \nFunfinity is a fun-filled mini-games zone at our Techfest, packed with exciting quick challenges. It features interactive games like Walker Bottle, Balloon Pyramid, Circle Switch, and Flip & Find — each designed to test balance, speed, focus, and memory in a thrilling way. It’s all about friendly competition, energy, and enjoying simple yet exciting challenges with endless fun!\nNo rules& regulations',
         date: 'February 27-28, 2026',
@@ -268,7 +296,7 @@ const departmentEvents: Record<string, any> = {
       badge: 4
       },
       {
-        id: 17,
+        id: 19,
         name: 'Mechamorphosis (E-Waste Sculpture)',
         description: 'Mechamorphosis is a sustainable art installation that transforms electronic waste into a life-size robotic sculpture. It reimagines discarded technology as creative expression, promoting responsible recycling and sustainability.\nSymbolizing technological rebirth, it stands as a mechanical guardian, highlighting innovation, environmental awareness, and the power of reuse in the digital age',
         date: 'February 27-28, 2026',
@@ -402,7 +430,7 @@ const departmentEvents: Record<string, any> = {
         description: 'Duration: 3hr \n\nWe are delighted to invite you to an exciting offline Robo Soccer Competition set in a professionally crafted arena. Participants will compete using standardized robotic systems arranged by the organizers, ensuring a fair and thrilling gameplay experience. \nDemonstrate your precision, control, and strategic thinking as you aim to outscore your opponent in this dynamic robotic showdown. If you’re ready to experience technology in motion, register now and be part of the action! \n\n1st Prize: Rs.2000 \n2nd Prize: Rs.1000 \n\nRules and regulations: \n• Only one operator allowed in control area.\n • Score goals in opponent’s goalpost.\n • Player with highest goals at end of match wins.\n • Total time: 3–5 minutes.\n • Goal counts only if ball completely crosses goal line.\n • After goal, ball reset to centre. \n• If tie, extra time (1–2 minutes)\n • Or penalty shootout (3 attempts each) \n\nLast date for reg: 26/02/2026 ',
         date: 'February 28, 2026',
         time: '09:30 AM - 12:30 PM',
-        fee: '100 per person',
+        fee: '130 per person',
         prizepool:'₹3000',
         venue: ' ECE classroom (M120)',
         badge: 3,
@@ -642,7 +670,72 @@ const departmentEvents: Record<string, any> = {
         image: '/depfolds/ca/codequest.jpeg',
         registrationUrl: 'https://t4.ftcdn.net/jpg/17/77/94/27/360_F_1777942761_UTY0WxIs5of7FgsgrkLmzqFdCapwHHgN.jpg',
         contact: [{ name: 'Geeta Reddy', phone: '9981234567' }, { name: 'Karan Tiwari', phone: '9901345678' }]
-      }
+      },
+      {
+        id: 5,
+        name: 'Startup Pitch',
+        description: 'Pitch your startup idea',
+        date: 'February 26-27, 2026',
+        time: '3:00 PM - 6:00 PM',
+        prizepool: 'TBA',
+        fee: '₹200',
+        badge: 1,
+        image: '/depfolds/ca/shutter.jpeg',
+        registrationUrl: 'https://t4.ftcdn.net/jpg/17/77/94/27/360_F_1777942761_UTY0WxIs5of7FgsgrkLmzqFdCapwHHgN.jpg',
+        contact: [{ name: 'Geeta Reddy', phone: '9981234567' }, { name: 'Karan Tiwari', phone: '9901345678' }]
+      },
+      {
+        id: 6,
+        name: 'Startup Pitch',
+        description: 'Pitch your startup idea',
+        date: 'February 26-27, 2026',
+        time: '3:00 PM - 6:00 PM',
+        prizepool: 'TBA',
+        fee: '₹200',
+        badge: 1,
+        image: '/depfolds/ca/rootforce.jpeg',
+        registrationUrl: 'https://t4.ftcdn.net/jpg/17/77/94/27/360_F_1777942761_UTY0WxIs5of7FgsgrkLmzqFdCapwHHgN.jpg',
+        contact: [{ name: 'Geeta Reddy', phone: '9981234567' }, { name: 'Karan Tiwari', phone: '9901345678' }]
+      },
+      {
+        id: 7,
+        name: 'Startup Pitch',
+        description: 'Pitch your startup idea',
+        date: 'February 26-27, 2026',
+        time: '3:00 PM - 6:00 PM',
+        prizepool: 'TBA',
+        fee: '₹200',
+        badge: 1,
+        image: '/depfolds/ca/clash.jpeg',
+        registrationUrl: 'https://t4.ftcdn.net/jpg/17/77/94/27/360_F_1777942761_UTY0WxIs5of7FgsgrkLmzqFdCapwHHgN.jpg',
+        contact: [{ name: 'Geeta Reddy', phone: '9981234567' }, { name: 'Karan Tiwari', phone: '9901345678' }]
+      },
+      {
+        id: 8,
+        name: 'Startup Pitch',
+        description: 'Pitch your startup idea',
+        date: 'February 26-27, 2026',
+        time: '3:00 PM - 6:00 PM',
+        prizepool: 'TBA',
+        fee: '₹200',
+        badge: 1,
+        image: '/depfolds/ca/codecrush.jpeg',
+        registrationUrl: 'https://t4.ftcdn.net/jpg/17/77/94/27/360_F_1777942761_UTY0WxIs5of7FgsgrkLmzqFdCapwHHgN.jpg',
+        contact: [{ name: 'Geeta Reddy', phone: '9981234567' }, { name: 'Karan Tiwari', phone: '9901345678' }]
+      },
+      {
+        id: 9,
+        name: 'Startup Pitch',
+        description: 'Pitch your startup idea',
+        date: 'February 26-27, 2026',
+        time: '3:00 PM - 6:00 PM',
+        prizepool: 'TBA',
+        fee: '₹200',
+        badge: 1,
+        image: '/depfolds/ca/robotic.jpeg',
+        registrationUrl: 'https://t4.ftcdn.net/jpg/17/77/94/27/360_F_1777942761_UTY0WxIs5of7FgsgrkLmzqFdCapwHHgN.jpg',
+        contact: [{ name: 'Geeta Reddy', phone: '9981234567' }, { name: 'Karan Tiwari', phone: '9901345678' }]
+      },
     ]
   }
 };
