@@ -61,14 +61,14 @@ const DEFAULT_ITEMS = [
   },
    {
     title: 'Drone Expo & Workshops ',
-    description: 'Interactive drone demonstrations and hands-on workshops covering aerial surveying, mapping, and emerging UAV technologies.',
+    description: 'The Construction Equipment & Vehicles Expo is a premier industry event showcasing the latest innovations in heavy machinery, earth-moving equipment, transport vehicles, and construction technology. Bringing together leading manufacturers, suppliers, engineers, and industry professionals, the expo provides a dynamic platform for networking, live demonstrations, product launches, and business opportunities.\nCoordinators: ELDHO PAULOSE, AMEENUDHEEN',
     id: 10,
     image: '/mainpic/mn10.jpeg'
   },
   {
     title: 'Drone Expo & Workshops ',
     description: 'Interactive drone demonstrations and hands-on workshops covering aerial surveying, mapping, and emerging UAV technologies.',
-    id: 10,
+    id: 11,
     image: '/mainpic/mn11.jpeg'
   }
 ];

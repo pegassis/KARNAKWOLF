@@ -150,7 +150,7 @@ export function AboutPage() {
                 <div className="text-sm text-[#6B6B6B]">Years</div>
               </div>
               <div className="text-center p-4 bg-white rounded-2xl shadow-md border border-gray-100">
-                <div className="text-3xl text-[#B8956A] mb-1">15</div>
+                <div className="text-3xl text-[#B8956A] mb-1">0</div>
                 <div className="text-sm text-[#6B6B6B]">Departments</div>
               </div>
               <div className="text-center p-4 bg-white rounded-2xl shadow-md border border-gray-100">
