@@ -26,8 +26,12 @@ export function EventForm({ isOpen, event, departmentId, onClose, onSave, isNew 
   // Sync formData when event changes or form opens
   useEffect(() => {
     if (isOpen && event) {
-      setFormData({ ...event });
-      setOriginalData({ ...event });
+      const eventData = { 
+        ...event,
+        registerOption: event.registerOption ?? 1 // Default to 1 if not provided
+      };
+      setFormData(eventData);
+      setOriginalData(eventData);
       setError(null);
       setSuccess(false);
       setShowConfirmDialog(false);
@@ -313,6 +317,40 @@ export function EventForm({ isOpen, event, departmentId, onClose, onSave, isNew 
                   className="w-full px-4 py-3 rounded-xl border border-[#C65D3B]/30 focus:outline-none focus:ring-2 focus:ring-[#C65D3B] text-black"
                   disabled={loading}
                 />
+              </div>
+
+              {/* Register Option */}
+              <div>
+                <label className="block text-sm font-semibold text-[#2A2A2A] mb-2">
+                  Show Register Now Button
+                </label>
+                <div className="flex gap-4">
+                  <label className="flex items-center gap-2 cursor-pointer">
+                    <input
+                      type="radio"
+                      name="registerOption"
+                      value="1"
+                      checked={formData.registerOption === 1 || formData.registerOption === '1'}
+                      onChange={(e) => handleChange('registerOption', parseInt(e.target.value))}
+                      disabled={loading}
+                      className="w-4 h-4"
+                    />
+                    <span className="text-[#2A2A2A] font-medium">Yes (Option 1)</span>
+                  </label>
+                  <label className="flex items-center gap-2 cursor-pointer">
+                    <input
+                      type="radio"
+                      name="registerOption"
+                      value="2"
+                      checked={formData.registerOption === 2 || formData.registerOption === '2'}
+                      onChange={(e) => handleChange('registerOption', parseInt(e.target.value))}
+                      disabled={loading}
+                      className="w-4 h-4"
+                    />
+                    <span className="text-[#2A2A2A] font-medium">No (Option 2)</span>
+                  </label>
+                </div>
+                <p className="text-xs text-gray-500 mt-2">Option 1: Display the Register Now button | Option 2: Hide the Register Now button</p>
               </div>
 
               {/* Buttons */}

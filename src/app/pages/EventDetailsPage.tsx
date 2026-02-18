@@ -5,7 +5,8 @@ import { ArrowLeft, ExternalLink, Calendar, IndianRupee, Edit, X } from 'lucide-
 import { ImageWithFallback } from '../components/figma/ImageWithFallback';
 import { useAdmin } from '../context/AdminContext';
 import { EventForm } from '../components/EventForm';
-import { getApiUrl } from '../utils/apiConfig';
+import { getApiUrl, checkBackendHealth } from '../utils/apiConfig';
+import { getStoredDepartmentEvents } from '../utils/storageManager';
 
 export function EventDetailsPage() {
   const { departmentId, eventId } = useParams<{ departmentId: string; eventId: string }>();
@@ -24,29 +25,35 @@ export function EventDetailsPage() {
         if (res.ok) {
           const data = await res.json();
           const found = (data.events || []).find((e: any) => String(e.id) === String(eventId));
-          if (found) setEvent(found);
+          if (found) {
+            setEvent(found);
+            setLoading(false);
+            return;
+          }
         }
       } catch (err) {
-        // ignore, fallback to client-side mock handled below
-      } finally {
-        setLoading(false);
+        // Backend unavailable, try fallback
       }
+      
+      // Fallback to stored data
+      try {
+        const storedEvents = getStoredDepartmentEvents(departmentId);
+        if (storedEvents && Array.isArray(storedEvents)) {
+          const found = storedEvents.find((e: any) => String(e.id) === String(eventId));
+          if (found) {
+            setEvent(found);
+            setLoading(false);
+            return;
+          }
+        }
+      } catch (err) {
+        // ignore
+      }
+      
+      setLoading(false);
     };
     fetchEvent();
   }, [departmentId, eventId]);
-
-  // If backend unavailable, try to read from client-side mock data
-  useEffect(() => {
-    if (!event && !loading && departmentId) {
-      try {
-        // dynamic import of department mock from DepartmentEventsPage file
-        // fallback: read from same mock used there by importing module
-        // require is not used in ESM; simplest approach: access window preloaded data not available here.
-      } catch (err) {
-        // noop
-      }
-    }
-  }, [event, loading, departmentId]);
 
   const handleSave = async (updatedEvent: any) => {
     try {
@@ -63,11 +70,18 @@ export function EventDetailsPage() {
         setEvent(returned);
         setEditing(false);
         return true;
+      } else {
+        // If server update failed, at least update local state with the form data
+        setEvent(updatedEvent);
+        setEditing(false);
+        return true;
       }
-      return false;
     } catch (err) {
       console.error('Save failed', err);
-      return false;
+      // Still update local state even if API fails
+      setEvent(updatedEvent);
+      setEditing(false);
+      return true;
     }
   };
 
@@ -184,31 +198,33 @@ export function EventDetailsPage() {
                   </div>
                 </motion.div>
 
-                {/* Registration Status */}
-                <motion.div
-                  initial={{ opacity: 0, y: 10 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ delay: 0.3 }}
-                  className="flex items-start gap-4"
-                >
-                  <div className="flex-shrink-0">
-                    <div className="flex items-center justify-center h-12 w-12 rounded-lg" style={{ backgroundColor: '#6366f120' }}>
-                      <ExternalLink className="h-6 w-6 text-[#6366f1]" />
+                {/* Registration Status - Conditional based on registerOption */}
+                {(event.registerOption === 1 || event.registerOption === '1' || event.registerOption === undefined) && (
+                  <motion.div
+                    initial={{ opacity: 0, y: 10 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ delay: 0.3 }}
+                    className="flex items-start gap-4"
+                  >
+                    <div className="flex-shrink-0">
+                      <div className="flex items-center justify-center h-12 w-12 rounded-lg" style={{ backgroundColor: '#6366f120' }}>
+                        <ExternalLink className="h-6 w-6 text-[#6366f1]" />
+                      </div>
                     </div>
-                  </div>
-                  <div>
-                    <h3 className="text-sm font-semibold text-[#2A2A2A] mb-1">Registration</h3>
-                    <a
-                      href={event.registrationUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-[#6366f1] hover:text-[#4f46e5] font-semibold inline-flex items-center gap-1"
-                    >
-                      Register Now
-                      <ExternalLink className="w-4 h-4" />
-                    </a>
-                  </div>
-                </motion.div>
+                    <div>
+                      <h3 className="text-sm font-semibold text-[#2A2A2A] mb-1">Registration</h3>
+                      <a
+                        href={event.registrationUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-[#6366f1] hover:text-[#4f46e5] font-semibold inline-flex items-center gap-1"
+                      >
+                        Register Now
+                        <ExternalLink className="w-4 h-4" />
+                      </a>
+                    </div>
+                  </motion.div>
+                )}
               </div>
 
               {/* Divider */}
@@ -267,24 +283,26 @@ export function EventDetailsPage() {
                 </motion.div>
               )}
 
-              {/* Register Button */}
-              <motion.div
-                initial={{ opacity: 0, y: 10 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.6 }}
-                className="mt-10"
-              >
-                <a
-                  href={event.registrationUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 px-8 py-4 rounded-full text-white font-semibold shadow-lg hover:shadow-xl transition-all"
-                  style={{ backgroundColor: '#C65D3B' }}
+              {/* Register Button - Conditional based on registerOption */}
+              {(event.registerOption === 1 || event.registerOption === '1' || event.registerOption === undefined) && (
+                <motion.div
+                  initial={{ opacity: 0, y: 10 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: 0.6 }}
+                  className="mt-10"
                 >
-                  Register Now
-                  <ExternalLink className="w-5 h-5" />
-                </a>
-              </motion.div>
+                  <a
+                    href={event.registrationUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 px-8 py-4 rounded-full text-white font-semibold shadow-lg hover:shadow-xl transition-all"
+                    style={{ backgroundColor: '#C65D3B' }}
+                  >
+                    Register Now
+                    <ExternalLink className="w-5 h-5" />
+                  </a>
+                </motion.div>
+              )}
             </div>
           </div>
         </motion.div>

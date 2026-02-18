@@ -27,22 +27,22 @@ export function Footer() {
               Technical festival showcasing innovation, creativity, and technological excellence across multiple engineering domains.
             </p>
             <div className="flex gap-4 mt-6">
-              <a href="https://www.facebook.com/mbitsnellimattom?mibextid=LQQJ4d" className="w-10 h-10 rounded-full bg-white/10 hover:bg-[#FF6B35] transition-colors duration-200 flex items-center justify-center">
+              <a href="https://www.facebook.com/mbitsnellimattom?mibextid=LQQJ4d" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-white/10 hover:bg-[#FF6B35] transition-colors duration-200 flex items-center justify-center">
                 <Facebook className="w-5 h-5" />
               </a>
               
-              <a href="https://www.instagram.com/mbits_kothamangalam/?hl=en" className="w-10 h-10 rounded-full bg-white/10 hover:bg-[#FF6B35] transition-colors duration-200 flex items-center justify-center">
+              <a href="https://www.instagram.com/mbits_kothamangalam/?hl=en" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-white/10 hover:bg-[#FF6B35] transition-colors duration-200 flex items-center justify-center">
                 <Instagram className="w-5 h-5" />
               </a>
-              <a href="https://www.linkedin.com/organization-guest/mwlite/school/mbits-nellimattom" className="w-10 h-10 rounded-full bg-white/10 hover:bg-[#FF6B35] transition-colors duration-200 flex items-center justify-center">
+              <a href="https://www.linkedin.com/organization-guest/mwlite/school/mbits-nellimattom" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-white/10 hover:bg-[#FF6B35] transition-colors duration-200 flex items-center justify-center">
                 <Linkedin className="w-5 h-5" />
               </a>
               
-              <a href="https://api.whatsapp.com/send/?phone=919061063801&text&type=phone_number&app_absent=0" className="w-10 h-10 rounded-full bg-white/10 hover:bg-[#FF6B35] transition-colors duration-200 flex items-center justify-center">
+              <a href="https://api.whatsapp.com/send/?phone=919061063801&text&type=phone_number&app_absent=0" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-white/10 hover:bg-[#FF6B35] transition-colors duration-200 flex items-center justify-center">
                 <MessageCircle className="w-5 h-5" />
               </a>
               
-              <a href="https://www.youtube.com/@mbitsnellimattom1479" className="w-10 h-10 rounded-full bg-white/10 hover:bg-[#FF6B35] transition-colors duration-200 flex items-center justify-center">
+              <a href="https://www.youtube.com/@mbitsnellimattom1479" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-white/10 hover:bg-[#FF6B35] transition-colors duration-200 flex items-center justify-center">
                 <Youtube className="w-5 h-5" />
               </a>
             </div>
@@ -73,7 +73,7 @@ export function Footer() {
                 </Link>
               </li>
               <li>
-                <a href="https://mbits.ac.in/contact-us/" className="text-gray-300 hover:text-[#C65D3B] transition-colors duration-200">
+                <a href="https://mbits.ac.in/contact-us/" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-[#C65D3B] transition-colors duration-200">
                   Contact Us
                 </a>
               </li>
@@ -86,7 +86,7 @@ export function Footer() {
             <ul className="space-y-3">
               <li className="flex items-start gap-3">
                 <MapPin className="w-5 h-5 mt-0.5 text-[#FF6B35] flex-shrink-0" />
-                <a href="https://www.google.com/maps?um=1&ie=UTF-8&fb=1&gl=in&sa=X&geocode=KfnycxfC6Ac7MZx62tdHgsz4&daddr=Kochi+-+Madurai+-+Dhanushkodi+Road,+Nellimattam,+Ernakulam+District,+Kothamangalam,+Kerala+686693"  className="text-gray-300 hover:text-[#C65D3B] transition-colors">
+                <a href="https://www.google.com/maps?um=1&ie=UTF-8&fb=1&gl=in&sa=X&geocode=KfnycxfC6Ac7MZx62tdHgsz4&daddr=Kochi+-+Madurai+-+Dhanushkodi+Road,+Nellimattam,+Ernakulam+District,+Kothamangalam,+Kerala+686693" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-[#C65D3B] transition-colors">
                   Mar Baselios Institute of Technology and Science<br />
                   Nellimattom P.O, Kothamangalam,
                   Ernakulam District,
@@ -101,7 +101,7 @@ export function Footer() {
               </li>
                <li className="flex items-center gap-3">
                 <Globe className="w-5 h-5 text-[#FF6B35] flex-shrink-0" />
-                <a href="https://mbits.ac.in/" className="text-gray-300 hover:text-[#C65D3B] transition-colors">
+                <a href="https://mbits.ac.in/" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-[#C65D3B] transition-colors">
                   MBITS
                 </a>
               </li>

@@ -28,6 +28,7 @@ interface Event {
   registrationUrl: string;
   venue?: string;
   badge?: number; // 1=Expo, 2=Workshop, 3=Competition, 4=Entertainment
+  registerOption?: number; // 1=Show Register Now, 2=Hide Register Now
 }
 
 // Mock events data for each department
@@ -48,6 +49,7 @@ const departmentEvents: Record<string, any> = {
         venue: 'Room 130,131',
         image: '/depfolds/comps/vrposter.jpeg',
         registrationUrl: 'https://t4.ftcdn.net/jpg/17/77/94/27/360_F_1777942761_UTY0WxIs5of7FgsgrkLmzqFdCapwHHgN.jpg',
+        registerOption: 1,
         contact: [{ name: 'Adinath', phone: '8921798670' }, { name: 'Anand', phone: '6238763675' }]
       },
       {
@@ -62,6 +64,7 @@ const departmentEvents: Record<string, any> = {
         venue: 'Room 231,232',
         image: '/depfolds/comps/GAMING_XP.jpeg',
         registrationUrl: 'https://t4.ftcdn.net/jpg/17/77/94/27/360_F_1777942761_UTY0WxIs5of7FgsgrkLmzqFdCapwHHgN.jpg',
+        registerOption: 1,
         contact: [{ name: 'Rehab ', phone: '7907844588' }, { name: 'Fidha ', phone: '9947304940' }]
       },
       {
@@ -76,6 +79,7 @@ const departmentEvents: Record<string, any> = {
         venue: 'Lab 3 Room 225',
         image: '/depfolds/comps/pixelia.jpeg',
         registrationUrl: 'https://t4.ftcdn.net/jpg/17/77/94/27/360_F_1777942761_UTY0WxIs5of7FgsgrkLmzqFdCapwHHgN.jpg',
+        registerOption: 1,
         contact: [{ name: 'Hail Mary', phone: '8078925526' }, { name: 'Joel George', phone: '9188492986' }]
       },
       {
@@ -90,6 +94,7 @@ const departmentEvents: Record<string, any> = {
         venue: 'Computer Lab 3',
         image: '/depfolds/comps/puzzle.jpeg',
         registrationUrl: 'https://t4.ftcdn.net/jpg/17/77/94/27/360_F_1777942761_UTY0WxIs5of7FgsgrkLmzqFdCapwHHgN.jpg',
+        registerOption: 1,
         contact: [{ name: 'Yeldho', phone: '9495171414' }, { name: 'Agnus', phone: '9544266892' }]
       },
       {
@@ -103,6 +108,7 @@ const departmentEvents: Record<string, any> = {
         venue: 'Basketball court',
         image: '/depfolds/comps/splash.jpeg',
         registrationUrl: 'https://t4.ftcdn.net/jpg/17/77/94/27/360_F_1777942761_UTY0WxIs5of7FgsgrkLmzqFdCapwHHgN.jpg',
+        registerOption: 1,
         contact: [{ name: 'Kevin', phone: '8075723712' }, { name: 'Ryan', phone: '6238890177' }]
       },
       {
@@ -117,6 +123,7 @@ const departmentEvents: Record<string, any> = {
         venue: 'Classroom 133,134',
         image: '/depfolds/comps/techtrove.jpeg',
         registrationUrl: 'https://t4.ftcdn.net/jpg/17/77/94/27/360_F_1777942761_UTY0WxIs5of7FgsgrkLmzqFdCapwHHgN.jpg',
+        registerOption: 1,
         contact: [{ name: 'Justin', phone: '7736309758' }, { name: 'Amrutha', phone: '7594907504' }]
       },
       {
@@ -130,6 +137,7 @@ const departmentEvents: Record<string, any> = {
         venue: 'Lab 8',
         image: '/depfolds/comps/codepredict.jpeg',
         registrationUrl: 'https://t4.ftcdn.net/jpg/17/77/94/27/360_F_1777942761_UTY0WxIs5of7FgsgrkLmzqFdCapwHHgN.jpg',
+        registerOption: 1,
         contact: [{ name: 'Adwaith K S', phone: '9037861197' }, { name: 'Anna Palanattu', phone: '6235432740' }],
       
       badge: 2
@@ -145,6 +153,7 @@ const departmentEvents: Record<string, any> = {
         venue: 'Computer Lab 7',
         image: '/depfolds/comps/blindcoding.jpeg',
         registrationUrl: 'https://t4.ftcdn.net/jpg/17/77/94/27/360_F_1777942761_UTY0WxIs5of7FgsgrkLmzqFdCapwHHgN.jpg',
+        registerOption: 1,
         contact: [{ name: 'Leen Leo', phone: '8075750254' }, { name: 'Emil Mareena P', phone: '6235868192' }]
       ,
       badge: 3
@@ -160,6 +169,7 @@ const departmentEvents: Record<string, any> = {
         venue: 'Computer Lab 9',
         image: '/depfolds/comps/reversecoding.jpeg',
         registrationUrl: 'https://t4.ftcdn.net/jpg/17/77/94/27/360_F_1777942761_UTY0WxIs5of7FgsgrkLmzqFdCapwHHgN.jpg',
+        registerOption: 1,
         contact: [{ name: 'Christepher C Biju', phone: '8921057348' }, { name: 'Basil Biju', phone: '7558850154' }]
       ,
       badge: 3
@@ -174,6 +184,7 @@ const departmentEvents: Record<string, any> = {
         venue: 'Computer Lab 7',
         image: '/depfolds/comps/prompt.jpeg',
         registrationUrl: 'https://t4.ftcdn.net/jpg/17/77/94/27/360_F_1777942761_UTY0WxIs5of7FgsgrkLmzqFdCapwHHgN.jpg',
+        registerOption: 1,
         contact: [{ name: 'Gayathridevi K', phone: '8921169842' }, { name: 'Rinsa Fathima M A', phone: '8606033545' }]
       ,
       badge: 2
@@ -189,6 +200,7 @@ const departmentEvents: Record<string, any> = {
         venue: 'Computer Lab 7',
         image: '/depfolds/comps/techhunt.jpeg',
         registrationUrl: 'https://t4.ftcdn.net/jpg/17/77/94/27/360_F_1777942761_UTY0WxIs5of7FgsgrkLmzqFdCapwHHgN.jpg',
+        registerOption: 1,
         contact: [{ name: 'Anudev', phone: '9778155243' }, { name: 'Anna', phone: '8714224467' }]
       ,
       badge: 3
@@ -204,6 +216,7 @@ const departmentEvents: Record<string, any> = {
         venue: 'Room 229',
         image: '/depfolds/comps/netriot.jpeg',
         registrationUrl: 'https://t4.ftcdn.net/jpg/17/77/94/27/360_F_1777942761_UTY0WxIs5of7FgsgrkLmzqFdCapwHHgN.jpg',
+        registerOption: 1,
         contact: [{ name: 'Febin', phone: '9562767233' }, { name: 'Sain', phone: '8139879470' }]
       ,
       badge: 3
@@ -219,6 +232,7 @@ const departmentEvents: Record<string, any> = {
         venue: 'Computer Lab 9',
         image: '/depfolds/comps/thinktank.jpeg',
         registrationUrl: 'https://t4.ftcdn.net/jpg/17/77/94/27/360_F_1777942761_UTY0WxIs5of7FgsgrkLmzqFdCapwHHgN.jpg',
+        registerOption: 1,
         contact: [{ name: 'Samuel', phone: '8137897726' }, { name: 'Helvin', phone: '8590018466' }]
       ,
       badge: 3
@@ -233,6 +247,7 @@ const departmentEvents: Record<string, any> = {
         venue: 'Room M10',
         image: '/depfolds/comps/lpsg.jpeg',
         registrationUrl: 'https://t4.ftcdn.net/jpg/17/77/94/27/360_F_1777942761_UTY0WxIs5of7FgsgrkLmzqFdCapwHHgN.jpg',
+        registerOption: 1,
         contact: [{ name: 'Aleena', phone: '9048847676' }, { name: 'Gouripriya', phone: '9447290587' }]
       ,
       badge: 1
@@ -248,6 +263,7 @@ const departmentEvents: Record<string, any> = {
         venue: 'Room M229',
         image: '/depfolds/comps/ipl.jpeg',
         registrationUrl: 'https://t4.ftcdn.net/jpg/17/77/94/27/360_F_1777942761_UTY0WxIs5of7FgsgrkLmzqFdCapwHHgN.jpg',
+        registerOption: 1,
         contact: [{ name: 'Joel', phone: '7907502537' }, { name: 'Seetha', phone: '9074490518' }]
       ,
       badge: 3
@@ -262,6 +278,7 @@ const departmentEvents: Record<string, any> = {
         venue: 'Lab 8',
         image: '/depfolds/comps/vibe.jpeg',
         registrationUrl: 'https://t4.ftcdn.net/jpg/17/77/94/27/360_F_1777942761_UTY0WxIs5of7FgsgrkLmzqFdCapwHHgN.jpg',
+        registerOption: 1,
         contact: [{ name: 'Navaneeth', phone: '8281450604' }]
       ,
       badge: 2
@@ -276,6 +293,7 @@ const departmentEvents: Record<string, any> = {
         venue: 'Lab 8',
         image: '/depfolds/comps/hack.jpeg',
         registrationUrl: 'https://t4.ftcdn.net/jpg/17/77/94/27/360_F_1777942761_UTY0WxIs5of7FgsgrkLmzqFdCapwHHgN.jpg',
+        registerOption: 1,
         contact: [{ name: 'Navaneeth', phone: '8281450604' }]
       ,
       badge: 2
@@ -290,6 +308,7 @@ const departmentEvents: Record<string, any> = {
         venue: 'CSE Block Corridors',
         image: '/depfolds/comps/funfinity.jpeg',
         registrationUrl: 'https://t4.ftcdn.net/jpg/17/77/94/27/360_F_1777942761_UTY0WxIs5of7FgsgrkLmzqFdCapwHHgN.jpg',
+        registerOption: 1,
         contact: [{ name: 'Vismaya', phone: '9544251901' }, { name: 'Vinayathri', phone: '9778140400' }]
       ,
       badge: 4
@@ -304,6 +323,7 @@ const departmentEvents: Record<string, any> = {
         venue: 'Open Area CSE Block',
         image: '/depfolds/comps/ewaste.jpeg',
         registrationUrl: 'https://t4.ftcdn.net/jpg/17/77/94/27/360_F_1777942761_UTY0WxIs5of7FgsgrkLmzqFdCapwHHgN.jpg',
+        registerOption: 1,
         contact: [{ name: 'Manna', phone: ' 8089581794' }]
       ,
       badge: 1
@@ -326,6 +346,7 @@ const departmentEvents: Record<string, any> = {
         badge: 2,
         image: '/depfolds/ec/skyforge.jpeg',
         registrationUrl: 'https://makemypass.com/event/skyforge',
+        registerOption: 1,
         contact: [{ name: 'Fawas T Hamsa', phone: '9037220618' }, { name: 'Harikrishnan', phone: '9037018509' }]
       },
       {
@@ -339,6 +360,7 @@ const departmentEvents: Record<string, any> = {
         badge: 2,
         image: '/depfolds/ec/voltera.jpeg',
         registrationUrl: 'https://makemypass.com/event/voltera',
+        registerOption: 1,
         contact: [{ name: 'Navaneeth C V', phone: '9072392054' }, { name: 'Ashkar Salim', phone: '8590330521' }]
       },
       {
@@ -352,6 +374,7 @@ const departmentEvents: Record<string, any> = {
         badge: 2,
         image: '/depfolds/ec/pistack.jpeg',
         registrationUrl: 'https://makemypass.com/event/pi-stark',
+        registerOption: 1,
         contact: [{ name: 'Samuel Joshy', phone: '8075187294' }, { name: 'Sana Fathima', phone: '9497670658' }]
       },
       {
@@ -365,6 +388,7 @@ const departmentEvents: Record<string, any> = {
         badge: 2,
         image: '/depfolds/ec/arduino.jpeg',
         registrationUrl: 'https://makemypass.com/event/aurduino-101',
+        registerOption: 1,
         contact: [{ name: 'Adon Eldho', phone: '7907035790' }, { name: 'Minna Eldho', phone: '8848239305' }]
       },
       {
@@ -379,6 +403,7 @@ const departmentEvents: Record<string, any> = {
         badge: 3,
         image: '/depfolds/ec/a.jpeg',
         registrationUrl: 'https://makemypass.com/event/arducode',
+        registerOption: 1,
         contact: [{ name: 'Basil Thomas', phone: '7736045956' }, { name: 'Sen Anoop', phone: '6238103683' }]
       },
       {
@@ -393,6 +418,7 @@ const departmentEvents: Record<string, any> = {
         badge: 3,
         image: '/depfolds/ec/linex.jpeg',
         registrationUrl: 'https://makemypass.com/event/linex',
+        registerOption: 1,
         contact: [{ name: 'Anand S', phone: '8111836424' }, { name: 'Jesald Tony', phone: '9188201911' }]
       },
       {
@@ -407,6 +433,7 @@ const departmentEvents: Record<string, any> = {
         badge: 3,
         image: '/depfolds/ec/routeit.jpeg',
         registrationUrl: 'https://makemypass.com/event/route-it-right',
+        registerOption: 1,
         contact: [{ name: ' Lakshmi', phone: '7736487168' }, { name: ' Aksa Mariyam', phone: '8075791698' }]
       },
       {
@@ -421,6 +448,7 @@ const departmentEvents: Record<string, any> = {
         badge: 3,
         image: '/depfolds/ec/mcode.jpeg',
         registrationUrl: 'https://makemypass.com/event/m-code',
+        registerOption: 1,
         contact: [{ name: ' Adon Eldho', phone: '7907035790' }, { name: 'Henna MP', phone: '9037205706' }]
       },
       {
@@ -435,6 +463,7 @@ const departmentEvents: Record<string, any> = {
         badge: 3,
         image: '/depfolds/ec/robosoccer.jpeg',
         registrationUrl: 'https://makemypass.com/event/tech-tackle',
+        registerOption: 1,
         contact: [{ name: 'Benson Kuriakose', phone: '7736234898' }, { name: 'Samuel Joshy', phone: '8075187294' }]
       },
       {
@@ -448,6 +477,7 @@ const departmentEvents: Record<string, any> = {
         badge: 4,
         image: '/depfolds/ec/l.jpeg',
         registrationUrl: 'https://makemypass.com/event/laser-strike',
+        registerOption: 1,
         contact: [{ name: 'Naveen Sunil', phone: '9074131206' }, { name: 'Alwin Sibi', phone: '8848558945' }]
       },
       {
@@ -462,6 +492,7 @@ const departmentEvents: Record<string, any> = {
         badge: 3,
         image: '/depfolds/ec/bgmi.jpeg',
         registrationUrl: 'https://makemypass.com/event/royalwarfare',
+        registerOption: 1,
         contact: [{ name: 'Arundev NB', phone: '7034235202' }, { name: 'Albin Eldhose', phone: '7034920887' }]
       }
     ]
@@ -481,6 +512,7 @@ const departmentEvents: Record<string, any> = {
         badge: 3,
         image: 'https://images.unsplash.com/photo-1561144257-e32e8eef8e8e?w=600&q=80',
         registrationUrl: 'https://t4.ftcdn.net/jpg/17/77/94/27/360_F_1777942761_UTY0WxIs5of7FgsgrkLmzqFdCapwHHgN.jpg',
+        registerOption: 1,
         contact: [{ name: 'Suresh Babu', phone: '9856781234' }, { name: 'Priya Gupta', phone: '9867892345' }]
       },
       {
@@ -494,6 +526,7 @@ const departmentEvents: Record<string, any> = {
         badge: 3,
         image: 'https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=600&q=80',
         registrationUrl: 'https://t4.ftcdn.net/jpg/17/77/94/27/360_F_1777942761_UTY0WxIs5of7FgsgrkLmzqFdCapwHHgN.jpg',
+        registerOption: 1,
         contact: [{ name: 'Meena Pillai', phone: '9867812345' }, { name: 'Dev Yadav', phone: '9978903456' }]
       },
       {
@@ -507,6 +540,7 @@ const departmentEvents: Record<string, any> = {
         badge: 3,
         image: 'https://images.unsplash.com/photo-1587293852726-70cdb56c2866?w=600&q=80',
         registrationUrl: 'https://t4.ftcdn.net/jpg/17/77/94/27/360_F_1777942761_UTY0WxIs5of7FgsgrkLmzqFdCapwHHgN.jpg',
+        registerOption: 1,
         contact: [{ name: 'Arjun Das', phone: '9878123456' }, { name: 'Sophia Khan', phone: '9789012367' }]
       },
       {
@@ -520,6 +554,7 @@ const departmentEvents: Record<string, any> = {
         badge: 2,
         image: 'https://images.unsplash.com/photo-1581094794329-c8112e89af45?w=600&q=80',
         registrationUrl: 'https://t4.ftcdn.net/jpg/17/77/94/27/360_F_1777942761_UTY0WxIs5of7FgsgrkLmzqFdCapwHHgN.jpg',
+        registerOption: 1,
         contact: [{ name: 'Divya Nair', phone: '9881234567' }, { name: 'Sameer Chopra', phone: '9890123478' }]
       }
     ]
@@ -539,6 +574,7 @@ const departmentEvents: Record<string, any> = {
         badge: 3,
         image: '/depfolds/civ/trial1.jpeg',
         registrationUrl: 'https://t4.ftcdn.net/jpg/17/77/94/27/360_F_1777942761_UTY0WxIs5of7FgsgrkLmzqFdCapwHHgN.jpg',
+        registerOption: 1,
         contact: [{ name: 'Karthik Rao', phone: '9891234567' }, { name: 'Divya Desai', phone: '9912345678' }]
       },
       {
@@ -552,6 +588,7 @@ const departmentEvents: Record<string, any> = {
         badge: 1,
         image: '/depfolds/civ/trial1.jpeg',
         registrationUrl: 'https://t4.ftcdn.net/jpg/17/77/94/27/360_F_1777942761_UTY0WxIs5of7FgsgrkLmzqFdCapwHHgN.jpg',
+        registerOption: 1,
         contact: [{ name: 'Shalini Menon', phone: '9901234567' }, { name: 'Nikhil Bhat', phone: '9823456789' }]
       },
       {
@@ -565,6 +602,7 @@ const departmentEvents: Record<string, any> = {
         badge: 3,
         image: '/depfolds/civ/trial1.jpeg',
         registrationUrl: 'https://t4.ftcdn.net/jpg/17/77/94/27/360_F_1777942761_UTY0WxIs5of7FgsgrkLmzqFdCapwHHgN.jpg',
+        registerOption: 1,
         contact: [{ name: 'Mohit Verma', phone: '9912345678' }, { name: 'Ruhi Kapoor', phone: '9734567890' }]
       }
     ]
@@ -584,6 +622,7 @@ const departmentEvents: Record<string, any> = {
         badge: 1,
         image: '/depfolds/civ/trial1.jpeg',
         registrationUrl: 'https://t4.ftcdn.net/jpg/17/77/94/27/360_F_1777942761_UTY0WxIs5of7FgsgrkLmzqFdCapwHHgN.jpg',
+        registerOption: 1,
         contact: [{ name: 'Anil Joshi', phone: '9923456781' }, { name: 'Sneha Iyer', phone: '9845678901' }]
       },
       {
@@ -597,6 +636,7 @@ const departmentEvents: Record<string, any> = {
         badge: 2,
         image: 'https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=600&q=80',
         registrationUrl: 'https://t4.ftcdn.net/jpg/17/77/94/27/360_F_1777942761_UTY0WxIs5of7FgsgrkLmzqFdCapwHHgN.jpg',
+        registerOption: 1,
         contact: [{ name: 'Sunita Rao', phone: '9934567812' }, { name: 'Vikrant Sinha', phone: '9756890123' }]
       },
       {
@@ -610,6 +650,7 @@ const departmentEvents: Record<string, any> = {
         badge: 1,
         image: 'https://images.unsplash.com/photo-1509391366360-2e959784a276?w=600&q=80',
         registrationUrl: 'https://t4.ftcdn.net/jpg/17/77/94/27/360_F_1777942761_UTY0WxIs5of7FgsgrkLmzqFdCapwHHgN.jpg',
+        registerOption: 1,
         contact: [{ name: 'Rakesh Gupta', phone: '9945678123' }, { name: 'Aarav Singh', phone: '9867901234' }]
       }
     ]
@@ -629,6 +670,7 @@ const departmentEvents: Record<string, any> = {
         badge: 3,
         image: '/depfolds/ca/efootball.jpeg',
         registrationUrl: 'https://t4.ftcdn.net/jpg/17/77/94/27/360_F_1777942761_UTY0WxIs5of7FgsgrkLmzqFdCapwHHgN.jpg',
+        registerOption: 1,
         contact: [{ name: 'Neeraj', phone: '8086368571' }, { name: 'Vyshnav', phone: '9496669914' },{ name: 'Kiran MS', phone: '8606811261' },{ name: 'Niranjan', phone: '8848669127' }]
       },
       {
@@ -642,6 +684,7 @@ const departmentEvents: Record<string, any> = {
         badge: 2,
         image: '/depfolds/ca/qubits.jpeg',
         registrationUrl: 'https://t4.ftcdn.net/jpg/17/77/94/27/360_F_1777942761_UTY0WxIs5of7FgsgrkLmzqFdCapwHHgN.jpg',
+        registerOption: 1,
         contact: [{ name: 'Aman Kapoor', phone: '9967812345' }, { name: 'Ritu Verma', phone: '9789123456' }]
       },
       {
@@ -656,6 +699,7 @@ const departmentEvents: Record<string, any> = {
         badge: 3,
         image: '/depfolds/ca/treasurehunt.jpeg',
         registrationUrl: 'https://t4.ftcdn.net/jpg/17/77/94/27/360_F_1777942761_UTY0WxIs5of7FgsgrkLmzqFdCapwHHgN.jpg',
+        registerOption: 1,
         contact: [{ name: 'Ashli Sojan', phone: '62357 36827' }, { name: 'Anna Rose Joshi', phone: '62382 54635' }]
       },
       {
@@ -670,6 +714,7 @@ const departmentEvents: Record<string, any> = {
         badge: 3,
         image: '/depfolds/ca/codequest.jpeg',
         registrationUrl: 'https://t4.ftcdn.net/jpg/17/77/94/27/360_F_1777942761_UTY0WxIs5of7FgsgrkLmzqFdCapwHHgN.jpg',
+        registerOption: 1,
         contact: [{ name: 'Aparna', phone: '7012713377' }, { name: 'Alan', phone: '6238236726' }]
       },
       {
@@ -684,6 +729,7 @@ const departmentEvents: Record<string, any> = {
         badge: 3,
         image: '/depfolds/ca/shutter.jpeg',
         registrationUrl: 'https://t4.ftcdn.net/jpg/17/77/94/27/360_F_1777942761_UTY0WxIs5of7FgsgrkLmzqFdCapwHHgN.jpg',
+        registerOption: 1,
         contact: [{ name: 'Ajay', phone: '8129529363' }, { name: 'Cenna', phone: '6235263729' }]
       },
       {
@@ -697,6 +743,7 @@ const departmentEvents: Record<string, any> = {
         badge: 1,
         image: '/depfolds/ca/rootforce.jpeg',
         registrationUrl: 'https://t4.ftcdn.net/jpg/17/77/94/27/360_F_1777942761_UTY0WxIs5of7FgsgrkLmzqFdCapwHHgN.jpg',
+        registerOption: 1,
         contact: [{ name: 'Geeta Reddy', phone: '9981234567' }, { name: 'Karan Tiwari', phone: '9901345678' }]
       },
       {
@@ -711,6 +758,7 @@ const departmentEvents: Record<string, any> = {
         badge: 3,
         image: '/depfolds/ca/clash.jpeg',
         registrationUrl: 'https://t4.ftcdn.net/jpg/17/77/94/27/360_F_1777942761_UTY0WxIs5of7FgsgrkLmzqFdCapwHHgN.jpg',
+        registerOption: 1,
         contact: [{ name: 'Sibion', phone: '7306769579' }, { name: 'Achu', phone: '9496110247' }]
       },
       {
@@ -725,6 +773,7 @@ const departmentEvents: Record<string, any> = {
         badge: 3,
         image: '/depfolds/ca/codecrush.jpeg',
         registrationUrl: 'https://t4.ftcdn.net/jpg/17/77/94/27/360_F_1777942761_UTY0WxIs5of7FgsgrkLmzqFdCapwHHgN.jpg',
+        registerOption: 1,
         contact: [{ name: 'Jeswin', phone: '9778230580' }, { name: 'Sahala', phone: '9400395924' }]
       },
       {
@@ -738,6 +787,7 @@ const departmentEvents: Record<string, any> = {
         badge: 2,
         image: '/depfolds/ca/robotic.jpeg',
         registrationUrl: 'https://t4.ftcdn.net/jpg/17/77/94/27/360_F_1777942761_UTY0WxIs5of7FgsgrkLmzqFdCapwHHgN.jpg',
+        registerOption: 1,
         contact: [{ name: 'Ajin Biju', phone: '8590463106' }, { name: 'Ignatious', phone: '7510130510' }]
       },
     ]
@@ -1497,16 +1547,18 @@ export function DepartmentEventsPage() {
 
                     {/* Action Buttons */}
                     <div className="flex gap-4">
-                      <a
-                        href={selectedEvent.registrationUrl}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="flex-1 inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full text-white font-semibold shadow-lg hover:shadow-xl transition-all"
-                        style={{ backgroundColor: department?.color || '#C65D3B' }}
-                      >
-                        Register Now
-                        <ExternalLink className="w-4 h-4" />
-                      </a>
+                      {(selectedEvent.registerOption === 1 || selectedEvent.registerOption === '1' || selectedEvent.registerOption === undefined) && (
+                        <a
+                          href={selectedEvent.registrationUrl}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="flex-1 inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full text-white font-semibold shadow-lg hover:shadow-xl transition-all"
+                          style={{ backgroundColor: department?.color || '#C65D3B' }}
+                        >
+                          Register Now
+                          <ExternalLink className="w-4 h-4" />
+                        </a>
+                      )}
                       {isAdmin && backendAvailable && (
                         <button
                           onClick={() => {
