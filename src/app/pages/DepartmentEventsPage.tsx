@@ -29,6 +29,8 @@ interface Event {
   venue?: string;
   badge?: number; // 1=Expo, 2=Workshop, 3=Competition, 4=Entertainment
   registerOption?: number; // 1=Show Register Now, 2=Hide Register Now
+  discount?: number; // 1 = discounted, 2 = no discount
+  discountedFee?: string; // discounted fee to display when discount === 1
 }
 
 // Mock events data for each department
@@ -46,7 +48,7 @@ const departmentEvents: Record<string, any> = {
         time: 'FULL DAY',
         fee: '40',
         badge: 1,
-        venue: 'Room 130,131',
+        venue: 'Room 130',
         image: '/depfolds/comps/vrposter.jpeg',
         registrationUrl: 'https://t4.ftcdn.net/jpg/17/77/94/27/360_F_1777942761_UTY0WxIs5of7FgsgrkLmzqFdCapwHHgN.jpg',
         registerOption: 1,
@@ -60,8 +62,8 @@ const departmentEvents: Record<string, any> = {
         time: 'FULL DAY',
         prizepool: 'NA',
         fee: '50',
-        badge: 1,
-        venue: 'Room 231,232',
+        badge: 2,
+        venue: 'Computer Lab 3',
         image: '/depfolds/comps/GAMING_XP.jpeg',
         registrationUrl: 'https://t4.ftcdn.net/jpg/17/77/94/27/360_F_1777942761_UTY0WxIs5of7FgsgrkLmzqFdCapwHHgN.jpg',
         registerOption: 1,
@@ -71,12 +73,12 @@ const departmentEvents: Record<string, any> = {
         id: 3,
         name: 'PIXELIA',
         description: 'Unleash your creativity and technical imagination in our Poster Designing Competition conducted as part of the Tech Fest. Participants will design a digital poster based on a given theme using the computer systems provided in the lab. The event aims to test creativity, visual communication skills, layout design, and effective use of design tools. Create a poster that is visually appealing, informative, and impactful within the given time\n\nRULES & REGULATIONS\n\n 1. Participants must report to the lab 15 minutes before the event starts.\n2. The poster theme/topic will be announced on the spot.\n3. Only the software available on the lab computers may be used(Canva Web)\n4. Internet usage allowed only under supervision.\n5. Participants must not use pre-made templates or previously created posters.\n6. All designs must be created during the competition time only.\n7. External storage devices (pen drives, hard disks) are not allowed\n8. Posters must include a title and relevant visual elements related to the theme.\n9. Any form of copying or plagiarism will lead to disqualification.\n10. Final poster must be saved with the participant name and submitted before the deadline in the specified format (PNG).\n11. Judges’ decision will  be final',
-        date: 'February 28, 2026',
-        time: 'Forenoon',
+        date: 'February 27, 2026',
+        time: 'Afternoon',
         prizepool: '1000',
-        fee: '₹60',
+        fee: '60',
         badge: 3,
-        venue: 'Lab 3 Room 225',
+        venue: 'Computer Lab 8',
         image: '/depfolds/comps/pixelia.jpeg',
         registrationUrl: 'https://t4.ftcdn.net/jpg/17/77/94/27/360_F_1777942761_UTY0WxIs5of7FgsgrkLmzqFdCapwHHgN.jpg',
         registerOption: 1,
@@ -123,7 +125,7 @@ const departmentEvents: Record<string, any> = {
         venue: 'Classroom 133,134',
         image: '/depfolds/comps/techtrove.jpeg',
         registrationUrl: 'https://t4.ftcdn.net/jpg/17/77/94/27/360_F_1777942761_UTY0WxIs5of7FgsgrkLmzqFdCapwHHgN.jpg',
-        registerOption: 1,
+        registerOption: 2,
         contact: [{ name: 'Justin', phone: '7736309758' }, { name: 'Amrutha', phone: '7594907504' }]
       },
       {
@@ -131,13 +133,13 @@ const departmentEvents: Record<string, any> = {
         name: ' Code, Predict, Conquer – Machine Learning Workshop',
         description: 'A hands-on introduction to Machine Learning organized by IEDC MBITS, where participants explore how machines analyze data, build predictive models, and solve real-world problems. Designed for beginners, this workshop emphasizes practical learning and the fundamentals of intelligent system development.\n\nOrganized By: IEDC MBITS\nCategory: Workshop\nMode: Offline (Lab Session)\nSeats: Limited seats available \n\nBenefits\n * Certificates will be provided to all participants upon successful completion of the workshop.\n* Activity points will be awarded.\n\nRules & Regulations\n* Entry is permitted only for registered participants.\n* Certificates will be issued only after full attendance throughout the session.',
         date: 'February 28, 2026',
-        time: '10:00 AM – 01:00 PM',
+        time: 'Forenoon',
         Organizedby:'IEDC MBITS',
         fee: 'FREE',
-        venue: 'Lab 8',
+        venue: 'Computer Lab 8',
         image: '/depfolds/comps/codepredict.jpeg',
         registrationUrl: 'https://t4.ftcdn.net/jpg/17/77/94/27/360_F_1777942761_UTY0WxIs5of7FgsgrkLmzqFdCapwHHgN.jpg',
-        registerOption: 1,
+        registerOption: 2,
         contact: [{ name: 'Adwaith K S', phone: '9037861197' }, { name: 'Anna Palanattu', phone: '6235432740' }],
       
       badge: 2
@@ -150,7 +152,7 @@ const departmentEvents: Record<string, any> = {
         time: 'Forenoon',
         prizepool: '1500',
         fee: '60',
-        venue: 'Computer Lab 7',
+        venue: 'Computer Lab 8',
         image: '/depfolds/comps/blindcoding.jpeg',
         registrationUrl: 'https://t4.ftcdn.net/jpg/17/77/94/27/360_F_1777942761_UTY0WxIs5of7FgsgrkLmzqFdCapwHHgN.jpg',
         registerOption: 1,
@@ -197,7 +199,7 @@ const departmentEvents: Record<string, any> = {
         time: 'Afternoon',
         prizepool: 'NA',
         fee: '20 per person',
-        venue: 'Computer Lab 7',
+        venue: 'Campus',
         image: '/depfolds/comps/techhunt.jpeg',
         registrationUrl: 'https://t4.ftcdn.net/jpg/17/77/94/27/360_F_1777942761_UTY0WxIs5of7FgsgrkLmzqFdCapwHHgN.jpg',
         registerOption: 1,
@@ -213,7 +215,7 @@ const departmentEvents: Record<string, any> = {
         time: 'FULL DAY',
         prizepool: '₹3000',
         fee: '40',
-        venue: 'Room 229',
+        venue: 'Room M131',
         image: '/depfolds/comps/netriot.jpeg',
         registrationUrl: 'https://t4.ftcdn.net/jpg/17/77/94/27/360_F_1777942761_UTY0WxIs5of7FgsgrkLmzqFdCapwHHgN.jpg',
         registerOption: 1,
@@ -232,7 +234,7 @@ const departmentEvents: Record<string, any> = {
         venue: 'Computer Lab 9',
         image: '/depfolds/comps/thinktank.jpeg',
         registrationUrl: 'https://t4.ftcdn.net/jpg/17/77/94/27/360_F_1777942761_UTY0WxIs5of7FgsgrkLmzqFdCapwHHgN.jpg',
-        registerOption: 1,
+        registerOption: 2,
         contact: [{ name: 'Samuel', phone: '8137897726' }, { name: 'Helvin', phone: '8590018466' }]
       ,
       badge: 3
@@ -247,7 +249,7 @@ const departmentEvents: Record<string, any> = {
         venue: 'Room M10',
         image: '/depfolds/comps/lpsg.jpeg',
         registrationUrl: 'https://t4.ftcdn.net/jpg/17/77/94/27/360_F_1777942761_UTY0WxIs5of7FgsgrkLmzqFdCapwHHgN.jpg',
-        registerOption: 1,
+        registerOption: 2,
         contact: [{ name: 'Aleena', phone: '9048847676' }, { name: 'Gouripriya', phone: '9447290587' }]
       ,
       badge: 1
@@ -260,7 +262,7 @@ const departmentEvents: Record<string, any> = {
         time: 'Afternoon',
         fee: '200 per team',
         prizepool: '₹3500',
-        venue: 'Room M229',
+        venue: 'Room M131',
         image: '/depfolds/comps/ipl.jpeg',
         registrationUrl: 'https://t4.ftcdn.net/jpg/17/77/94/27/360_F_1777942761_UTY0WxIs5of7FgsgrkLmzqFdCapwHHgN.jpg',
         registerOption: 1,
@@ -275,7 +277,7 @@ const departmentEvents: Record<string, any> = {
         date: 'February 27, 2026',
         time: 'Afternoon',
         fee: '*For IEEE Members – ₹0 ( Free ) \n  *For Non-IEEE Members – ₹30',
-        venue: 'Lab 8',
+        venue: 'Computer Lab 7',
         image: '/depfolds/comps/vibe.jpeg',
         registrationUrl: 'https://t4.ftcdn.net/jpg/17/77/94/27/360_F_1777942761_UTY0WxIs5of7FgsgrkLmzqFdCapwHHgN.jpg',
         registerOption: 1,
@@ -290,7 +292,7 @@ const departmentEvents: Record<string, any> = {
         date: 'February 27, 2026',
         time: 'Forenoon',
         fee: '*For IEEE Members – ₹0 ( Free ) \n  *For Non-IEEE Members – ₹30',
-        venue: 'Lab 8',
+        venue: 'Lab 7',
         image: '/depfolds/comps/hack.jpeg',
         registrationUrl: 'https://t4.ftcdn.net/jpg/17/77/94/27/360_F_1777942761_UTY0WxIs5of7FgsgrkLmzqFdCapwHHgN.jpg',
         registerOption: 1,
@@ -308,7 +310,7 @@ const departmentEvents: Record<string, any> = {
         venue: 'CSE Block Corridors',
         image: '/depfolds/comps/funfinity.jpeg',
         registrationUrl: 'https://t4.ftcdn.net/jpg/17/77/94/27/360_F_1777942761_UTY0WxIs5of7FgsgrkLmzqFdCapwHHgN.jpg',
-        registerOption: 1,
+        registerOption: 2,
         contact: [{ name: 'Vismaya', phone: '9544251901' }, { name: 'Vinayathri', phone: '9778140400' }]
       ,
       badge: 4
@@ -323,7 +325,7 @@ const departmentEvents: Record<string, any> = {
         venue: 'Open Area CSE Block',
         image: '/depfolds/comps/ewaste.jpeg',
         registrationUrl: 'https://t4.ftcdn.net/jpg/17/77/94/27/360_F_1777942761_UTY0WxIs5of7FgsgrkLmzqFdCapwHHgN.jpg',
-        registerOption: 1,
+        registerOption: 2,
         contact: [{ name: 'Manna', phone: ' 8089581794' }]
       ,
       badge: 1
@@ -503,59 +505,18 @@ const departmentEvents: Record<string, any> = {
     events: [
       {
         id: 1,
-        name: 'Robo Race',
-        description: 'Autonomous robot racing',
-        date: 'February 26-27, 2026',
-        time: '11:00 AM - 4:00 PM',
-        prizepool: 'TBA',
-        fee: '₹500',
-        badge: 3,
-        image: 'https://images.unsplash.com/photo-1561144257-e32e8eef8e8e?w=600&q=80',
-        registrationUrl: 'https://t4.ftcdn.net/jpg/17/77/94/27/360_F_1777942761_UTY0WxIs5of7FgsgrkLmzqFdCapwHHgN.jpg',
-        registerOption: 1,
-        contact: [{ name: 'Suresh Babu', phone: '9856781234' }, { name: 'Priya Gupta', phone: '9867892345' }]
-      },
-      {
-        id: 2,
-        name: 'CAD Master',
-        description: '3D modeling competition',
-        date: 'February 26-27, 2026',
-        time: '9:00 AM - 2:00 PM',
-        prizepool: 'TBA',
-        fee: '₹250',
-        badge: 3,
-        image: 'https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=600&q=80',
-        registrationUrl: 'https://t4.ftcdn.net/jpg/17/77/94/27/360_F_1777942761_UTY0WxIs5of7FgsgrkLmzqFdCapwHHgN.jpg',
-        registerOption: 1,
-        contact: [{ name: 'Meena Pillai', phone: '9867812345' }, { name: 'Dev Yadav', phone: '9978903456' }]
-      },
-      {
-        id: 3,
-        name: 'Bridge Build',
-        description: 'Build the strongest bridge',
-        date: 'February 26-27, 2026',
-        time: '1:30 PM - 5:30 PM',
-        prizepool: 'TBA',
-        fee: '₹400',
-        badge: 3,
-        image: 'https://images.unsplash.com/photo-1587293852726-70cdb56c2866?w=600&q=80',
-        registrationUrl: 'https://t4.ftcdn.net/jpg/17/77/94/27/360_F_1777942761_UTY0WxIs5of7FgsgrkLmzqFdCapwHHgN.jpg',
-        registerOption: 1,
-        contact: [{ name: 'Arjun Das', phone: '9878123456' }, { name: 'Sophia Khan', phone: '9789012367' }]
-      },
-      {
-        id: 4,
-        name: 'Hydraulic Challenge',
-        description: 'Design hydraulic systems',
-        date: 'February 26-27, 2026',
-        time: '10:30 AM - 3:30 PM',
-        prizepool: 'TBA',
-        fee: '₹350',
+        name: '🔧 IC ENGINE WORKSHOP',
+        description: '🏆 Benefits\n* Practical knowledge of engine components\n* Understanding of working cycles and mechanisms\n* Hands-on exposure to real engine models\n* Participation certificates will be provided 🎓\n\n⚙️ Learn the heart of automobiles. Understand how engines power the world.\n📘 About the Workshop\nThe IC Engine Workshop is a hands-on technical session designed to help participants understand the working principles of internal combustion engines.\nParticipants will get practical exposure to engine components, working cycles, and real-time demonstrations. The workshop focuses on explaining how fuel converts into mechanical power and how different engine systems operate together. This session is ideal for students interested in automobiles, mechanical systems, and engine technology.\n\n🔥 Workshop Highlights\n* Live Engine Demonstration\n* Hands-on Tool Usage\n* Engine Component Explanation\n* Working Cycle Demonstration\n\n📌 Rules / Guidelines\n* Participants must follow workshop safety instructions\n* Proper handling of engine components is mandatory\n* Workshop is strictly for educational purposes\n* Participants must report on time',
+        date: 'February 27, 2026',
+        time: 'Forenoon',
+        venue: 'Automobile lab',
+        prizepool: '₹3,000',
+        fee: '30',
         badge: 2,
-        image: 'https://images.unsplash.com/photo-1581094794329-c8112e89af45?w=600&q=80',
+        image: '/depfolds/mec/icengine.jpeg',
         registrationUrl: 'https://t4.ftcdn.net/jpg/17/77/94/27/360_F_1777942761_UTY0WxIs5of7FgsgrkLmzqFdCapwHHgN.jpg',
         registerOption: 1,
-        contact: [{ name: 'Divya Nair', phone: '9881234567' }, { name: 'Sameer Chopra', phone: '9890123478' }]
+        contact: [{ name: 'Varghese Biju', phone: '9746323751' }, { name: 'Don Basil', phone: '8590796049' },{ name: 'Amal Wilson', phone: '8590029539' }]
       }
     ]
   },
@@ -563,96 +524,14 @@ const departmentEvents: Record<string, any> = {
     name: 'Civil',
     color: '#FF6B35',
     events: [
-      {
-        id: 1,
-        name: 'Structure Design',
-        description: 'Structural engineering design',
-        date: 'February 26-27, 2026',
-        time: '9:30 AM - 12:30 PM',
-        prizepool: 'TBA',
-        fee: '₹300',
-        badge: 3,
-        image: '/depfolds/civ/trial1.jpeg',
-        registrationUrl: 'https://t4.ftcdn.net/jpg/17/77/94/27/360_F_1777942761_UTY0WxIs5of7FgsgrkLmzqFdCapwHHgN.jpg',
-        registerOption: 1,
-        contact: [{ name: 'Karthik Rao', phone: '9891234567' }, { name: 'Divya Desai', phone: '9912345678' }]
-      },
-      {
-        id: 2,
-        name: 'City Planning',
-        description: 'Urban planning competition',
-        date: 'February 26-27, 2026',
-        time: '2:00 PM - 5:00 PM',
-        prizepool: 'TBA',
-        fee: '₹250',
-        badge: 1,
-        image: '/depfolds/civ/trial1.jpeg',
-        registrationUrl: 'https://t4.ftcdn.net/jpg/17/77/94/27/360_F_1777942761_UTY0WxIs5of7FgsgrkLmzqFdCapwHHgN.jpg',
-        registerOption: 1,
-        contact: [{ name: 'Shalini Menon', phone: '9901234567' }, { name: 'Nikhil Bhat', phone: '9823456789' }]
-      },
-      {
-        id: 3,
-        name: 'AutoCAD Challenge',
-        description: 'Technical drawing competition.JAGSJJAERBHBKFBLHBABHBIAEIRIUBBEA.&nbsp;',
-        date: 'February 26, 2026',
-        time: '10:00 AM - 1:00 PM',
-        prizepool: '₹10,000',
-        fee: '₹200',
-        badge: 3,
-        image: '/depfolds/civ/trial1.jpeg',
-        registrationUrl: 'https://t4.ftcdn.net/jpg/17/77/94/27/360_F_1777942761_UTY0WxIs5of7FgsgrkLmzqFdCapwHHgN.jpg',
-        registerOption: 1,
-        contact: [{ name: 'Mohit Verma', phone: '9912345678' }, { name: 'Ruhi Kapoor', phone: '9734567890' }]
-      }
+      
     ]
   },
   'electrical': {
     name: 'Electrical',
     color: '#FFA500',
     events: [
-      {
-        id: 1,
-        name: 'Power Grid',
-        description: 'Power systems design',
-        date: 'February 26-27, 2026',
-        time: '9:00 AM - 1:00 PM',
-        prizepool: 'TBA',
-        fee: '₹300',
-        badge: 1,
-        image: '/depfolds/civ/trial1.jpeg',
-        registrationUrl: 'https://t4.ftcdn.net/jpg/17/77/94/27/360_F_1777942761_UTY0WxIs5of7FgsgrkLmzqFdCapwHHgN.jpg',
-        registerOption: 1,
-        contact: [{ name: 'Anil Joshi', phone: '9923456781' }, { name: 'Sneha Iyer', phone: '9845678901' }]
-      },
-      {
-        id: 2,
-        name: 'Motor Control',
-        description: 'Electric motor control systems',
-        date: 'February 26-27, 2026',
-        time: '1:30 PM - 4:30 PM',
-        prizepool: 'TBA',
-        fee: '₹350',
-        badge: 2,
-        image: 'https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=600&q=80',
-        registrationUrl: 'https://t4.ftcdn.net/jpg/17/77/94/27/360_F_1777942761_UTY0WxIs5of7FgsgrkLmzqFdCapwHHgN.jpg',
-        registerOption: 1,
-        contact: [{ name: 'Sunita Rao', phone: '9934567812' }, { name: 'Vikrant Sinha', phone: '9756890123' }]
-      },
-      {
-        id: 3,
-        name: 'Renewable Energy',
-        description: 'Sustainable energy projects',
-        date: 'February 26-27, 2026',
-        time: '10:00 AM - 3:00 PM',
-        prizepool: 'TBA',
-        fee: 'FREE',
-        badge: 1,
-        image: 'https://images.unsplash.com/photo-1509391366360-2e959784a276?w=600&q=80',
-        registrationUrl: 'https://t4.ftcdn.net/jpg/17/77/94/27/360_F_1777942761_UTY0WxIs5of7FgsgrkLmzqFdCapwHHgN.jpg',
-        registerOption: 1,
-        contact: [{ name: 'Rakesh Gupta', phone: '9945678123' }, { name: 'Aarav Singh', phone: '9867901234' }]
-      }
+    
     ]
   },
   'general': {
@@ -675,6 +554,23 @@ const departmentEvents: Record<string, any> = {
       },
       {
         id: 2,
+<<<<<<< HEAD
+=======
+        name: 'Tech Talk Series',
+        description: 'Industry expert sessions',
+        date: 'February 26-27, 2026',
+        time: '10:00 AM - 2:00 PM',
+        prizepool: 'TBA',
+        fee: 'FREE',
+        badge: 2,
+        image: '/depfolds/ca/qubits.jpeg',
+        registrationUrl: 'https://t4.ftcdn.net/jpg/17/77/94/27/360_F_1777942761_UTY0WxIs5of7FgsgrkLmzqFdCapwHHgN.jpg',
+        registerOption: 2,
+        contact: [{ name: 'Aman Kapoor', phone: '9967812345' }, { name: 'Ritu Verma', phone: '9789123456' }]
+      },
+      {
+        id: 3,
+>>>>>>> 3364c3232e62925a7fd0db292746354a37cbc829
         name: 'TREX: Trail of Clues (TREASURE HUNT)',
         description: 'TREX: Trail of Clues challenges your wit, teamwork, and speed as you race against time to crack clues and uncover secrets hidden in plain sight\n.Get ready for the ultimate adventure where mystery, clues, and hidden treasures await!Every step brings you closer to victory—if you can think smart, move fast, and trust your team.\n\nRules and Regulations:\n* Teams must consist of 4 members only.\n* The hunt is restricted to campus areas only.\n* Clues must be solved in order, skipping or sharing clues is strictly prohibited. \n * Any damage, misconduct, or unsafe behaviour will lead to disqualification.\n* The first team to complete all clues correctly will be declared the winner.\n* The organizers’ decision is final.\n* All participants must report at the venue 30 minutes before the event start time.',
         date: 'February 27, 2026',
@@ -732,8 +628,12 @@ const departmentEvents: Record<string, any> = {
         venue:'Lab 10',
         badge: 3,
         image: '/depfolds/ca/rootforce.jpeg',
+<<<<<<< HEAD
         registrationUrl: 'https://makemypass.com/event/rootforce',
 
+=======
+        registrationUrl: 'https://t4.ftcdn.net/jpg/17/77/94/27/360_F_1777942761_UTY0WxIs5of7FgsgrkLmzqFdCapwHHgN.jpg',
+>>>>>>> 3364c3232e62925a7fd0db292746354a37cbc829
         contact: [{ name: 'Vishnupriya', phone: '7907456401' }, { name: 'Jerald', phone: '7025497088' }]
 
       },
@@ -777,8 +677,13 @@ const departmentEvents: Record<string, any> = {
         venue: 'MBA Lecture Hall, MBITS',
         badge: 2,
         image: '/depfolds/ca/robotic.jpeg',
+<<<<<<< HEAD
         registrationUrl: 'https://makemypass.com/event/robotic-workshop',
         registerOption: 1,
+=======
+        registrationUrl: 'https://t4.ftcdn.net/jpg/17/77/94/27/360_F_1777942761_UTY0WxIs5of7FgsgrkLmzqFdCapwHHgN.jpg',
+        registerOption: 2,
+>>>>>>> 3364c3232e62925a7fd0db292746354a37cbc829
         contact: [{ name: 'Ajin Biju', phone: '8590463106' }, { name: 'Ignatious', phone: '7510130510' }]
       },
       {
@@ -1245,8 +1150,8 @@ export function DepartmentEventsPage() {
             Back to Departments
           </Link>
 
-          <h1 
-            className="text-6xl md:text-7xl mb-6"
+          <h1
+            className="text-2xl md:text-1xl lg:text-1xl mb-6"
             style={{ color: department.color }}
           >
             {department.name}
@@ -1329,11 +1234,26 @@ export function DepartmentEventsPage() {
                   </div>
                 </div>
 
-                {/* Fee Box - Centered with Orange Border */}
+                {/* Fee Box - Centered with Orange Border (supports optional discount) */}
                 <div className="px-4 py-1 bg-[#1A1A1A] flex-shrink-0 flex justify-center">
-                  <div className="border-2 border-[#FFA500] rounded-lg px-3 py-0.5 flex items-center gap-2" style={{ borderColor: department.color }}>
-                    <IndianRupee className="w-5 h-5" style={{ color: department.color }} />
-                    <span className="font-bold text-lg text-white">{event.fee}</span>
+                  <div className="relative flex flex-col items-center">
+                    {event.discount === 1 && event.discountedFee && (
+                      <div className="mb-2 bg-red-600 text-white px-3 py-1 rounded-md text-sm font-bold shadow-md z-30">
+                        DISCOUNT AVAILABLE!
+                      </div>
+                    )}
+
+                    <div className="border-2 border-[#FFA500] rounded-lg px-3 py-0.5 flex items-center gap-2" style={{ borderColor: department.color }}>
+                      <IndianRupee className="w-5 h-5" style={{ color: department.color }} />
+                      {event.discount === 1 && event.discountedFee ? (
+                        <div className="flex items-baseline gap-3">
+                          <span className="text-sm text-white/70 line-through">{event.fee}</span>
+                          <span className="font-bold text-lg text-white">{event.discountedFee}</span>
+                        </div>
+                      ) : (
+                        <span className="font-bold text-lg text-white">{event.fee}</span>
+                      )}
+                    </div>
                   </div>
                 </div>
 

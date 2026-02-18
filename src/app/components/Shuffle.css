@@ -6,7 +6,7 @@
   word-wrap: break-word;
   will-change: transform;
   line-height: 1;
-  font-size: 3.2rem;
+  font-size: 4rem;
   font-family: 'Casco', 'Press Start 2P', sans-serif;
   text-transform: uppercase;
   visibility: visible;
@@ -27,18 +27,18 @@
 }
 
 .shuffle-large {
-  font-size: 3.2rem;
+  font-size: 4rem;
 }
 
 @media (min-width: 640px) {
   .shuffle-large {
-    font-size: 5rem;
+    font-size: 7.5rem;
   }
 }
 
 @media (min-width: 768px) {
   .shuffle-large {
-    font-size: 9rem;
+    font-size: 12rem;
   }
 }
 

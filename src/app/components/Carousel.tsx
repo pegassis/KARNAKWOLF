@@ -9,67 +9,73 @@ const DEFAULT_ITEMS = [
     title: 'Karnak Conference',
     description: 'Join us for the grand opening ceremony of KARNAK 2026, the premier tech festival bringing together innovators, engineers, and visionaries. Witness cutting-edge presentations, live demonstrations, and collaborative workshops showcasing the future of technology across all engineering disciplines. Network with industry leaders and fellow enthusiasts in an electrifying atmosphere of innovation.',
     id: 1,
-    image: '/mainpic/mn1.jpeg'
+    image: '/mainpic/mn1.jpg'
   },
   {
     title: 'Auto Show',
-    description: 'An exhibition of high-performance and customized vehicles, celebrating automotive engineering and design excellence.',
+    description: '.',
     id: 2,
-    image: '/mainpic/mn2.jpeg'
+    image: '/mainpic/mn2.jpg'
   },
   {
-    title: 'MBITS Moments',
-    description: 'Celebrate the rich heritage and vibrant campus culture of MBITS through curated moments of academic excellence and student achievements. Experience highlights from throughout the year including research breakthroughs, cultural events, and the inspiring journey of our institution. These treasured moments define the spirit and innovation that drives our community forward.',
+    title: '',
+    description: '',
     id: 3,
-    image: '/mainpic/mn3.jpeg'
+    image: '/mainpic/mn3.jpg'
   },
   {
-    title: 'Karnak Logo',
-    description: 'Discover the creative vision behind KARNAK\'s iconic branding and visual identity that represents excellence and technological innovation. The carefully crafted design elements capture the essence of forward-thinking engineering and the dynamic energy of our festival. Every symbol and color tells a story of ambition, creativity, and technological advancement.',
+    title: '',
+    description: '',
     id: 4,
-    image: '/mainpic/mn4.jpeg'
+    image: '/mainpic/mn4.jpg'
   },
   {
-    title: 'Karnak Brand',
-    description: 'The official KARNAK brand stands as a symbol of innovation, excellence, and technological prowess across the engineering world. Representing years of tradition and cutting-edge vision, this emblem unifies students, faculty, and industry professionals in celebration of engineering achievement. Become part of a legacy of innovation and transformation.',
+    title: '',
+    description: '',
     id: 5,
-    image: '/mainpic/mn5.jpeg'
+    image: '/mainpic/mn5.jpg'
   },
   {
-    title: 'Festival Vibes',
-    description: 'Experience the electrifying energy and vibrant atmosphere of KARNAK, where passion for technology meets creative expression and collaborative spirit. From technical competitions to cultural performances, every moment pulses with excitement and innovation. Immerse yourself in the dynamic ecosystem where ideas spark, friendships form, and futures are shaped.',
+    title: '',
+    description: '',
     id: 6,
-    image: '/mainpic/mn6.jpeg'
+    image: '/mainpic/mn6.jpg'
   },
   {
-    title: 'Inter-College Dance Fest',
-    description: 'Vibrant cultural events that add creativity, style, and energy to the festival atmosphere.',
+    title: '',
+    description: '',
     id: 7,
-    image: '/mainpic/mn7.jpeg'
+    image: '/mainpic/mn7.jpg'
   },
   {
     title: 'Virtual Reality (VR) Show',
     description: 'An immersive experience zone where participants explore cutting-edge virtual reality applications in engineering, design, gaming, simulation, and interactive learning.',
     id: 8,
-    image: '/mainpic/mn8.jpeg'
+    image: '/mainpic/mn8.jpg'
   },
   {
     title: 'Drone Expo & Workshops ',
     description: 'Interactive drone demonstrations and hands-on workshops covering aerial surveying, mapping, and emerging UAV technologies.',
     id: 9,
-    image: '/mainpic/mn9.jpeg'
+    image: '/mainpic/mn9.jpg'
   },
    {
-    title: 'Drone Expo & Workshops ',
+    title: 'Heavy Haulage',
     description: 'The Construction Equipment & Vehicles Expo is a premier industry event showcasing the latest innovations in heavy machinery, earth-moving equipment, transport vehicles, and construction technology. Bringing together leading manufacturers, suppliers, engineers, and industry professionals, the expo provides a dynamic platform for networking, live demonstrations, product launches, and business opportunities.\nCoordinators: ELDHO PAULOSE, AMEENUDHEEN',
     id: 10,
-    image: '/mainpic/mn10.jpeg'
+    image: '/mainpic/mn10.jpg'
   },
   {
-    title: 'Drone Expo & Workshops ',
-    description: 'Interactive drone demonstrations and hands-on workshops covering aerial surveying, mapping, and emerging UAV technologies.',
+    title: 'Gaming XP',
+    description: '',
     id: 11,
     image: '/mainpic/mn11.jpeg'
+  },
+  {
+    title: 'Coordinators',
+    description: '',
+    id: 12,
+    image: '/mainpic/mn12.jpg'
   }
 ];
 

@@ -1,7 +1,6 @@
 import React from 'react';
 import { motion } from 'motion/react';
 import SplashCursor from '../components/SplashCursor';
-import ProfileCard from '../components/ProfileCard';
 import ChromaGrid from '../components/ChromaGrid';
 
 export function DevPage() {
@@ -9,26 +8,29 @@ export function DevPage() {
     {
       name: 'Leen Leo',
       title: 'Website Developer',
-      handle: 'Leen Leo',
+      handle: 'S6 CSE C',
       status: 'Website Developer',
-      image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=500&h=500&fit=crop',
-      contactText: 'Contact'
+      image: 'https://res.cloudinary.com/dts9wynrs/image/upload/v1771423691/leen2_ptglmm.jpg',
+      contactText: 'Contact',
+      url: 'https://www.instagram.com/leenleo?igsh=MWw0amhmM29zM3doaQ%3D%3D&utm_source=qr'
     },
     {
-      name: 'Cristepher C Biju',
+      name: 'Christepher C Biju',
       title: 'Website Developer',
-      handle: 'Cristepher C Biju',
+      handle: 'S6 CSE B',
       status: 'Website Developer',
       image: 'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=500&h=500&fit=crop',
-      contactText: 'Contact'
+      contactText: 'Contact',
+      url: 'https://www.instagram.com/leenleo?igsh=MWw0amhmM29zM3doaQ%3D%3D&utm_source=qr'
     },
     {
       name: 'Aryan C S',
       title: 'Website Developer',
-      handle: 'Aryan C S',
+      handle: 'S6 CSE A',
       status: 'Website Developer',
-      image: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=500&h=500&fit=crop',
-      contactText: 'Contact'
+      image: 'https://res.cloudinary.com/dts9wynrs/image/upload/v1771429145/aryan_sylfot.jpg',
+      contactText: 'Contact',
+      url: 'https://www.instagram.com/leenleo?igsh=MWw0amhmM29zM3doaQ%3D%3D&utm_source=qr'
     }
   ];
 
@@ -52,37 +54,30 @@ export function DevPage() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
               className="text-5xl md:text-7xl font-bold text-center mb-16"
-              style={{ paddingTop: '50px', color: '#FF6B35' }}
+              style={{ paddingTop: '50px', color: '#ce3d04' }}
             >
               DEVELOPERS
             </motion.h1>
 
-            {/* Cards Grid */}
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 place-items-center">
-              {developers.map((dev, index) => (
-                <motion.div
-                  key={index}
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.6, delay: index * 0.2 }}
-                >
-                  <ProfileCard
-                    avatarUrl={dev.image}
-                    name={dev.name}
-                    title={dev.title}
-                    handle={dev.handle}
-                    status={dev.status}
-                    contactText={dev.contactText}
-                    className="w-80 sm:w-96 md:w-auto text-lg sm:text-xl"
-                    showUserInfo={true}
-                    enableTilt={true}
-                    enableMobileTilt={true}
-                    mobileTiltSensitivity={8}
-                    behindGlowEnabled={false}
-                    onContactClick={() => console.log(`Contact ${dev.name}`)}
-                  />
-                </motion.div>
-              ))}
+            {/* Single ChromaGrid matching the editor layout */}
+            <div className="editor-grid" style={{ position: 'relative', height: '600px' }}>
+              <ChromaGrid
+                items={developers.map(d => ({
+                  image: d.image,
+                  title: d.name,
+                  subtitle: d.title,
+                  handle: d.handle,
+                  url: d.url,
+                  borderColor: '#bc2020',
+                  gradient: 'linear-gradient(145deg,#FF6B35,#000)'
+                }))}
+                radius={300}
+                columns={3}
+                rows={1}
+                damping={0.45}
+                fadeOut={0.6}
+                ease="power3.out"
+              />
             </div>
 
             {/* Editor Section */}
