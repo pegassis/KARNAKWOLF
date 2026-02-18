@@ -524,7 +524,7 @@ const departmentEvents: Record<string, any> = {
     name: 'Civil',
     color: '#FF6B35',
     events: [
-      
+    
     ]
   },
   'electrical': {
