@@ -517,7 +517,52 @@ const departmentEvents: Record<string, any> = {
         registrationUrl: 'https://t4.ftcdn.net/jpg/17/77/94/27/360_F_1777942761_UTY0WxIs5of7FgsgrkLmzqFdCapwHHgN.jpg',
         registerOption: 1,
         contact: [{ name: 'Varghese Biju', phone: '9746323751' }, { name: 'Don Basil', phone: '8590796049' },{ name: 'Amal Wilson', phone: '8590029539' }]
-      }
+      },
+      {
+        id: 2,
+        name: 'SEMINAR AND INNOVATION ',
+        description: 'Seminar and innovation presentation Showcase your innovative ideas and cutting-edge engineering projects. Join us for an inspiring seminar filled with creativity, technology, and groundbreaking discoveries\n\nRules / Guidelines\n\n1.Each team shall consist of a maximum of four (4) participants. Individual participation is permitted.\n2.Participants must be currently enrolled students of a recognized college or university.\n3.All participants are required to carry and present a valid student identification card at the time of the event.\n4.The presentation topic must be related to the field of Mechanical Engineering. Acceptable areas include innovation, technology, research, entrepreneurship, sustainability, or emerging trends within the discipline.\n5.Participants must bring their own laptop/system and the required presentation file (PPT). Only a projector',
+        date: 'February 27, 2026',
+        time: 'Forenoon',
+        venue: 'Room no. M208',
+        prizepool: '₹3,000',
+        fee: '50 per head',
+        badge: 3,
+        image: '/depfolds/mec/idea.jpeg',
+        registrationUrl: 'https://t4.ftcdn.net/jpg/17/77/94/27/360_F_1777942761_UTY0WxIs5of7FgsgrkLmzqFdCapwHHgN.jpg',
+        registerOption: 1,
+        contact: [{ name: ' Nandana Sunil', phone: '6235734127' }, { name: '', phone: '' },{ name: '', phone: '' }]
+      },
+      {
+        id: 3,
+        name: 'CIRCLE SMASH (Mini Game) ',
+        description: 'Prize \n* score 15+ runs to get amazing prize\n*Prize varies based on scoring runs\n*Minimum prize 15+\n\nGame\n There will be a circle with out runs marked on it. Players have to defend from the center circle with their bat and reach the marked circles. Those who score 15+ runs will get gifts.\n\nRules\n•score runs with using bat only \n•stay on the circle\n•Score runs only with defensive shots',
+        date: 'February 27, 2026',
+        time: 'Full Day',
+        venue: 'Near to bike parking ',
+        prizepool: 'Excisting prizes',
+        fee: '10 per person',
+        badge: 3,
+        image: '/depfolds/mec/mini.jpeg',
+        registrationUrl: 'https://t4.ftcdn.net/jpg/17/77/94/27/360_F_1777942761_UTY0WxIs5of7FgsgrkLmzqFdCapwHHgN.jpg',
+        registerOption: 1,
+        contact: [{ name: 'Basil Eldhose', phone: '6235366926' }, { name: 'Martin Antony', phone: '6235887598' },{ name: '', phone: '' }]
+      },
+            {
+        id: 4,
+        name: 'spin craft championship ',
+        description: 'Prize Pool\n1st : 2000\n2nd: 1000\n\nA high-intensity machining challenge testing precision turning, dimensional accuracy, tool control, and time efficiency. Execute real-world lathe operations and prove your technical skill to claim the title of Lathe Master.\n\nRules / Guidelines\n•Participants should wear safety shoes•\nParticipants must complete the official registration form by the given deadline.\n•Each participant will be provided with a lathe machine, cutting tools, tool holders, and work piece material\n•Participants are not allowed to bring their own tools, measuring devices, or materials\n•Participants will have a fixed time limit of 1.5 hours (including setup time) to complete the task\n•Individual Participation Only – no team entries.\n•Participants should have a valid College ID.',
+        date: 'February 27, 2026',
+        time: 'Forenoon',
+        venue: 'MT Lab ',
+        prizepool: '₹3000',
+        fee: '10 per person',
+        badge: 3,
+        image: '/depfolds/mec/spin.jpeg',
+        registrationUrl: 'https://t4.ftcdn.net/jpg/17/77/94/27/360_F_1777942761_UTY0WxIs5of7FgsgrkLmzqFdCapwHHgN.jpg',
+        registerOption: 1,
+        contact: [{ name: 'Midhun', phone: '9037165193' }, { name: '', phone: '' },{ name: '', phone: '' }]
+      },
     ]
   },
   'civil': {
@@ -554,23 +599,6 @@ const departmentEvents: Record<string, any> = {
       },
       {
         id: 2,
-<<<<<<< HEAD
-=======
-        name: 'Tech Talk Series',
-        description: 'Industry expert sessions',
-        date: 'February 26-27, 2026',
-        time: '10:00 AM - 2:00 PM',
-        prizepool: 'TBA',
-        fee: 'FREE',
-        badge: 2,
-        image: '/depfolds/ca/qubits.jpeg',
-        registrationUrl: 'https://t4.ftcdn.net/jpg/17/77/94/27/360_F_1777942761_UTY0WxIs5of7FgsgrkLmzqFdCapwHHgN.jpg',
-        registerOption: 2,
-        contact: [{ name: 'Aman Kapoor', phone: '9967812345' }, { name: 'Ritu Verma', phone: '9789123456' }]
-      },
-      {
-        id: 3,
->>>>>>> 3364c3232e62925a7fd0db292746354a37cbc829
         name: 'TREX: Trail of Clues (TREASURE HUNT)',
         description: 'TREX: Trail of Clues challenges your wit, teamwork, and speed as you race against time to crack clues and uncover secrets hidden in plain sight\n.Get ready for the ultimate adventure where mystery, clues, and hidden treasures await!Every step brings you closer to victory—if you can think smart, move fast, and trust your team.\n\nRules and Regulations:\n* Teams must consist of 4 members only.\n* The hunt is restricted to campus areas only.\n* Clues must be solved in order, skipping or sharing clues is strictly prohibited. \n * Any damage, misconduct, or unsafe behaviour will lead to disqualification.\n* The first team to complete all clues correctly will be declared the winner.\n* The organizers’ decision is final.\n* All participants must report at the venue 30 minutes before the event start time.',
         date: 'February 27, 2026',
@@ -628,12 +656,7 @@ const departmentEvents: Record<string, any> = {
         venue:'Lab 10',
         badge: 3,
         image: '/depfolds/ca/rootforce.jpeg',
-<<<<<<< HEAD
         registrationUrl: 'https://makemypass.com/event/rootforce',
-
-=======
-        registrationUrl: 'https://t4.ftcdn.net/jpg/17/77/94/27/360_F_1777942761_UTY0WxIs5of7FgsgrkLmzqFdCapwHHgN.jpg',
->>>>>>> 3364c3232e62925a7fd0db292746354a37cbc829
         contact: [{ name: 'Vishnupriya', phone: '7907456401' }, { name: 'Jerald', phone: '7025497088' }]
 
       },
@@ -677,13 +700,9 @@ const departmentEvents: Record<string, any> = {
         venue: 'MBA Lecture Hall, MBITS',
         badge: 2,
         image: '/depfolds/ca/robotic.jpeg',
-<<<<<<< HEAD
         registrationUrl: 'https://makemypass.com/event/robotic-workshop',
         registerOption: 1,
-=======
-        registrationUrl: 'https://t4.ftcdn.net/jpg/17/77/94/27/360_F_1777942761_UTY0WxIs5of7FgsgrkLmzqFdCapwHHgN.jpg',
-        registerOption: 2,
->>>>>>> 3364c3232e62925a7fd0db292746354a37cbc829
+
         contact: [{ name: 'Ajin Biju', phone: '8590463106' }, { name: 'Ignatious', phone: '7510130510' }]
       },
       {
