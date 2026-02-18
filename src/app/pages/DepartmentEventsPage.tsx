@@ -577,8 +577,8 @@ const departmentEvents: Record<string, any> = {
         fee: '165',
         venue: 'Drawing Hall(St.Thomas Block, MBITS)',
         prizepool: '₹2,000',
-        badge: 2,
-        image: '/depfolds/ec/arduino.jpeg',
+        badge: 3,
+        image: '/depfolds/civ/titan.jpeg',
         registrationUrl: 'https://makemypass.com/event/aurduino-101',
         registerOption: 1,
         contact: [{ name: 'Mathew Abraham', phone: '8078426690' }, { name: 'Akshara K R', phone: '8848070864' }]
@@ -592,8 +592,8 @@ const departmentEvents: Record<string, any> = {
         fee: '220',
         venue: 'Drawing Hall(St.Thomas Block, MBITS)',
         prizepool: '₹3,000',
-        badge: 2,
-        image: '/depfolds/ec/arduino.jpeg',
+        badge: 3,
+        image: '/depfolds/civ/static.jpeg',
         registrationUrl: 'https://makemypass.com/event/aurduino-101',
         registerOption: 1,
         contact: [{ name: 'Prof. Rinku Kuriakose', phone: '9846271793' },{ name: 'Mariya Stanselavos', phone: '9074185655' }, { name: 'Adhul Mathew', phone: '9383466695' }]
@@ -605,10 +605,10 @@ const departmentEvents: Record<string, any> = {
         date: 'February 27, 2026',
         venue: 'Front Area and Ground',
         badge: 1,
-        image: '/depfolds/ec/arduino.jpeg',
+        image: '/depfolds/civ/heavy.jpeg',
         registrationUrl: 'https://makemypass.com/event/aurduino-101',
         registerOption: 1,
-        contact: [{ name: 'Mr. Basil Eldhose', phone: '9895343839' },{ name: 'Ameenudheen E A', phone: '9188362003' }, { name: 'Eldho Paulose', phone: '8075587355' }]
+        contact: [{ name: 'Mr. Basil Eldhose', phone: '9895343839' }, { name: 'Eldho Paulose', phone: '8075587355' },{ name: 'Ameenudheen E A', phone: '9188362003' }]
       },
     
     ]
@@ -1211,7 +1211,7 @@ export function DepartmentEventsPage() {
           </Link>
 
           <h1
-            className="text-2xl md:text-1xl lg:text-1xl mb-6"
+            className="text-5xl md:text-5xl lg:text-5xl mb-6"
             style={{ color: department.color }}
           >
             {department.name}
