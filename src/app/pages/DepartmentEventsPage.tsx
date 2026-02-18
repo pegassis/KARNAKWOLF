@@ -795,6 +795,20 @@ const departmentEvents: Record<string, any> = {
         registerOption: 1,
         contact: [{ name: 'Ajin Biju', phone: '8590463106' }, { name: 'Ignatious', phone: '7510130510' }]
       },
+      {
+        id: 10,
+        name: 'KERNAL CORNER',
+        description: '🚀 What Awaits You? \n>“Kernel Corner – Play Smart, Experience AI”\nStep into an interactive tech zone where innovation meets entertainment.\n>“Tech, Games, and Intelligence – All at One Corner”.\nExplore AI-powered demos, smart games, and futuristic applications designed to challenge your mind.\n>“Step In for Fun. Step Out with Tech Experience.”\nEngage, learn, and compete while experiencing the power of modern technology firsthand.\n 🔧 Attractions\n* AI & Tech Game Arena\n* Interactive Smart Demos\n* Fun Challenges & Mini Competitions\n* Hands-on Tech Experience\n* Spot Prizes & Recognition.\n\n✨ Don’t Miss the Smartest Corner of the Fest!\n Enter Curious. Exit Inspired.',
+        date: 'February 27-28, 2026',
+        time: '10:00 AM – 4:00 PM',
+        fee: '₹FREE',
+        venue: 'Tech Fest Stall Area / Campus Ground',
+        badge: 4,
+        image: '/depfolds/ca/kernal.jpeg',
+        registrationUrl: 'https://t4.ftcdn.net/jpg/17/77/94/27/360_F_1777942761_UTY0WxIs5of7FgsgrkLmzqFdCapwHHgN.jpg',
+        registerOption: 1,
+        contact: [{ name: 'Aiswarya', phone: '+91 751082 2516' }, { name: 'Aryalakshmi', phone: ' +91 956201 5498' }]
+      }
     ]
   }
 };

@@ -92,12 +92,12 @@ export function HomePage() {
         {/* Top-center MBITS logo on mobile, top-right on desktop - positioned inside hero so it scrolls away */}
         <div className="absolute top-7 left-1/2 -translate-x-1/2 md:left-auto md:right-5 md:translate-x-0 z-10 flex items-center gap-3">
           <img
-            src="https://res.cloudinary.com/dts9wynrs/image/upload/v1771396491/mbitslogo-removebg-preview_1_qzhwyo.png"
+            src="https://res.cloudinary.com/dts9wynrs/image/upload/v1771401106/Mbits_Logo_qhtf76.png"
             alt="MBITS logo"
             className="w-50 h-12 md:w-50 md:h-16 object-contain rounded-md shadow-lg"
             onError={(e) => {
               const t = e.currentTarget as HTMLImageElement;
-              t.src = 'https://res.cloudinary.com/dts9wynrs/image/upload/v1771396491/mbitslogo-removebg-preview_1_qzhwyo.png';
+              t.src = 'https://res.cloudinary.com/dts9wynrs/image/upload/v1771401106/Mbits_Logo_qhtf76.png';
             }}
           />
         </div>

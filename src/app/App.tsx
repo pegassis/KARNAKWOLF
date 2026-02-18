@@ -12,6 +12,7 @@ import { EventDetailsPage } from './pages/EventDetailsPage';
 import { MainEventPage } from './pages/MainEventPage';
 import GalleryPage from './pages/GalleryPage';
 import { AdminLoginPage } from './pages/AdminLoginPage';
+import { DevPage } from './pages/DevPage';
 import { AdminProvider } from './context/AdminContext';
 import { IntroAnimationProvider } from './context/IntroAnimationContext';
 
@@ -38,6 +39,7 @@ export default function App() {
                 <Route path="/mainevent" element={<MainEventPage />} />
                 <Route path="/departments" element={<DepartmentsPage />} />
                 <Route path="/gallery" element={<GalleryPage />} />
+                <Route path="/devpage" element={<DevPage />} />
                 <Route path="/departments/:departmentId" element={<DepartmentEventsPage />} />
                 <Route path="/departments/:departmentId/events/:eventId" element={<EventDetailsPage />} />
                 
