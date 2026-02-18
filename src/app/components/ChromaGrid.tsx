@@ -44,13 +44,13 @@ export const ChromaGrid: React.FC<ChromaGridProps> = ({
 
   const demo: ChromaItem[] = [
     {
-      image: '',
-      title: '',
-      subtitle: '',
-      handle: '',
+      image: 'https://res.cloudinary.com/dts9wynrs/image/upload/v1771421285/rehab_wvcd9y.jpg',
+      title: 'Rehab Hamsa',
+      subtitle: 'Media Wing Head',
+      handle: 'S6 CSE A',
       borderColor: '#4F46E5',
       gradient: 'linear-gradient(145deg, #4F46E5, #000)',
-      url: ''
+      url: 'https://instagram.com/rrrrrehab'
     },
     {
       image: '',
@@ -62,31 +62,31 @@ export const ChromaGrid: React.FC<ChromaGridProps> = ({
       url: ''
     },
     {
-      image: '',
-      title: '',
-      subtitle: '',
-      handle: '',
+      image: 'https://res.cloudinary.com/dts9wynrs/image/upload/v1771421949/eldhopp_pumxuo.jpg',
+      title: 'Eldho P P',
+      subtitle: 'Media Wing ',
+      handle: 'S6 CSE B',
       borderColor: '#F59E0B',
       gradient: 'linear-gradient(165deg, #F59E0B, #000)',
-      url: ''
+      url: 'https://www.instagram.com/e.ldho7?igsh=MWw0amhmM29zM3doaQ%3D%3D&utm_source=qr'
     },
     {
-      image: '',
-      title: '',
-      subtitle: '',
-      handle: '',
+      image: 'https://res.cloudinary.com/dts9wynrs/image/upload/v1771421290/abutahir_rosx4c.jpg',
+      title: 'AbuTahir F',
+      subtitle: 'Media Wing ',
+      handle: 'S6 CSE A',
       borderColor: '#EF4444',
       gradient: 'linear-gradient(195deg, #EF4444, #000)',
-      url: ''
+      url: 'https://www.instagram.com/abu._thahirr?igsh=MWhobHg3Nmc1ZDN1eA=='
     },
     {
-      image: '',
-      title: '',
-      subtitle: '',
-      handle: '',
+      image: 'https://res.cloudinary.com/dts9wynrs/image/upload/v1771423187/abraham_ezuffz.jpg',
+      title: 'Abraham Hayden Joseph',
+      subtitle: 'Media Wing ',
+      handle: ' ',
       borderColor: '#8B5CF6',
       gradient: 'linear-gradient(225deg, #8B5CF6, #000)',
-      url: ''
+      url: 'https://www.instagram.com/hayden_a_elite?igsh=MWhlZjJrcHV3MWJ4Yg=='
     },
     {
       image: '',
