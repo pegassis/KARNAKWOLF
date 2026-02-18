@@ -508,9 +508,9 @@ const departmentEvents: Record<string, any> = {
         name: '🔧 IC ENGINE WORKSHOP',
         description: '🏆 Benefits\n* Practical knowledge of engine components\n* Understanding of working cycles and mechanisms\n* Hands-on exposure to real engine models\n* Participation certificates will be provided 🎓\n\n⚙️ Learn the heart of automobiles. Understand how engines power the world.\n📘 About the Workshop\nThe IC Engine Workshop is a hands-on technical session designed to help participants understand the working principles of internal combustion engines.\nParticipants will get practical exposure to engine components, working cycles, and real-time demonstrations. The workshop focuses on explaining how fuel converts into mechanical power and how different engine systems operate together. This session is ideal for students interested in automobiles, mechanical systems, and engine technology.\n\n🔥 Workshop Highlights\n* Live Engine Demonstration\n* Hands-on Tool Usage\n* Engine Component Explanation\n* Working Cycle Demonstration\n\n📌 Rules / Guidelines\n* Participants must follow workshop safety instructions\n* Proper handling of engine components is mandatory\n* Workshop is strictly for educational purposes\n* Participants must report on time',
         date: 'February 27, 2026',
-        time: 'Forenoon',
+        time: 'Forenoon 9.00am',
         venue: 'Automobile lab',
-        prizepool: '₹3,000',
+        prizepool: 'N/A',
         fee: '30',
         badge: 2,
         image: '/depfolds/mec/icengine.jpeg',
@@ -657,10 +657,6 @@ const departmentEvents: Record<string, any> = {
         badge: 3,
         image: '/depfolds/ca/rootforce.jpeg',
         registrationUrl: 'https://makemypass.com/event/rootforce',
-<<<<<<< HEAD
-=======
-
->>>>>>> d222c4dd22549e886ee5f42fe6162e99c7af55d6
         contact: [{ name: 'Vishnupriya', phone: '7907456401' }, { name: 'Jerald', phone: '7025497088' }]
 
       },
