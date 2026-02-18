@@ -801,12 +801,12 @@ const departmentEvents: Record<string, any> = {
         description: '🚀 What Awaits You? \n>“Kernel Corner – Play Smart, Experience AI”\nStep into an interactive tech zone where innovation meets entertainment.\n>“Tech, Games, and Intelligence – All at One Corner”.\nExplore AI-powered demos, smart games, and futuristic applications designed to challenge your mind.\n>“Step In for Fun. Step Out with Tech Experience.”\nEngage, learn, and compete while experiencing the power of modern technology firsthand.\n 🔧 Attractions\n* AI & Tech Game Arena\n* Interactive Smart Demos\n* Fun Challenges & Mini Competitions\n* Hands-on Tech Experience\n* Spot Prizes & Recognition.\n\n✨ Don’t Miss the Smartest Corner of the Fest!\n Enter Curious. Exit Inspired.',
         date: 'February 27-28, 2026',
         time: '10:00 AM – 4:00 PM',
-        fee: '₹FREE',
+        fee: 'FREE',
         venue: 'Tech Fest Stall Area / Campus Ground',
-        badge: 4,
+        badge: 1,
         image: '/depfolds/ca/kernal.jpeg',
         registrationUrl: 'https://t4.ftcdn.net/jpg/17/77/94/27/360_F_1777942761_UTY0WxIs5of7FgsgrkLmzqFdCapwHHgN.jpg',
-        registerOption: 1,
+        registerOption: 2,
         contact: [{ name: 'Aiswarya', phone: '+91 751082 2516' }, { name: 'Aryalakshmi', phone: ' +91 956201 5498' }]
       }
     ]
@@ -1086,7 +1086,7 @@ export function DepartmentEventsPage() {
 
   if (!department) {
     return (
-      <div className="min-h-screen pt-32 pb-16 flex items-center justify-center">
+      <div className="min-h-screen pt-32 pb-100 flex items-center justify-center">
         <div className="text-center">
           <h1 className="text-4xl mb-4">Department Not Found</h1>
           <Link to="/departments" className="text-[#FF6B35] hover:underline">
@@ -1098,7 +1098,7 @@ export function DepartmentEventsPage() {
   }
 
   return (
-    <div className="min-h-screen pt-24 lg:pt-32 pb-16 relative">
+    <div className="min-h-screen pt-24 lg:pt-32 pb-100 relative">
       {/* Lightning Background for Electrical Department */}
       {departmentId === 'electrical' && (
         <div className="fixed inset-0 w-full h-full z-0 pointer-events-none overflow-hidden">
