@@ -742,17 +742,14 @@ const departmentEvents: Record<string, any> = {
         date: 'February 28, 2026',
         time: 'TBA',
         prizepool: '₹3000',
-        fee: '₹60',
+        fee: '60',
         venue:'Lab 10',
         badge: 3,
         image: '/depfolds/ca/rootforce.jpeg',
         registrationUrl: 'https://t4.ftcdn.net/jpg/17/77/94/27/360_F_1777942761_UTY0WxIs5of7FgsgrkLmzqFdCapwHHgN.jpg',
-<<<<<<< HEAD
-        registerOption: 1,
-        contact: [{ name: 'Geeta Reddy', phone: '9981234567' }, { name: 'Karan Tiwari', phone: '9901345678' }]
-=======
+
         contact: [{ name: 'Vishnupriya', phone: '7907456401' }, { name: 'Jerald', phone: '7025497088' }]
->>>>>>> e75d072686664693b874edf444a2d1e24dffd4fa
+
       },
       {
         id: 7,
