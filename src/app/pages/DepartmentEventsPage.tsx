@@ -42,7 +42,6 @@ const departmentEvents: Record<string, any> = {
       {
         id: 1,
         name: 'VR Vortex',
-       
         description: 'Virtual Reality redefines how we learn, create, and experience the digital world by immersing us in environments beyond physical limits.At this VR Expo, innovation meets imagination as cutting-edge technology transforms ideas into interactive realities.devStep in, explore the future, and experience technology not just seen—but lived.\n Step in, explore the future, and experience technology not just seen—but lived.\n\n\n',
         date: 'February 27-28, 2026',
         time: 'FULL DAY',
@@ -50,7 +49,7 @@ const departmentEvents: Record<string, any> = {
         badge: 1,
         venue: 'Room 130',
         image: '/depfolds/comps/vrposter.jpeg',
-        registrationUrl: 'https://t4.ftcdn.net/jpg/17/77/94/27/360_F_1777942761_UTY0WxIs5of7FgsgrkLmzqFdCapwHHgN.jpg',
+        registrationUrl: 'https://makemypass.com/event/vr-vortex',
         registerOption: 1,
         contact: [{ name: 'Adinath', phone: '8921798670' }, { name: 'Anand', phone: '6238763675' }]
       },
@@ -65,7 +64,7 @@ const departmentEvents: Record<string, any> = {
         badge: 2,
         venue: 'Computer Lab 3',
         image: '/depfolds/comps/GAMING_XP.jpeg',
-        registrationUrl: 'https://t4.ftcdn.net/jpg/17/77/94/27/360_F_1777942761_UTY0WxIs5of7FgsgrkLmzqFdCapwHHgN.jpg',
+        registrationUrl: 'https://makemypass.com/event/gamingxp',
         registerOption: 1,
         contact: [{ name: 'Rehab ', phone: '7907844588' }, { name: 'Fidha ', phone: '9947304940' }]
       },
@@ -80,7 +79,7 @@ const departmentEvents: Record<string, any> = {
         badge: 3,
         venue: 'Computer Lab 8',
         image: '/depfolds/comps/pixelia.jpeg',
-        registrationUrl: 'https://t4.ftcdn.net/jpg/17/77/94/27/360_F_1777942761_UTY0WxIs5of7FgsgrkLmzqFdCapwHHgN.jpg',
+        registrationUrl: 'https://makemypass.com/event/pixelia',
         registerOption: 1,
         contact: [{ name: 'Hail Mary', phone: '8078925526' }, { name: 'Joel George', phone: '9188492986' }]
       },
@@ -95,7 +94,7 @@ const departmentEvents: Record<string, any> = {
         badge: 3,
         venue: 'Computer Lab 3',
         image: '/depfolds/comps/puzzle.jpeg',
-        registrationUrl: 'https://t4.ftcdn.net/jpg/17/77/94/27/360_F_1777942761_UTY0WxIs5of7FgsgrkLmzqFdCapwHHgN.jpg',
+        registrationUrl: 'https://makemypass.com/event/pixel-puzzle',
         registerOption: 1,
         contact: [{ name: 'Yeldho', phone: '9495171414' }, { name: 'Agnus', phone: '9544266892' }]
       },
@@ -109,7 +108,7 @@ const departmentEvents: Record<string, any> = {
         badge: 4,
         venue: 'Basketball court',
         image: '/depfolds/comps/splash.jpeg',
-        registrationUrl: 'https://t4.ftcdn.net/jpg/17/77/94/27/360_F_1777942761_UTY0WxIs5of7FgsgrkLmzqFdCapwHHgN.jpg',
+        registrationUrl: 'https://makemypass.com/event/splash-pitch',
         registerOption: 1,
         contact: [{ name: 'Kevin', phone: '8075723712' }, { name: 'Ryan', phone: '6238890177' }]
       },
@@ -138,7 +137,7 @@ const departmentEvents: Record<string, any> = {
         fee: 'FREE',
         venue: 'Computer Lab 8',
         image: '/depfolds/comps/codepredict.jpeg',
-        registrationUrl: 'https://t4.ftcdn.net/jpg/17/77/94/27/360_F_1777942761_UTY0WxIs5of7FgsgrkLmzqFdCapwHHgN.jpg',
+        registrationUrl: 'https://makemypass.com/event/code-predict-conquer',
         registerOption: 2,
         contact: [{ name: 'Adwaith K S', phone: '9037861197' }, { name: 'Anna Palanattu', phone: '6235432740' }],
       
@@ -154,7 +153,7 @@ const departmentEvents: Record<string, any> = {
         fee: '60',
         venue: 'Computer Lab 8',
         image: '/depfolds/comps/blindcoding.jpeg',
-        registrationUrl: 'https://t4.ftcdn.net/jpg/17/77/94/27/360_F_1777942761_UTY0WxIs5of7FgsgrkLmzqFdCapwHHgN.jpg',
+        registrationUrl: 'https://makemypass.com/event/blindx-code',
         registerOption: 1,
         contact: [{ name: 'Leen Leo', phone: '8075750254' }, { name: 'Emil Mareena P', phone: '6235868192' }]
       ,
@@ -170,7 +169,7 @@ const departmentEvents: Record<string, any> = {
         fee: '60',
         venue: 'Computer Lab 9',
         image: '/depfolds/comps/reversecoding.jpeg',
-        registrationUrl: 'https://t4.ftcdn.net/jpg/17/77/94/27/360_F_1777942761_UTY0WxIs5of7FgsgrkLmzqFdCapwHHgN.jpg',
+        registrationUrl: 'https://makemypass.com/event/coderewind',
         registerOption: 1,
         contact: [{ name: 'Christepher C Biju', phone: '8921057348' }, { name: 'Basil Biju', phone: '7558850154' }]
       ,
@@ -185,7 +184,7 @@ const departmentEvents: Record<string, any> = {
         fee: '60',
         venue: 'Computer Lab 7',
         image: '/depfolds/comps/prompt.jpeg',
-        registrationUrl: 'https://t4.ftcdn.net/jpg/17/77/94/27/360_F_1777942761_UTY0WxIs5of7FgsgrkLmzqFdCapwHHgN.jpg',
+        registrationUrl: 'https://makemypass.com/event/prompt-to-pixel',
         registerOption: 1,
         contact: [{ name: 'Gayathridevi K', phone: '8921169842' }, { name: 'Rinsa Fathima M A', phone: '8606033545' }]
       ,
@@ -201,7 +200,7 @@ const departmentEvents: Record<string, any> = {
         fee: '20 per person',
         venue: 'Campus',
         image: '/depfolds/comps/techhunt.jpeg',
-        registrationUrl: 'https://t4.ftcdn.net/jpg/17/77/94/27/360_F_1777942761_UTY0WxIs5of7FgsgrkLmzqFdCapwHHgN.jpg',
+        registrationUrl: 'https://makemypass.com/event/tech-hunt',
         registerOption: 1,
         contact: [{ name: 'Anudev', phone: '9778155243' }, { name: 'Anna', phone: '8714224467' }]
       ,
@@ -217,7 +216,7 @@ const departmentEvents: Record<string, any> = {
         fee: '40',
         venue: 'Room M131',
         image: '/depfolds/comps/netriot.jpeg',
-        registrationUrl: 'https://t4.ftcdn.net/jpg/17/77/94/27/360_F_1777942761_UTY0WxIs5of7FgsgrkLmzqFdCapwHHgN.jpg',
+        registrationUrl: 'https://makemypass.com/event/netriot',
         registerOption: 1,
         contact: [{ name: 'Febin', phone: '9562767233' }, { name: 'Sain', phone: '8139879470' }]
       ,
@@ -233,7 +232,7 @@ const departmentEvents: Record<string, any> = {
         fee: 'FREE',
         venue: 'Computer Lab 9',
         image: '/depfolds/comps/thinktank.jpeg',
-        registrationUrl: 'https://t4.ftcdn.net/jpg/17/77/94/27/360_F_1777942761_UTY0WxIs5of7FgsgrkLmzqFdCapwHHgN.jpg',
+        registrationUrl: 'https://makemypass.com/event/the-thinktank',
         registerOption: 2,
         contact: [{ name: 'Samuel', phone: '8137897726' }, { name: 'Helvin', phone: '8590018466' }]
       ,
@@ -264,7 +263,7 @@ const departmentEvents: Record<string, any> = {
         prizepool: '₹3500',
         venue: 'Room M131',
         image: '/depfolds/comps/ipl.jpeg',
-        registrationUrl: 'https://t4.ftcdn.net/jpg/17/77/94/27/360_F_1777942761_UTY0WxIs5of7FgsgrkLmzqFdCapwHHgN.jpg',
+        registrationUrl: 'https://makemypass.com/event/pitch-to-pocket',
         registerOption: 1,
         contact: [{ name: 'Joel', phone: '7907502537' }, { name: 'Seetha', phone: '9074490518' }]
       ,
@@ -279,7 +278,7 @@ const departmentEvents: Record<string, any> = {
         fee: '*For IEEE Members – ₹0 ( Free ) \n  *For Non-IEEE Members – ₹30',
         venue: 'Computer Lab 7',
         image: '/depfolds/comps/vibe.jpeg',
-        registrationUrl: 'https://t4.ftcdn.net/jpg/17/77/94/27/360_F_1777942761_UTY0WxIs5of7FgsgrkLmzqFdCapwHHgN.jpg',
+        registrationUrl: 'https://makemypass.com/event/vibe-exe',
         registerOption: 1,
         contact: [{ name: 'Navaneeth', phone: '8281450604' }]
       ,
@@ -294,7 +293,7 @@ const departmentEvents: Record<string, any> = {
         fee: '*For IEEE Members – ₹0 ( Free ) \n  *For Non-IEEE Members – ₹30',
         venue: 'Lab 7',
         image: '/depfolds/comps/hack.jpeg',
-        registrationUrl: 'https://t4.ftcdn.net/jpg/17/77/94/27/360_F_1777942761_UTY0WxIs5of7FgsgrkLmzqFdCapwHHgN.jpg',
+        registrationUrl: 'https://makemypass.com/event/hack-demo-defend',
         registerOption: 1,
         contact: [{ name: 'Navaneeth', phone: '8281450604' }]
       ,
@@ -308,7 +307,7 @@ const departmentEvents: Record<string, any> = {
         time: 'FULL DAY',
         fee: 'FREE',
         venue: 'CSE Block Corridors',
-        image: '/depfolds/comps/funfinity.jpeg',
+        image: '/depfolds/comps/minigames.jpeg',
         registrationUrl: 'https://t4.ftcdn.net/jpg/17/77/94/27/360_F_1777942761_UTY0WxIs5of7FgsgrkLmzqFdCapwHHgN.jpg',
         registerOption: 2,
         contact: [{ name: 'Vismaya', phone: '9544251901' }, { name: 'Vinayathri', phone: '9778140400' }]
@@ -323,7 +322,7 @@ const departmentEvents: Record<string, any> = {
         time: 'FULL DAY',
         fee: 'FREE',
         venue: 'Open Area CSE Block',
-        image: '/depfolds/comps/ewaste.jpeg',
+        image: '/depfolds/comps/mecha.jpeg',
         registrationUrl: 'https://t4.ftcdn.net/jpg/17/77/94/27/360_F_1777942761_UTY0WxIs5of7FgsgrkLmzqFdCapwHHgN.jpg',
         registerOption: 2,
         contact: [{ name: 'Manna', phone: ' 8089581794' }]
@@ -354,7 +353,7 @@ const departmentEvents: Record<string, any> = {
       {
         id: 2,
         name: 'voltera (bulb making workshop)',
-        description: 'Duration: 2hr\n\n Step into a warm and inspiring learning experience at our Bulb Making Workshop. Discover the simple science behind how a bulb lights up and enjoy creating your own model with gentle guidance. This hands-on session is designed to spark curiosity, encourage creativity, and brighten your understanding in a fun and welcoming environment. /n/n Last date for reg: 26 feb',
+        description: 'Duration: 2hr\n\n Step into a warm and inspiring learning experience at our Bulb Making Workshop. Discover the simple science behind how a bulb lights up and enjoy creating your own model with gentle guidance. This hands-on session is designed to spark curiosity, encourage creativity, and brighten your understanding in a fun and welcoming environment.\n\nLast date for reg: 26 feb\n\nEach participant made their own bulb and received it at the end.',
         date: 'February 28, 2026',
         time: '9:30 PM - 11:30 PM',
         fee: '110',
@@ -396,7 +395,7 @@ const departmentEvents: Record<string, any> = {
       {
         id: 5,
         name: 'arducode (arduino simulation competition)',
-        description: 'Duration:2hr \n\nEnter a world where ideas come alive through code and creativity. Our Arduino Simulation Competition offers a vibrant platform for participants to design and simulate innovative embedded systems in a dynamic virtual environment. \nWith every circuit you connect and every line of code you write, you’ll shape intelligent solutions that reflect precision and imagination. This event celebrates thoughtful design, technical elegance, and the excitement of transforming simple concepts into smart digital creations. Join us and let your innovation shine.\n\n1st Prize: Rs.2000 \n2nd Prize: Rs.1000 \n\nGeneral Guidelines:\n • Each team can have a maximum of  1-2 members.\n • Participants must design and simulate an Arduino-based project using simulation software (Proteus / Tinkercad ). \n• The coding part for an Arduino Simulation Competition can be done in (Arduino IDE). \n• Certificate will be provided.' ,
+        description: 'Duration:2hr \n\nEnter a world where ideas come alive through code and creativity. Our Arduino Simulation Competition offers a vibrant platform for participants to design and simulate innovative embedded systems in a dynamic virtual environment. \nWith every circuit you connect and every line of code you write, you’ll shape intelligent solutions that reflect precision and imagination. This event celebrates thoughtful design, technical elegance, and the excitement of transforming simple concepts into smart digital creations. Join us and let your innovation shine.\n\n1st Prize: Rs.2000 \n2nd Prize: Rs.1000 \n\nGeneral Guidelines:\n • Each team can have a maximum of  1-2 members.\n•	Participants must design and simulate an Arduino-based project using simulation software Proteus \n• The coding part for an Arduino Simulation Competition can be done in (Arduino IDE). \n• Certificate will be provided.' ,
         date: 'February 28, 2026',
         time: '9:00 AM -11:00 AM',
         fee: '170 per team',
@@ -411,7 +410,7 @@ const departmentEvents: Record<string, any> = {
       {
         id: 6,
         name: 'linex (line follower robotics)',
-        description: 'Step into the world of smart technology and friendly competition at our Line Follower Robot Competition. This exciting event invites participants to design and build autonomous robots that gracefully follow a marked path with precision and speed. It’s a wonderful opportunity to explore creativity, teamwork, and problem-solving while applying your knowledge of robotics and programming. \nLet your innovation lead the way as your robot navigates curves and challenges with confidence. Join us for a day filled with learning, excitement, and the joy of turning ideas into motion! \n\n1st Prize: Rs.6000 \n2nd Prize: Rs.4000 \n\nGENERAL GUIDELINES: \n• There will be check-in for the participants. \n• Every team should have at least one laptop. \n• Your bots must be within the size limit 20cm x 20cm x 20cm (l x b x h). \n• Board size will be 7(height)x10(length).  \n• Track will be solid black.  \n• Track size will be 25mm in width. \n• You could use any microcontroller. \n • Battery pack should be onboard and max permissible voltage is 12V.\n\n SCORING CRITERIA\n Task points will be as follows: \n• Successfully travelling through each section - 20 points \n • Successfully stopping at the finishing point - 40 points  \n• Total - 100 points \n\nNegative points\n After starting the competition, if any physical intervention is noticed then a hand touch penalty of 10 points shall be reduced for each hand touch.\n\nLast date for reg: 26 Feb',
+        description: 'Step into the world of smart technology and friendly competition at our Line Follower Robot Competition. This exciting event invites participants to design and build autonomous robots that gracefully follow a marked path with precision and speed. It’s a wonderful opportunity to explore creativity, teamwork, and problem-solving while applying your knowledge of robotics and programming. \nLet your innovation lead the way as your robot navigates curves and challenges with confidence. Join us for a day filled with learning, excitement, and the joy of turning ideas into motion! \n\n1st Prize: Rs.6000 \n2nd Prize: Rs.4000 \n\nGENERAL GUIDELINES: \n•	There will be check-in for the participants.\n•	Every team should have at least one laptop.\n•	Your bots must be within the size limit 20cm x 20cm x 20cm (l x b x h).\n•	Board size will be 7feet(height)x10feet(length). \n•	Track will be solid black. \n•	Track size will be 25mm in width.\n•	You could use any microcontroller. \n•	Battery pack should be onboard and max permissible voltage is 12V.\n•	If the robot moves outside the line or track, the participant is allowed to pick up the robot and place it back at the last checkpoint successfully reached.\n•	Participants are not allowed to touch the robot while it is running during the competition\n\nScoring criteria:\nTask points will be as follows:\n•	Successfully travelling through each section - 20 points \n•	Successfully stopping at the finishing point - 40 points \n•	Total - 100 points\n\nNegative point:\n•	If a participant touches the robot during the run, a penalty of –10 marks will be given for each touch.',
         date: 'February 27, 2026',
         time: 'Starts at 10 AM',
         fee: '200',
@@ -426,7 +425,7 @@ const departmentEvents: Record<string, any> = {
       {
         id: 7,
         name: 'route it right (pcb design simulation competition)',
-        description: 'Duration: 3hr \n\nStep into an exclusive arena of innovation and precision with our PCB Design Simulation Competition. This premium event invites participants to demonstrate mastery in PCB layout, precision routing, and design optimization within a professional simulation environment. Engineered to challenge both creativity and technical depth, the competition emphasizes innovation, efficiency, and aesthetic clarity in every trace and connection. It is an opportunity to showcase advanced design thinking, attention to detail, and a refined understanding of circuit architecture. \nJoin us for an elite experience where sophistication meets technology, and every design reflects true engineering excellence\n\n1st Prize: Rs.2000 \n2nd Prize: Rs.1000 \n\nLast date for reg: 26 Feb',
+        description: 'Duration: 3hr \n\nStep into an exclusive arena of innovation and precision with our PCB Design Simulation Competition. This premium event invites participants to demonstrate mastery in PCB layout, precision routing, and design optimization within a professional simulation environment. Engineered to challenge both creativity and technical depth, the competition emphasizes innovation, efficiency, and aesthetic clarity in every trace and connection. It is an opportunity to showcase advanced design thinking, attention to detail, and a refined understanding of circuit architecture. \nJoin us for an elite experience where sophistication meets technology, and every design reflects true engineering excellence\n\n1st Prize: Rs.2000 \n2nd Prize: Rs.1000 \n\nLast date for reg: 26 Feb\n\nRules and Regulations:\n•Open to all branch students\n•Participants can compete individually or in teams (maximum 2 members)\n•Allowed software is KiCad\n•The design must be original. Copying existing PCB layouts is strictly prohibited\n•	Participants must submit schematic files, PCB layout files, Gerber files, and a PDF of the design.\n•	The final design must pass Design Rule Check (DRC) without errors\n\nScoring criteria\n:•	Circuit Functionality & Correctness                     - 25\n•	Component Placement & Layout Optimization    - 20\n•	Routing Quality (trace width, clearance, vias )     - 20\n•	DRC Compliance (Error-free design)                    -15\n•	Board Aesthetics, Neatness & Proper Labelling    -15\n•	Innovation / Design Efficiency                               -5',
         date: 'February 27, 2026',
         time: '9:30 AM - 12:30 PM',
         fee: '130 per team',
@@ -524,6 +523,48 @@ const departmentEvents: Record<string, any> = {
     name: 'Civil',
     color: '#FF6B35',
     events: [
+      {
+        id: 1,
+        name: 'TITAN TENSION (BRIDGE MAKING COMPETITION)',
+        description: 'The Bridge Making Competition is a hands-on engineering event that challenges students to design and construct a model bridge using specified materials within given constraints.\n\n📝Certificates are provided\n\n📌Rules and regulations \n1. Each team can consist of 2–3 members. \n2. The bridge must span 30 cm.\n3.The material used is Wood Ice Cream Sticks.\n4.Quantity of materials will be given.\n5. Total time allotted : 90 minutes\n\n📌Testing and Loading \n1. After construction, bridges will be tested.\n2. The maximum load sustained by the bridge will be recorded.',
+        date: 'February 28, 2026',
+        time: '10:00 AM',
+        fee: '165',
+        venue: 'Drawing Hall(St.Thomas Block, MBITS)',
+        prizepool: '₹2,000',
+        badge: 2,
+        image: '/depfolds/ec/arduino.jpeg',
+        registrationUrl: 'https://makemypass.com/event/aurduino-101',
+        registerOption: 1,
+        contact: [{ name: 'Mathew Abraham', phone: '8078426690' }, { name: 'Akshara K R', phone: '8848070864' }]
+      },
+      {
+        id: 2,
+        name: 'STATICA (STILL MODEL COMPETITION)',
+        description: 'As part of Tech Fest ( KARNAK 26 ),The Department of Civil Engineering, Mar Baselios Institute of Technology and Science Kothamangalam presents STILL MODEL COMPETITION\n\nEligibility - All Civil Engineering (UG, PG & Diploma) Students\n\n📌Rules and regulations \n1) Static, original civil model only.\n2 ) Bring display and description chart.\n3 ) No hazardous materials.\n4 ) 3–5 minute explanation; judges final.\n5 ) Innovation and presentation based evaluation; violation disqualified.\n\nLast Date of Registration  - 25/02/26📅',
+        date: 'February 27, 2026',
+        time: '10:00 AM',
+        fee: '220',
+        venue: 'Drawing Hall(St.Thomas Block, MBITS)',
+        prizepool: '₹3,000',
+        badge: 2,
+        image: '/depfolds/ec/arduino.jpeg',
+        registrationUrl: 'https://makemypass.com/event/aurduino-101',
+        registerOption: 1,
+        contact: [{ name: 'Prof. Rinku Kuriakose', phone: '9846271793' },{ name: 'Mariya Stanselavos', phone: '9074185655' }, { name: 'Adhul Mathew', phone: '9383466695' }]
+      },
+      {
+        id: 3,
+        name: 'The Heavy Haulage Show',
+        description: 'A Civil Engineering Expo Show is a platform where students showcase innovative projects, models, and modern construction techniques. It highlights practical skills, engineering creativity, and real-world applications in areas like structures, transportation, and sustainable development.',
+        date: 'February 27, 2026',
+        venue: 'Front Area and Ground',
+        badge: 1,
+        image: '/depfolds/ec/arduino.jpeg',
+        registrationUrl: 'https://makemypass.com/event/aurduino-101',
+        registerOption: 1,
+        contact: [{ name: 'Mr. Basil Eldhose', phone: '9895343839' },{ name: 'Ameenudheen E A', phone: '9188362003' }, { name: 'Eldho Paulose', phone: '8075587355' }]
+      },
     
     ]
   },
