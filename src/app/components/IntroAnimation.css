@@ -14,10 +14,10 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100px;
-  height: 100px;
+  width: 260px;
+  height: 260px;
   font-family: "Inter", sans-serif;
-  font-size: 1.2em;
+  font-size: 2.4em;
   font-weight: 600;
   color: #fff;
   border-radius: 50%;
@@ -70,8 +70,8 @@
   z-index: 1;
   border-radius: 50ch;
   border: none;
-  filter: blur(2px);
-  margin: 0.35em;
+  filter: blur(1px);
+  margin: 0.6em;
 }
 
 .loader-letter:nth-child(1) {
@@ -129,45 +129,45 @@
 
 .star {
   position: absolute;
-  width: 6px;
-  height: 6px;
+  width: 10px;
+  height: 10px;
   border-radius: 50%;
   background-color: #fff;
-  transform: translate(20px, 90px);
+  transform: translate(40px, 140px);
   animation: blur-anim 2s infinite;
   box-shadow: 0 0 8px 0 #fff;
-  filter: blur(4px);
+  filter: blur(3px);
   opacity: 0.2;
 }
 
 .star:nth-of-type(2) {
-  transform: translate(56px, 46px);
-  scale: 1.05;
+  transform: translate(106px, 86px);
+  scale: 1.25;
   animation-delay: 0.2s;
 }
 .star:nth-of-type(3) {
-  transform: translate(-26px, 56px);
-  scale: 1.4;
+  transform: translate(-56px, 86px);
+  scale: 1.6;
   animation-delay: 0.4s;
 }
 .star:nth-of-type(4) {
-  transform: translate(-50px, -70px);
-  scale: 0.95;
+  transform: translate(-110px, -150px);
+  scale: 1;
   animation-delay: 0.7s;
 }
 .star:nth-of-type(5) {
-  transform: translate(32px, -66px);
-  scale: 1.3;
+  transform: translate(72px, -146px);
+  scale: 1.5;
   animation-delay: 0.35s;
 }
 .star:nth-of-type(6) {
-  transform: translate(82px, -36px);
-  scale: 1;
+  transform: translate(162px, -76px);
+  scale: 1.1;
   animation-delay: 0.9s;
 }
 .star:nth-of-type(7) {
-  transform: translate(-92px, 26px);
-  scale: 1;
+  transform: translate(-192px, 66px);
+  scale: 1.2;
   animation-delay: 0.95s;
 }
 
