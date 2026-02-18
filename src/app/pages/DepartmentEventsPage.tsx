@@ -548,12 +548,13 @@ const departmentEvents: Record<string, any> = {
         fee: '60',
         badge: 3,
         image: '/depfolds/ca/efootball.jpeg',
-        registrationUrl: 'https://t4.ftcdn.net/jpg/17/77/94/27/360_F_1777942761_UTY0WxIs5of7FgsgrkLmzqFdCapwHHgN.jpg',
+        registrationUrl: 'https://makemypass.com/event/pes-e-football',
         registerOption: 1,
         contact: [{ name: 'Neeraj', phone: '8086368571' }, { name: 'Vyshnav', phone: '9496669914' },{ name: 'Kiran MS', phone: '8606811261' },{ name: 'Niranjan', phone: '8848669127' }]
       },
       {
         id: 2,
+
         name: 'Tech Talk Series',
         description: 'Industry expert sessions',
         date: 'February 26-27, 2026',
@@ -568,6 +569,7 @@ const departmentEvents: Record<string, any> = {
       },
       {
         id: 3,
+
         name: 'TREX: Trail of Clues (TREASURE HUNT)',
         description: 'TREX: Trail of Clues challenges your wit, teamwork, and speed as you race against time to crack clues and uncover secrets hidden in plain sight\n.Get ready for the ultimate adventure where mystery, clues, and hidden treasures await!Every step brings you closer to victory—if you can think smart, move fast, and trust your team.\n\nRules and Regulations:\n* Teams must consist of 4 members only.\n* The hunt is restricted to campus areas only.\n* Clues must be solved in order, skipping or sharing clues is strictly prohibited. \n * Any damage, misconduct, or unsafe behaviour will lead to disqualification.\n* The first team to complete all clues correctly will be declared the winner.\n* The organizers’ decision is final.\n* All participants must report at the venue 30 minutes before the event start time.',
         date: 'February 27, 2026',
@@ -577,12 +579,12 @@ const departmentEvents: Record<string, any> = {
         venue: 'TBA',
         badge: 3,
         image: '/depfolds/ca/treasurehunt.jpeg',
-        registrationUrl: 'https://t4.ftcdn.net/jpg/17/77/94/27/360_F_1777942761_UTY0WxIs5of7FgsgrkLmzqFdCapwHHgN.jpg',
+        registrationUrl: 'https://makemypass.com/event/trextrail-of-clues',
         registerOption: 1,
         contact: [{ name: 'Ashli Sojan', phone: '62357 36827' }, { name: 'Anna Rose Joshi', phone: '62382 54635' }]
       },
       {
-        id: 4,
+        id: 3,
         name: 'CODE QUEST (CODING CHALLENGE)',
         description: 'Enter the world of Code Quest where coders battle through brain-teasing problems and race against time.Sharpen your logic, trust your skills, and turn ideas into powerful code.The quest begins with a single line of code!\n\nRules & Regulations\n1.This is an individual participation event\n2.Participants must solve the given problem on the provided system only\n3.The competition will be conducted strictly in C programming language\n4.Participants must complete and submit their code within the allotted time.\n5.Internet access is strictly prohibited during the contest.\n6.Mobile phones, external storage devices, and any electronic gadgets are not 	allowed.\n7.Participants are not allowed to discuss or share solutions with others.\n8.Copying, plagiarism, or any form of malpractice will lead to immediate disqualification.\n9.Participants must submit their code before the deadline.\n10.The submitted program must compile and run without errors\n11.Participants must include their Name and ID in the program file.\n12.Winners will be decided based on:\nCorrectness of the output\nEfficiency of the code\nLogical approach\nTime of submission\n13.Participants must remain in the lab until the event concludes.\n14.The decision of the judges and coordinators will be final.',
         date: 'February 27, 2026',
@@ -592,12 +594,12 @@ const departmentEvents: Record<string, any> = {
         venue: 'TBA',
         badge: 3,
         image: '/depfolds/ca/codequest.jpeg',
-        registrationUrl: 'https://t4.ftcdn.net/jpg/17/77/94/27/360_F_1777942761_UTY0WxIs5of7FgsgrkLmzqFdCapwHHgN.jpg',
+        registrationUrl: 'https://makemypass.com/event/codequest',
         registerOption: 1,
         contact: [{ name: 'Aparna', phone: '7012713377' }, { name: 'Alan', phone: '6238236726' }]
       },
       {
-        id: 5,
+        id: 4,
         name: 'SHUTTER STORIES (PHOTOGRAPHY COMPETITION)',
         description: 'SHUTTER STORIES is a creative photography competition that encourages participants to capture powerful moments through their lens. The event focuses on originality, creativity, and theme-based photography. Participants are expected to present their best visual stories that reflect emotion, perspective, and artistic expression.\n\nRules & Regulations:\n1. Each participant can submit a maximum of 2 entries.\n2. The theme will be announced prior to the competition.\n3. Photographs must strictly relate to the given theme.\n4. Photos must be submitted in JPEG/PNG format only.\n5. Minimum resolution required: 1920 × 1080 pixels.\n6. All photographs must be the original work of the participant.\n7. No copyrighted, downloaded, or stock images are allowed.\n8. AI-generated images are strictly prohibited.\n9. Basic editing such as brightness, contrast, cropping, and color correction is allowed.\n10. Heavy manipulation, object addition/removal, or composite images are not permitted unless specified.\n11. Watermarks, signatures, or borders must not be added.\n12. There is no restriction on device type (Mobile/DSLR/Mirrorless allowed).\n13. Plagiarism or malpractice will lead to immediate disqualification.\n14. The decision of judges and coordinators will be final and binding.',
         date: 'February 27, 2026',
@@ -607,12 +609,12 @@ const departmentEvents: Record<string, any> = {
         venue: 'TBA',
         badge: 3,
         image: '/depfolds/ca/shutter.jpeg',
-        registrationUrl: 'https://t4.ftcdn.net/jpg/17/77/94/27/360_F_1777942761_UTY0WxIs5of7FgsgrkLmzqFdCapwHHgN.jpg',
+        registrationUrl: 'https://makemypass.com/event/shuttlestories',
         registerOption: 1,
         contact: [{ name: 'Ajay', phone: '8129529363' }, { name: 'Cenna', phone: '6235263729' }]
       },
       {
-        id: 6,
+        id: 5,
         name: 'ROOTFORCE (CTF)',
         description: 'Name: Root force the ultimate hackers contest\nTheme: Mr. Robot \n\nRules for registration \n1.Competition is open to all registered participants \n2.Participants can compete individually or team of 2\n3.Each participant can be part of 1 theme\n4.Participant should bring laptop \n\nCompetition format\n\n 1.Each task contains a flag \n2.Task/challenges include:\n -Hidden files \n-Web security\n -Cryptography \n-Forensic/Reverse and miscellaneous\n3.Duration: 1-3hrs\n4.Event will start and stop strictly on time\n- Each task/challenge carries pre-defined points\n - Team with maximum points in allowed time is considered as winners\n - In case of tie team that submit earliest wins\n- Final decision is done by organising committee',
         Venue: 'LAB 10',
@@ -625,12 +627,13 @@ const departmentEvents: Record<string, any> = {
         venue:'Lab 10',
         badge: 3,
         image: '/depfolds/ca/rootforce.jpeg',
-        registrationUrl: 'https://t4.ftcdn.net/jpg/17/77/94/27/360_F_1777942761_UTY0WxIs5of7FgsgrkLmzqFdCapwHHgN.jpg',
+        registrationUrl: 'https://makemypass.com/event/rootforce',
+
         contact: [{ name: 'Vishnupriya', phone: '7907456401' }, { name: 'Jerald', phone: '7025497088' }]
 
       },
       {
-        id: 7,
+        id: 6,
         name: 'CLASH OF KEYS ( SPEED TYPING )',
         description: '1. The competition is open to all registered participants of the tech fest.\n2. The event is an individual competition unless otherwise specified.\n3. Participants must report at the venue at least 15 minutes before their scheduled round.\n4. Each participant will be allotted a system; changing systems is not permitted without permission from the coordinator.\n5. Use of mobile phones, smart watches, earphones, or any external devices is strictly prohibited during the competition.\n6. Copy-paste, auto-correct tools, predictive text, or any typing assistance software is not allowed.\n7. Participants must type only the text displayed and follow round-specific instructions carefully.\n8. Any form of malpractice, disturbance, or unfair means will lead to immediate disqualification.\n9. Participants must maintain silence and discipline during the event.\n10. The decision of the judges and event coordinators will be final and binding.',
         date: 'February 28, 2026',
@@ -640,12 +643,12 @@ const departmentEvents: Record<string, any> = {
         venue: 'TBA',
         badge: 3,
         image: '/depfolds/ca/clash.jpeg',
-        registrationUrl: 'https://t4.ftcdn.net/jpg/17/77/94/27/360_F_1777942761_UTY0WxIs5of7FgsgrkLmzqFdCapwHHgN.jpg',
+        registrationUrl: 'https://makemypass.com/event/clash-of-keys',
         registerOption: 1,
         contact: [{ name: 'Sibion', phone: '7306769579' }, { name: 'Achu', phone: '9496110247' }]
       },
       {
-        id: 8,
+        id: 7,
         name: 'CODE CRUSH (OUTPUT PREDICTION)',
         description: 'Code Crush is a logic-based coding competition where participants predict the output of given pseudo code without executing it. The event tests analytical thinking, code tracing skills, and attention to detail. No compiler, no execution—just pure logic and sharp reasoning.\n\nRules & Regulations:\n1.Individual participation only \n2.Participants must carry valid college/tech fest ID.\n3.Participants will be given pseudo code / algorithm-based questions.\n4.The task is to predict the correct output without executing or compiling the code.\n5.This competition tests logical thinking, code tracing skills, and attention to detail.\n6.Internet access and external help are strictly prohibited.\n7.Use of compilers, IDEs, mobile phones, calculators, or internet is strictly prohibited\n8.Code execution is not allowed\n9.  Code may include:\n* Loops\n* Functions\n* Lists / Strings\n* OOP concepts\n* Logical / tricky questions\n10. Disqualification Criteria\n* Copying or malpractice of any kind\n* Use of electronic devices\n* Violation of competition rules\n11. Prohibited Items\n* Mobile phones\n* Smart watches\n* Compilers, IDEs, or any programming tools\n* Programmable calculators\n* Any study materials\n12. Time Rules\n* Participants must complete the round within the given time limit.\n* Late submissions will not be evaluated.\n13. Judge Authority\n* The decision of the judges/event coordinators will be final.\n* Organizers have the right to modify rules if required.',
         date: 'February 28, 2026',
@@ -655,12 +658,12 @@ const departmentEvents: Record<string, any> = {
         venue: 'TBA',
         badge: 3,
         image: '/depfolds/ca/codecrush.jpeg',
-        registrationUrl: 'https://t4.ftcdn.net/jpg/17/77/94/27/360_F_1777942761_UTY0WxIs5of7FgsgrkLmzqFdCapwHHgN.jpg',
+        registrationUrl: 'https://makemypass.com/event/codecrush',
         registerOption: 1,
         contact: [{ name: 'Jeswin', phone: '9778230580' }, { name: 'Sahala', phone: '9400395924' }]
       },
       {
-        id: 9,
+        id: 8,
         name: 'ROBOTIC WORKSHOP',
         description: 'The Department of Computer Applications under Tech Nexus proudly invites students to an exciting hands-on Robotic Workshop crafted to ignite innovation and technical creativity.\n\n🔧 Workshop Highlights\n* Hands-on Robot Building Experience\n* Introduction to Robotics & Automation\n* Basic Electronics & Programming\n* Team-Based Design & Fabrication\n* Expert Mentorship\n* Certificate of Participation',
         date: 'February 27, 2026',
@@ -669,13 +672,43 @@ const departmentEvents: Record<string, any> = {
         venue: 'MBA Lecture Hall, MBITS',
         badge: 2,
         image: '/depfolds/ca/robotic.jpeg',
-        registrationUrl: 'https://t4.ftcdn.net/jpg/17/77/94/27/360_F_1777942761_UTY0WxIs5of7FgsgrkLmzqFdCapwHHgN.jpg',
-        registerOption: 2,
+        registrationUrl: 'https://makemypass.com/event/robotic-workshop',
+        registerOption: 1,
+
         contact: [{ name: 'Ajin Biju', phone: '8590463106' }, { name: 'Ignatious', phone: '7510130510' }]
       },
       {
+        id: 9,
+        name: 'FRONTEND FORNTIER (WEB DEVELOPMENT)',
+        description: 'Rules:\n\n *Total Duration: 6 Hours (Starts 10:00 AM)\n*You will work continuously on your idea and prototype during this time.\n *First 1 Hour → Idea + Documentation\n*You must:Understand the theme given by organizers . \n*Create a project idea based on that theme. \n*Prepare a Word document including:Project TitleProblem StatementProposed Solution\n*Expected Output AI Tools Allowed\n*You can use any type of a AI tools \n *Remaining 5 Hours → Prototype DevelopmentYou must build a working model, not just theory.\n*Prototype means:\nBasic UI working\nCore feature \nWorking Doesn’t  need to be production-level\nShould demonstrate the idea clearly',
+        date: 'February 27, 2026',
+        time: 'Full Day',
+        fee: '200 (50 Per Head)',
+        prizepool: '₹12000',
+        venue: 'Lab 11',
+        badge: 3,
+        image: '/depfolds/ca/front.jpeg',
+        registrationUrl: ' https://makemypass.com/event/frontend-frontier',
+        registerOption: 1,
+        contact: [{ name: 'Abhinav', phone: '+91 9633053081' }, { name: 'Albin', phone: '+91 9037130224' }]
+      },
+      {
         id: 10,
-        name: 'KERNAL CORNER',
+        name: 'QUBITZ (TECH QUIZ COMPETITION)',
+        description: 'Rules :\n\n•	The quiz is open to all registered students of the college.\n•	Participants must carry a valid college ID card.\n•	Participants must report 30 minutes before the event start time.\n•	Late entry may not be permitted.\n•	Registration will be closed at 10:00 AM.\n•	No spot registrations will be entertained after the deadline.\n•	Only registered participants will be allowed to attend the quiz.\n•	Individual participation is allowed only if permitted by organizers.\n•	Team members cannot be changed after registration.\n•	The quiz may consist of multiple rounds.\n•	Use of mobile phones, smart watches, or any electronic devices is strictly prohibited.\n•	Any malpractice will result in immediate disqualification.\n•	Participants must maintain discipline throughout the event.\n•	The Quiz Master’s decision will be final and binding.\n•	Organizers reserve the right to modify rules if necessary',
+        date: 'February 27, 2026',
+        time: 'Full Day',
+        fee: '60',
+        venue: 'M213A',
+        badge: 3,
+        image: '/depfolds/ca/qubits.jpeg',
+        registrationUrl: 'https://makemypass.com/event/qubitz',
+        registerOption: 1,
+        contact: [{ name: 'Honey', phone: '+91 7501734346' }, { name: 'Akshay', phone: '+91 8714583190' }]
+      },
+      {
+        id: 11,
+        name: 'KERNAL CORNER (Tech stall)',
         description: '🚀 What Awaits You? \n>“Kernel Corner – Play Smart, Experience AI”\nStep into an interactive tech zone where innovation meets entertainment.\n>“Tech, Games, and Intelligence – All at One Corner”.\nExplore AI-powered demos, smart games, and futuristic applications designed to challenge your mind.\n>“Step In for Fun. Step Out with Tech Experience.”\nEngage, learn, and compete while experiencing the power of modern technology firsthand.\n 🔧 Attractions\n* AI & Tech Game Arena\n* Interactive Smart Demos\n* Fun Challenges & Mini Competitions\n* Hands-on Tech Experience\n* Spot Prizes & Recognition.\n\n✨ Don’t Miss the Smartest Corner of the Fest!\n Enter Curious. Exit Inspired.',
         date: 'February 27-28, 2026',
         time: '10:00 AM – 4:00 PM',
@@ -683,7 +716,6 @@ const departmentEvents: Record<string, any> = {
         venue: 'Tech Fest Stall Area / Campus Ground',
         badge: 1,
         image: '/depfolds/ca/kernal.jpeg',
-        registrationUrl: 'https://t4.ftcdn.net/jpg/17/77/94/27/360_F_1777942761_UTY0WxIs5of7FgsgrkLmzqFdCapwHHgN.jpg',
         registerOption: 2,
         contact: [{ name: 'Aiswarya', phone: '+91 751082 2516' }, { name: 'Aryalakshmi', phone: ' +91 956201 5498' }]
       }
