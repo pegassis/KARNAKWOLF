@@ -501,158 +501,21 @@ const departmentEvents: Record<string, any> = {
     name: 'Mechanical',
     color: '#FF8C5A',
     events: [
-      {
-        id: 1,
-        name: 'Robo Race',
-        description: 'Autonomous robot racing',
-        date: 'February 26-27, 2026',
-        time: '11:00 AM - 4:00 PM',
-        prizepool: 'TBA',
-        fee: '₹500',
-        badge: 3,
-        image: 'https://images.unsplash.com/photo-1561144257-e32e8eef8e8e?w=600&q=80',
-        registrationUrl: 'https://t4.ftcdn.net/jpg/17/77/94/27/360_F_1777942761_UTY0WxIs5of7FgsgrkLmzqFdCapwHHgN.jpg',
-        registerOption: 1,
-        contact: [{ name: 'Suresh Babu', phone: '9856781234' }, { name: 'Priya Gupta', phone: '9867892345' }]
-      },
-      {
-        id: 2,
-        name: 'CAD Master',
-        description: '3D modeling competition',
-        date: 'February 26-27, 2026',
-        time: '9:00 AM - 2:00 PM',
-        prizepool: 'TBA',
-        fee: '₹250',
-        badge: 3,
-        image: 'https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=600&q=80',
-        registrationUrl: 'https://t4.ftcdn.net/jpg/17/77/94/27/360_F_1777942761_UTY0WxIs5of7FgsgrkLmzqFdCapwHHgN.jpg',
-        registerOption: 1,
-        contact: [{ name: 'Meena Pillai', phone: '9867812345' }, { name: 'Dev Yadav', phone: '9978903456' }]
-      },
-      {
-        id: 3,
-        name: 'Bridge Build',
-        description: 'Build the strongest bridge',
-        date: 'February 26-27, 2026',
-        time: '1:30 PM - 5:30 PM',
-        prizepool: 'TBA',
-        fee: '₹400',
-        badge: 3,
-        image: 'https://images.unsplash.com/photo-1587293852726-70cdb56c2866?w=600&q=80',
-        registrationUrl: 'https://t4.ftcdn.net/jpg/17/77/94/27/360_F_1777942761_UTY0WxIs5of7FgsgrkLmzqFdCapwHHgN.jpg',
-        registerOption: 1,
-        contact: [{ name: 'Arjun Das', phone: '9878123456' }, { name: 'Sophia Khan', phone: '9789012367' }]
-      },
-      {
-        id: 4,
-        name: 'Hydraulic Challenge',
-        description: 'Design hydraulic systems',
-        date: 'February 26-27, 2026',
-        time: '10:30 AM - 3:30 PM',
-        prizepool: 'TBA',
-        fee: '₹350',
-        badge: 2,
-        image: 'https://images.unsplash.com/photo-1581094794329-c8112e89af45?w=600&q=80',
-        registrationUrl: 'https://t4.ftcdn.net/jpg/17/77/94/27/360_F_1777942761_UTY0WxIs5of7FgsgrkLmzqFdCapwHHgN.jpg',
-        registerOption: 1,
-        contact: [{ name: 'Divya Nair', phone: '9881234567' }, { name: 'Sameer Chopra', phone: '9890123478' }]
-      }
+     
     ]
   },
   'civil': {
     name: 'Civil',
     color: '#FF6B35',
     events: [
-      {
-        id: 1,
-        name: 'Structure Design',
-        description: 'Structural engineering design',
-        date: 'February 26-27, 2026',
-        time: '9:30 AM - 12:30 PM',
-        prizepool: 'TBA',
-        fee: '₹300',
-        badge: 3,
-        image: '/depfolds/civ/trial1.jpeg',
-        registrationUrl: 'https://t4.ftcdn.net/jpg/17/77/94/27/360_F_1777942761_UTY0WxIs5of7FgsgrkLmzqFdCapwHHgN.jpg',
-        registerOption: 1,
-        contact: [{ name: 'Karthik Rao', phone: '9891234567' }, { name: 'Divya Desai', phone: '9912345678' }]
-      },
-      {
-        id: 2,
-        name: 'City Planning',
-        description: 'Urban planning competition',
-        date: 'February 26-27, 2026',
-        time: '2:00 PM - 5:00 PM',
-        prizepool: 'TBA',
-        fee: '₹250',
-        badge: 1,
-        image: '/depfolds/civ/trial1.jpeg',
-        registrationUrl: 'https://t4.ftcdn.net/jpg/17/77/94/27/360_F_1777942761_UTY0WxIs5of7FgsgrkLmzqFdCapwHHgN.jpg',
-        registerOption: 1,
-        contact: [{ name: 'Shalini Menon', phone: '9901234567' }, { name: 'Nikhil Bhat', phone: '9823456789' }]
-      },
-      {
-        id: 3,
-        name: 'AutoCAD Challenge',
-        description: 'Technical drawing competition.JAGSJJAERBHBKFBLHBABHBIAEIRIUBBEA.&nbsp;',
-        date: 'February 26, 2026',
-        time: '10:00 AM - 1:00 PM',
-        prizepool: '₹10,000',
-        fee: '₹200',
-        badge: 3,
-        image: '/depfolds/civ/trial1.jpeg',
-        registrationUrl: 'https://t4.ftcdn.net/jpg/17/77/94/27/360_F_1777942761_UTY0WxIs5of7FgsgrkLmzqFdCapwHHgN.jpg',
-        registerOption: 1,
-        contact: [{ name: 'Mohit Verma', phone: '9912345678' }, { name: 'Ruhi Kapoor', phone: '9734567890' }]
-      }
+      
     ]
   },
   'electrical': {
     name: 'Electrical',
     color: '#FFA500',
     events: [
-      {
-        id: 1,
-        name: 'Power Grid',
-        description: 'Power systems design',
-        date: 'February 26-27, 2026',
-        time: '9:00 AM - 1:00 PM',
-        prizepool: 'TBA',
-        fee: '₹300',
-        badge: 1,
-        image: '/depfolds/civ/trial1.jpeg',
-        registrationUrl: 'https://t4.ftcdn.net/jpg/17/77/94/27/360_F_1777942761_UTY0WxIs5of7FgsgrkLmzqFdCapwHHgN.jpg',
-        registerOption: 1,
-        contact: [{ name: 'Anil Joshi', phone: '9923456781' }, { name: 'Sneha Iyer', phone: '9845678901' }]
-      },
-      {
-        id: 2,
-        name: 'Motor Control',
-        description: 'Electric motor control systems',
-        date: 'February 26-27, 2026',
-        time: '1:30 PM - 4:30 PM',
-        prizepool: 'TBA',
-        fee: '₹350',
-        badge: 2,
-        image: 'https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=600&q=80',
-        registrationUrl: 'https://t4.ftcdn.net/jpg/17/77/94/27/360_F_1777942761_UTY0WxIs5of7FgsgrkLmzqFdCapwHHgN.jpg',
-        registerOption: 1,
-        contact: [{ name: 'Sunita Rao', phone: '9934567812' }, { name: 'Vikrant Sinha', phone: '9756890123' }]
-      },
-      {
-        id: 3,
-        name: 'Renewable Energy',
-        description: 'Sustainable energy projects',
-        date: 'February 26-27, 2026',
-        time: '10:00 AM - 3:00 PM',
-        prizepool: 'TBA',
-        fee: 'FREE',
-        badge: 1,
-        image: 'https://images.unsplash.com/photo-1509391366360-2e959784a276?w=600&q=80',
-        registrationUrl: 'https://t4.ftcdn.net/jpg/17/77/94/27/360_F_1777942761_UTY0WxIs5of7FgsgrkLmzqFdCapwHHgN.jpg',
-        registerOption: 1,
-        contact: [{ name: 'Rakesh Gupta', phone: '9945678123' }, { name: 'Aarav Singh', phone: '9867901234' }]
-      }
+    
     ]
   },
   'general': {

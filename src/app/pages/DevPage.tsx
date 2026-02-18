@@ -19,6 +19,7 @@ export function DevPage() {
       title: 'Website Developer',
       handle: 'S6 CSE B',
       status: 'Website Developer',
+      color: '#2020bc',
       image: 'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=500&h=500&fit=crop',
       contactText: 'Contact'
     },
