@@ -569,7 +569,7 @@ const departmentEvents: Record<string, any> = {
     name: 'Civil',
     color: '#FF6B35',
     events: [
-      
+    
     ]
   },
   'electrical': {
@@ -657,6 +657,10 @@ const departmentEvents: Record<string, any> = {
         badge: 3,
         image: '/depfolds/ca/rootforce.jpeg',
         registrationUrl: 'https://makemypass.com/event/rootforce',
+<<<<<<< HEAD
+=======
+
+>>>>>>> d222c4dd22549e886ee5f42fe6162e99c7af55d6
         contact: [{ name: 'Vishnupriya', phone: '7907456401' }, { name: 'Jerald', phone: '7025497088' }]
 
       },

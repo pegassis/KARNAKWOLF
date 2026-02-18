@@ -10,7 +10,7 @@ export function DevPage() {
       title: 'Website Developer',
       handle: 'S6 CSE C',
       status: 'Website Developer',
-      image: 'https://res.cloudinary.com/dts9wynrs/image/upload/v1771423691/leen2_ptglmm.jpg',
+      image: 'https://res.cloudinary.com/dts9wynrs/image/upload/v1771437979/leen4_prxd8c.jpg',
       contactText: 'Contact',
       url: 'https://www.instagram.com/leenleo?igsh=MWw0amhmM29zM3doaQ%3D%3D&utm_source=qr'
     },
@@ -19,7 +19,7 @@ export function DevPage() {
       title: 'Website Developer',
       handle: 'S6 CSE B',
       status: 'Website Developer',
-      image: 'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=500&h=500&fit=crop',
+      image: 'https://res.cloudinary.com/dts9wynrs/image/upload/v1771437577/christu2_fpg8ml.jpg',
       contactText: 'Contact',
       url: 'https://www.instagram.com/leenleo?igsh=MWw0amhmM29zM3doaQ%3D%3D&utm_source=qr'
     },
@@ -46,21 +46,21 @@ export function DevPage() {
         transition={{ duration: 0.8 }}
         className="min-h-screen relative z-10"
       >
-        <section className="relative w-full py-20 px-4 md:px-8">
+        <section className="relative w-full py-8 md:py-20 px-4 md:px-8">
           <div className="max-w-7xl mx-auto">
             {/* Heading */}
             <motion.h1
               initial={{ opacity: 0, y: -20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
-              className="text-5xl md:text-7xl font-bold text-center mb-16"
-              style={{ paddingTop: '50px', color: '#ce3d04' }}
+              className="text-3xl md:text-5xl lg:text-7xl font-bold text-center mb-8 md:mb-16"
+              style={{ paddingTop: '20px', color: '#ce3d04' }}
             >
               DEVELOPERS
             </motion.h1>
 
             {/* Single ChromaGrid matching the editor layout */}
-            <div className="editor-grid" style={{ position: 'relative', height: '600px' }}>
+            <div className="editor-grid dev-grid" style={{ position: 'relative', height: 'auto' }}>
               <ChromaGrid
                 items={developers.map(d => ({
                   image: d.image,
@@ -81,8 +81,8 @@ export function DevPage() {
             </div>
 
             {/* Editor Section */}
-            <section className="mt-16">
-              <h2 className="text-5xl font-semibold mb-6" style={{ textAlign:'center',color: '#FFD166' }}>Editors</h2>
+            <section className="mt-8 md:mt-16">
+              <h2 className="text-3xl md:text-5xl font-semibold mb-6" style={{ textAlign:'center',color: '#FFD166' }}>Editors</h2>
               <div className="editor-grid" style={{ position: 'relative' }}>
                 <ChromaGrid
                   items={[]}

@@ -34,6 +34,27 @@
   }
 }
 
+/* Make developers grid use fixed-size cards on small screens (only affects .dev-grid) */
+@media (max-width: 500px) {
+  .dev-grid {
+    /* vertical sequence on mobile */
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-flow: row;
+    gap: 1rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+
+  .dev-grid .chroma-card {
+    flex: none !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    margin: 0 auto;
+  }
+}
+
 @media (max-width: 1124px) {
   .chroma-grid {
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
