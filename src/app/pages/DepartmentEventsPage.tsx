@@ -686,7 +686,7 @@ const departmentEvents: Record<string, any> = {
         prizepool: '₹1,000',
         badge: 3,
         image: '/depfolds/civ/cadpin.jpeg',
-        registrationUrl: '',
+        registrationUrl: 'https://makemypass.com/event/cad-pinnacle',
         registerOption: 1,
         contact: [{ name: 'Mr. Adeeb A.A', phone: '9995370174' },{ name: 'Mr. Niranjan T.P', phone: '8129291099' }]
       },
