@@ -554,7 +554,7 @@ const departmentEvents: Record<string, any> = {
         registerOption: 1,
         contact: [{ name: 'Basil Eldhose', phone: '6235366926' }, { name: 'Martin Antony', phone: '6235887598' },{ name: '', phone: '' }]
       },
-            {
+      {
         id: 3,
         name: 'spin craft championship ',
         description: 'Prize Pool\n1st : 2000\n2nd: 1000\n\nA high-intensity machining challenge testing precision turning, dimensional accuracy, tool control, and time efficiency. Execute real-world lathe operations and prove your technical skill to claim the title of Lathe Master.\n\nRules / Guidelines\n•Participants should wear safety shoes•\nParticipants must complete the official registration form by the given deadline.\n•Each participant will be provided with a lathe machine, cutting tools, tool holders, and work piece material\n•Participants are not allowed to bring their own tools, measuring devices, or materials\n•Participants will have a fixed time limit of 1.5 hours (including setup time) to complete the task\n•Individual Participation Only – no team entries.\n•Participants should have a valid College ID.',
@@ -568,6 +568,20 @@ const departmentEvents: Record<string, any> = {
         registrationUrl: 'https://t4.ftcdn.net/jpg/17/77/94/27/360_F_1777942761_UTY0WxIs5of7FgsgrkLmzqFdCapwHHgN.jpg',
         registerOption: 1,
         contact: [{ name: 'Midhun', phone: '9037165193' }, { name: '', phone: '' },{ name: '', phone: '' }]
+      },
+      {
+        id: 4,
+        name: 'AUTO XPLORE',
+        description: 'Dept. of Automobile Engineering \n🛠️ Live Engine Strip down session\n⚙️ From power➡️ precision \n🔩 Explore the mechanical logicOf Ic engine\n🧑‍🔧 Hands-on Automobile lab experience\n\nDont miss the power-packed Technical Experience!\n📌Register now & be part of the action',
+        date: 'February 27, 2026',
+        time: 'TBA',
+        venue: 'MT Lab ',
+        fee: '200',
+        badge: 3,
+        image: '/depfolds/mec/auto.jpeg',
+        registrationUrl: 'https://t4.ftcdn.net/jpg/17/77/94/27/360_F_1777942761_UTY0WxIs5of7FgsgrkLmzqFdCapwHHgN.jpg',
+        registerOption: 1,
+        contact: [{ name: 'Shifan', phone: '9747723133' }, { name: 'Ashkar', phone: '6238535799' }]
       },
     ]
   },
@@ -586,7 +600,7 @@ const departmentEvents: Record<string, any> = {
         prizepool: '₹2,000',
         badge: 3,
         image: '/depfolds/civ/titan.jpeg',
-        registrationUrl: 'https://makemypass.com/event/aurduino-101',
+        registrationUrl: 'https://makemypass.com/event/titan-tension',
         registerOption: 1,
         contact: [{ name: 'Mathew Abraham', phone: '8078426690' }, { name: 'Akshara K R', phone: '8848070864' }]
       },
@@ -601,7 +615,7 @@ const departmentEvents: Record<string, any> = {
         prizepool: '₹3,000',
         badge: 3,
         image: '/depfolds/civ/static.jpeg',
-        registrationUrl: 'https://makemypass.com/event/aurduino-101',
+        registrationUrl: 'https://makemypass.com/event/statica',
         registerOption: 1,
         contact: [{ name: 'Prof. Rinku Kuriakose', phone: '9846271793' },{ name: 'Mariya Stanselavos', phone: '9074185655' }, { name: 'Adhul Mathew', phone: '9383466695' }]
       },
@@ -614,7 +628,7 @@ const departmentEvents: Record<string, any> = {
         venue: 'Front Area and Ground',
         badge: 1,
         image: '/depfolds/civ/heavy.jpeg',
-        registrationUrl: 'https://makemypass.com/event/aurduino-101',
+        registrationUrl: '',
         registerOption: 2,
         contact: [{ name: 'Mr. Basil Eldhose', phone: '9895343839' }, { name: 'Eldho Paulose', phone: '8075587355' },{ name: 'Ameenudheen E A', phone: '9188362003' }]
       },
@@ -628,7 +642,7 @@ const departmentEvents: Record<string, any> = {
         venue: 'Software Lab – LAB 1 (107)',
         badge: 2,
         image: '/depfolds/civ/bimnova.jpeg',
-        registrationUrl: '',
+        registrationUrl: 'https://makemypass.com/event/bimnova',
         registerOption: 1,
         contact: [{ name: 'Ms. Vidya Vijayan', phone: '8138827243' },{ name: 'Ms. Arya P. V.', phone: '8590876166' },{ name: 'Mr. Godwin Santo', phone: '6238638364' },]
       },
@@ -642,7 +656,7 @@ const departmentEvents: Record<string, any> = {
         venue: 'Software Lab 1(107)',
         badge: 2,
         image: '/depfolds/civ/vision.jpeg',
-        registrationUrl: '',
+        registrationUrl: 'https://makemypass.com/event/vision-in-lines',
         registerOption: 1,
         contact: [{ name: 'Prof.Vidya Vijayan', phone: '8138827243' },{ name: 'Meera P Gireesh', phone: '8590698764' },{ name: 'Adhiya V Majeed', phone: '7306578529' },]
       },
@@ -657,7 +671,7 @@ const departmentEvents: Record<string, any> = {
         prizepool: '₹3,000',
         badge: 2,
         image: '/depfolds/civ/maqueta.jpeg',
-        registrationUrl: '',
+        registrationUrl: 'https://makemypass.com/event/maqueta-activa',
         registerOption: 1,
         contact: [{ name: 'Prof.Devanjana Manu', phone: '9778257605' },{ name: 'Jithu Joby', phone: '8590741298' }]
       },
@@ -675,6 +689,64 @@ const departmentEvents: Record<string, any> = {
         registrationUrl: '',
         registerOption: 1,
         contact: [{ name: 'Mr. Adeeb A.A', phone: '9995370174' },{ name: 'Mr. Niranjan T.P', phone: '8129291099' }]
+      },
+      {
+        id: 8,
+        name: ' BITSCAZA (TREASURE HUNT)',
+        description: 'BITSCAZA is an exciting on-campus treasure hunt designed to test your problem-solving skills, teamwork, logical thinking, and speed. Participants will navigate through multiple clues hidden across the campus, solving challenges and decoding hints to reach the final treasure.\n\n Team Size: 3 members per team\n\nRules & Regulations:\n>Each team must consist of exactly 3 members\n>Clues must not be damaged or removed from their locations.\n>The team that completes all levels in the shortest time wins.\n>Judges decision will be final.\n\n',
+        date: 'February 27, 2026',
+        time: 'TBA',
+        fee: '165 ',
+        venue: 'All civil Labs ',
+        prizepool: '₹1500',
+        badge: 3,
+        image: '/depfolds/civ/8.jpeg',
+        registrationUrl: 'https://makemypass.com/event/bitscaza',
+        registerOption: 1,
+        contact: [{ name: 'Salini Mohan', phone: '9633099290' },{ name: 'Sreehari Shaji', phone: '9037275307' },{ name: 'Vismaya Anilkumar', phone: '9847703381'}]
+      },
+      {
+        id: 9,
+        name: 'IDEA 2 INFRA (BUILD-UP IDEATHON)',
+        description: 'An innovation brainstorming competition \n\n Ideathon competition -An innovation brainstorming competitionGenerate and present creative solutions to real-world problems.\nAn Ideathon is a creative competition where participants come together to identify problems and propose innovative, practical solutions within a limited time. It encourages critical thinking, teamwork, and creativity, helping participants develop problem-solving and entrepreneurial skills.\n\n👥Group size - 5 members\n\nPrize pool\n💵1st prize -2000\n💵2nd prize -1500\n📝Certificates are provided\n\nRules & Regulations \n*Participants can take part individually or in teams.\n*Each team should consist of 5members.\n*Ideas must be based on the civil engineering \n*The idea should be original and innovative\n*Participants must submit their idea within the given time limit.\n*Each team will be given limited time for presentation, followed by a Q&A session.\n*Ideas will be judged based on innoinnovation,feasibility, clarity &impact \n*The decision of the judges will be final\n*All participants must follow instructions of the organizers',
+        date: 'February 27, 2026',
+        time: 'Forenoon',
+        fee: '275 ',
+        venue: 'M108',
+        prizepool: '₹3500',
+        badge: 3,
+        image: '/depfolds/civ/9.jpeg',
+        registrationUrl: 'https://makemypass.com/event/idea-2-infra',
+        registerOption: 1,
+        contact: [{ name: 'Supriya T.S', phone: '8075493079' },{ name: 'Sona Eldhose', phone: '8086491985' }]
+      },
+      {
+        id: 10,
+        name: 'RAKSHAK (Fire & Rescue Awareness Initiative)',
+        description: '*RAKSHAK* is a dynamic fire safety awareness and rescue demonstration program conducted in collaboration with the *Kerala Fire and Rescue Services* as part of KARNAK’26 at *Mar Baselios Institute of Technology and Science (MBITS).\nThis powerful event highlights the courage, discipline, and technical expertise of firefighting professionals through live demonstrations, safety education, and real-world rescue insights. ',
+        date: 'February 27, 2026',
+        time: 'TBA',
+        venue: 'Central Courtyard',
+        badge: 1,
+        fee: 'FREE',
+        image: '/depfolds/civ/10.jpeg',
+        registrationUrl: '',
+        registerOption: 2,
+        contact: [{ name: ' Mr. Kailas G Nath', phone: '7306844581' },{ name: 'Mr. Basil Shaji', phone: '8111895460' },{ name: 'Mr. Adhithyan K S', phone: '9526875078'}]
+      },
+      {
+        id: 11,
+        name: 'The Civilverse',
+        description: 'Civilverse, in the context of a Civil Engineering Tech Fest exhibition, represents an immersive digital and physical learning platform that showcases the vast and evolving world of civil engineering through innovation, visualization, and practical demonstrations \n\nHave a Comprehensive and Engaging experience of Civil Engineering ',
+        date: 'February 27-28, 2026',
+        time: 'FULL DAY',
+        fee: 'FREE',
+        venue: 'Room No M104,M106',
+        badge: 4,
+        image: '/depfolds/civ/11.jpeg',
+        registrationUrl: '',
+        registerOption: 2,
+        contact: [{ name: 'Prof.Deepthy Varkey', phone: '9496333858' },{ name: 'Adhithyan c jain', phone: '7736233238' },{ name: 'Abhijith saju', phone: '9495525930' }]
       },
     
     ]
@@ -808,7 +880,7 @@ const departmentEvents: Record<string, any> = {
         badge: 2,
         image: '/depfolds/ca/robotic.jpeg',
         registrationUrl: 'https://makemypass.com/event/robotic-workshop',
-        registerOption: 2,
+        registerOption: 1,
 
         contact: [{ name: 'Ajin Biju', phone: '8590463106' }, { name: 'Ignatious', phone: '7510130510' }]
       },
