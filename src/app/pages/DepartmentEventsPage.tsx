@@ -446,7 +446,7 @@ const departmentEvents: Record<string, any> = {
       },
       {
         id: 7,
-        name: 'route it right (pcb design simulation competition)',
+        name: 'route it right (pcb design competition)',
         description: 'Duration: 3hr \n\nStep into an exclusive arena of innovation and precision with our PCB Design Simulation Competition. This premium event invites participants to demonstrate mastery in PCB layout, precision routing, and design optimization within a professional simulation environment. Engineered to challenge both creativity and technical depth, the competition emphasizes innovation, efficiency, and aesthetic clarity in every trace and connection. It is an opportunity to showcase advanced design thinking, attention to detail, and a refined understanding of circuit architecture. \nJoin us for an elite experience where sophistication meets technology, and every design reflects true engineering excellence\n\n1st Prize: Rs.2000 \n2nd Prize: Rs.1000 \n\nLast date for reg: 26 Feb\n\nRules and Regulations:\n•Open to all branch students\n•Participants can compete individually or in teams (maximum 2 members)\n•Allowed software is KiCad\n•The design must be original. Copying existing PCB layouts is strictly prohibited\n•	Participants must submit schematic files, PCB layout files, Gerber files, and a PDF of the design.\n•	The final design must pass Design Rule Check (DRC) without errors\n\nScoring criteria\n:•	Circuit Functionality & Correctness                     - 25\n•	Component Placement & Layout Optimization    - 20\n•	Routing Quality (trace width, clearance, vias )     - 20\n•	DRC Compliance (Error-free design)                    -15\n•	Board Aesthetics, Neatness & Proper Labelling    -15\n•	Innovation / Design Efficiency                               -5',
         date: 'February 27, 2026',
         time: '9:30 AM - 12:30 PM',
@@ -645,6 +645,36 @@ const departmentEvents: Record<string, any> = {
         registrationUrl: '',
         registerOption: 1,
         contact: [{ name: 'Prof.Vidya Vijayan', phone: '8138827243' },{ name: 'Meera P Gireesh', phone: '8590698764' },{ name: 'Adhiya V Majeed', phone: '7306578529' },]
+      },
+       {
+        id: 6,
+        name: 'MAQUETA ACTIVA',
+        description: 'A Working Model Competition in Civil Engineering provides a platform for students to design and present functional models that demonstrate innovative solutions to real-world infrastructure and construction challenges, bridging theory with practical application.\n\n🎓 Eligibility: Civil Engineering Students (UG, PG & Diploma)\n🗓️ Last Date to Register: 25/02/2026\n\n📌 Evaluation Criteria:\n* Innovation & Creativity\n* Working Efficiency\n* Technical Knowledge\n* Practical Application\n* Presentation & Explanation',
+        date: 'February 27, 2026',
+        time: '10:00 AM',
+        fee: '220 per team',
+        venue: 'Drawing Hall, St. Thomas Block',
+        prizepool: '₹3,000',
+        badge: 2,
+        image: '/depfolds/civ/maqueta.jpeg',
+        registrationUrl: '',
+        registerOption: 1,
+        contact: [{ name: 'Prof.Devanjana Manu', phone: '9778257605' },{ name: 'Jithu Joby', phone: '8590741298' }]
+      },
+      {
+        id: 7,
+        name: 'CAD PINNACLE (CAD Drawing Competition)',
+        description: 'CAD PINNACLE – Design. Draft. Dominate. 🧩📐\nShowcase your creativity and technical precision in this exciting CAD drawing competition. Participants will be challenged to create accurate and innovative drawings using CAD software within the given time.\nThis competition tests your drafting skills, speed, visualization ability.\n\nRules / Guidelines\n* Individual participation only.\n* Participants must report on time at the venue.\n* Required software and system will be provided unless instructed otherwise.\n* Evaluation will be based on accuracy, presentation, and completion time.\n* Any malpractice or copying will lead to disqualification.',
+        date: 'February 27, 2026',
+        time: 'Afternoon',
+        fee: '55 ',
+        venue: 'software Lab 1',
+        prizepool: '₹1,000',
+        badge: 3,
+        image: '/depfolds/civ/cadpin.jpeg',
+        registrationUrl: '',
+        registerOption: 1,
+        contact: [{ name: 'Mr. Adeeb A.A', phone: '9995370174' },{ name: 'Mr. Niranjan T.P', phone: '8129291099' }]
       },
     
     ]
