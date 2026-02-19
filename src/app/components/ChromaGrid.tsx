@@ -30,7 +30,7 @@ export const ChromaGrid: React.FC<ChromaGridProps> = ({
   items,
   className = '',
   radius = 300,
-  columns = 3,
+  columns = 3, 
   rows = 2,
   damping = 0.45,
   fadeOut = 0.6,
@@ -42,63 +42,16 @@ export const ChromaGrid: React.FC<ChromaGridProps> = ({
   const setY = useRef<SetterFn | null>(null);
   const pos = useRef({ x: 0, y: 0 });
 
-  const demo: ChromaItem[] = [
-    {
-      image: 'https://res.cloudinary.com/dts9wynrs/image/upload/v1771421285/rehab_wvcd9y.jpg',
-      title: 'Rehab Hamsa',
-      subtitle: 'Media Wing Head',
-      handle: 'S6 CSE A',
-      borderColor: '#4F46E5',
-      gradient: 'linear-gradient(145deg, #4F46E5, #000)',
-      url: 'https://instagram.com/rrrrrehab'
-    },
-    {
-      image: '',
-      title: '',
-      subtitle: '',
-      handle: '',
-      borderColor: '#10B981',
-      gradient: 'linear-gradient(210deg, #10B981, #000)',
-      url: ''
-    },
-    {
-      image: 'https://res.cloudinary.com/dts9wynrs/image/upload/v1771421949/eldhopp_pumxuo.jpg',
-      title: 'Eldho P P',
-      subtitle: 'Media Wing ',
-      handle: 'S6 CSE B',
-      borderColor: '#F59E0B',
-      gradient: 'linear-gradient(165deg, #F59E0B, #000)',
-      url: 'https://www.instagram.com/e.ldho7?igsh=MWw0amhmM29zM3doaQ%3D%3D&utm_source=qr'
-    },
-    {
-      image: 'https://res.cloudinary.com/dts9wynrs/image/upload/v1771421290/abutahir_rosx4c.jpg',
-      title: 'AbuTahir F',
-      subtitle: 'Media Wing ',
-      handle: 'S6 CSE A',
-      borderColor: '#EF4444',
-      gradient: 'linear-gradient(195deg, #EF4444, #000)',
-      url: 'https://www.instagram.com/abu._thahirr?igsh=MWhobHg3Nmc1ZDN1eA=='
-    },
-    {
-      image: 'https://res.cloudinary.com/dts9wynrs/image/upload/v1771423187/abraham_ezuffz.jpg',
-      title: 'Abraham Hayden Joseph',
-      subtitle: 'Media Wing ',
-      handle: ' ',
-      borderColor: '#8B5CF6',
-      gradient: 'linear-gradient(225deg, #8B5CF6, #000)',
-      url: 'https://www.instagram.com/hayden_a_elite?igsh=MWhlZjJrcHV3MWJ4Yg=='
-    },
-    {
-      image: '',
-      title: '',
-      subtitle: '',
-      handle: '',
-      borderColor: '#06B6D4',
-      gradient: 'linear-gradient(135deg, #06B6D4, #000)',
-      url: ''
-    }
-  ];
-  const data = items?.length ? items : demo;
+ 
+  const raw = items?.length ? items : [];
+
+  const palette = ['#FF6B35', '#FFA500', '#8B5CF6', '#F59E0B', '#EF4444', '#10B981', '#06B6D4', '#F472B6'];
+
+  const data = raw.map((c, i) => ({
+    ...c,
+    gradient: c.gradient ?? `linear-gradient(145deg, ${palette[i % palette.length]}, #000)`,
+    borderColor: c.borderColor ?? palette[i % palette.length]
+  }));
 
   useEffect(() => {
     const el = rootRef.current;

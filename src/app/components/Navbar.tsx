@@ -11,6 +11,8 @@ export function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [visible, setVisible] = useState(true);
   const lastY = useRef<number>(typeof window !== 'undefined' ? window.scrollY : 0);
+  const menuRef = useRef<HTMLDivElement | null>(null);
+  const buttonRef = useRef<HTMLButtonElement | null>(null);
 
   useEffect(() => {
     const threshold = 10;
@@ -30,6 +32,19 @@ export function Navbar() {
 
     window.addEventListener('scroll', onScroll, { passive: true });
     return () => window.removeEventListener('scroll', onScroll);
+  }, [mobileMenuOpen]);
+
+  // Close mobile menu when clicking outside of it
+  useEffect(() => {
+    if (!mobileMenuOpen) return;
+    const onDown = (e: MouseEvent) => {
+      const target = e.target as Node;
+      if (menuRef.current && menuRef.current.contains(target)) return;
+      if (buttonRef.current && buttonRef.current.contains(target)) return;
+      setMobileMenuOpen(false);
+    };
+    document.addEventListener('mousedown', onDown);
+    return () => document.removeEventListener('mousedown', onDown);
   }, [mobileMenuOpen]);
   
   const isActive = (path: string) => {
@@ -61,6 +76,8 @@ export function Navbar() {
     { path: '/about', label: 'About' },
     { path: '/departments', label: 'Events' },
     { path: '/mainevent', label: 'Main Events' },
+   
+    
   ];
 
   return (
@@ -179,7 +196,7 @@ export function Navbar() {
       >
         <div >
           
-            <button style={{"position": "absolute", "top": "1.5rem", "right": "1.5rem"}}
+            <button ref={buttonRef} style={{ position: 'absolute', top: '1.5rem', right: '1.5rem' }}
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
               className="w-10 h-10 rounded-full left bg-[#2A2A2A] flex items-center justify-center text-white"
             >
@@ -191,6 +208,7 @@ export function Navbar() {
         <AnimatePresence>
           {mobileMenuOpen && (
             <motion.div
+              ref={menuRef}
               initial={{ opacity: 0, height: 0 }}
               animate={{ opacity: 1, height: 'auto' }}
               exit={{ opacity: 0, height: 0 }}

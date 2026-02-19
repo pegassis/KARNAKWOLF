@@ -10,6 +10,7 @@ import CircularGallery from '../components/CircularGallery';
 import LiquidEther from '../components/LiquidEther';
 import Shuffle from '../components/Shuffle';
 import RotatingBorderButton from '../components/RotatingBorderButton';
+import { useIntroAnimation } from '../context/IntroAnimationContext';
 
 // import RevealLoader from '../components/RevealLoader';
 
@@ -18,10 +19,7 @@ import RotatingBorderButton from '../components/RotatingBorderButton';
 
 export function HomePage() {
   const location = useLocation();
-  const [animationComplete, setAnimationComplete] = React.useState(
-    // Skip animation if navigating from navbar
-    (location.state as any)?.fromNavbar ?? false
-  );
+  const { hasShown, markAsShown } = useIntroAnimation();
   // const [showReveal, setShowReveal] = React.useState(false);
   const navigate = useNavigate();
   
@@ -31,13 +29,13 @@ export function HomePage() {
   };
 
   const handleAnimationFinish = () => {
-    setAnimationComplete(true);
+    markAsShown();
   };
 
   return (
     <div className="min-h-screen">
       {/* Full-Screen Intro Animation Overlay */}
-      {!animationComplete && (
+      {!hasShown && (
         <IntroAnimation onFinish={handleAnimationFinish} duration={3000} />
       )}
 
@@ -66,7 +64,7 @@ export function HomePage() {
       {/* Main Content */}
       <motion.div
         initial={{ opacity: 0 }}
-        animate={{ opacity: animationComplete ? 1 : 0 }}
+        animate={{ opacity: hasShown ? 1 : 0 }}
         transition={{ duration: 0.8 }}
         className="min-h-screen relative z-10"
       >
