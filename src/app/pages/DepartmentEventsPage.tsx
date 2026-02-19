@@ -211,7 +211,7 @@ const departmentEvents: Record<string, any> = {
         name: 'Tech Hunt',
         description: 'Step into a campus wide tech scavenger hunt like no other, where logic replaces luck and clues are hidden in code. The Tech Hunt challenges participants to think, decode, and solve their way through a series of mysteries. Only sharp minds, quick reasoning, and technical intuition will lead you to the final prize. Get ready to explore, analyze, and conquer.\n\nRules & Regulations\n1. The treasure hunt must be completed within the allotted time.\n2. All team members must stay together throughout the event.\n3. Certain tasks may require full team participation.\n4. At Each Location Teams must find the next clue card and must keep them until the end.\n5. Clues must be followed in order; skipping locations is not allowed.\n6. Teams cannot ask volunteers or coordinators for hints.\n7. The number of participants allowed for each team is 3-5.\n8. Fragments & Progress: \nEach team must collect all 5 clue card to proceed to the final round.\n9. Final Round & Winner Selection:\n If more than one team reaches and completes the final round: a tie breaker task will be given.\n10. Device Policy:\n Mobile phones, smart watches, and all smart devices are strictly prohibited during the hunt.\n11. Any team found using them will be disqualified.',
         date: 'February 27, 2026',
-        time: 'Afternoon',
+        time: 'Forenoon',
         prizepool: 'NA',
         fee: '20 per person',
         discount: 1,
