@@ -178,7 +178,7 @@ export function HomePage() {
             
             <p className="text-lg sm:text-xl text-[#B0B0B0] mb-8 leading-relaxed">
               Experience the convergence of innovation and technology at MBITS's premier technical festival. 
-              Join us for three days of competitions, workshops, and groundbreaking ideas.
+              Join us for two days of competitions, workshops, and groundbreaking ideas.
             </p>
 
             {/* Stats */}
