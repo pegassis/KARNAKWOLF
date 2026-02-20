@@ -74,9 +74,11 @@ export function Navbar() {
   const navLinks = [
     { path: '/', label: 'Home' },
     { path: '/about', label: 'About' },
+   
     { path: '/departments', label: 'Events' },
     { path: '/mainevent', label: 'Main Events' },
    { path: '/devpage', label: 'Dev' },
+
     
   ];
 

@@ -15,6 +15,7 @@ import { AdminLoginPage } from './pages/AdminLoginPage';
 import { DevPage } from './pages/DevPage';
 import { AdminProvider } from './context/AdminContext';
 import { IntroAnimationProvider } from './context/IntroAnimationContext';
+import KarnakGame from './pages/karnakgame';
 
 export default function App() {
   return (
@@ -42,6 +43,7 @@ export default function App() {
                 <Route path="/devpage" element={<DevPage />} />
                 <Route path="/departments/:departmentId" element={<DepartmentEventsPage />} />
                 <Route path="/departments/:departmentId/events/:eventId" element={<EventDetailsPage />} />
+                <Route path="/KarnakGame" element={<KarnakGame />} />
                 
                 {/* Admin Routes */}
                 <Route path="/karmin" element={<AdminLoginPage />} />

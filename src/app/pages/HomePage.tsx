@@ -283,6 +283,7 @@ export function HomePage() {
                 whileHover={{ y: -5 }}
                 className="bg-[#1A1A1A] p-8 rounded-3xl border border-[#FF6B35]/20 shadow-lg hover:shadow-xl transition-all duration-300"
               >
+                
                 <div 
                   className="w-16 h-16 rounded-2xl flex items-center justify-center mb-6"
                   style={{ backgroundColor: `${feature.color}15` }}
@@ -296,7 +297,21 @@ export function HomePage() {
                   {feature.description}
                 </p>
               </motion.div>
+              
             ))}
+            {/*<div className="col-span-1 md:col-span-3 flex justify-center mt-8">
+
+              <Link to="/karnakgame" >
+                <motion.button
+                
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
+                  className="w-full sm:w-auto px-0.5 py-0.1 bg-[#1A1A1A] border-1  border-[#FF6B35] text-[#AAA] rounded-full  gap-2 shadow-lg hover:shadow-xl transition-shadow duration-200"
+                >
+                  Easter EGG!
+                </motion.button>
+              </Link>
+            </div>*/}
           </div>
         </div>
       </section>
