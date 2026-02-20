@@ -15,7 +15,7 @@ import { AdminLoginPage } from './pages/AdminLoginPage';
 import { DevPage } from './pages/DevPage';
 import { AdminProvider } from './context/AdminContext';
 import { IntroAnimationProvider } from './context/IntroAnimationContext';
-import KarnakGame from './pages/karnakgame';
+import KarnakGame from './pages/KarnakGame';
 
 export default function App() {
   return (
