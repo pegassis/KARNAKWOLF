@@ -72,7 +72,7 @@ export function HomePage() {
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20 lg:pt-0">
         {/* Top-left logo and badge (only on Home) - positioned inside hero so it scrolls away */}
         <div className="absolute top-5 left-5 z-10 flex items-center gap-3">
-          <Link to="/" onClick={() => {}} className="z-10">
+          <Link to="/karnakgame" onClick={() => {}} className="z-10">
             <img
               src="/pics/remlogo.png"
               alt="KARNAK logo"
@@ -299,19 +299,7 @@ export function HomePage() {
               </motion.div>
               
             ))}
-            {/*<div className="col-span-1 md:col-span-3 flex justify-center mt-8">
-
-              <Link to="/karnakgame" >
-                <motion.button
-                
-                  whileHover={{ scale: 1.05 }}
-                  whileTap={{ scale: 0.95 }}
-                  className="w-full sm:w-auto px-0.5 py-0.1 bg-[#1A1A1A] border-1  border-[#FF6B35] text-[#AAA] rounded-full  gap-2 shadow-lg hover:shadow-xl transition-shadow duration-200"
-                >
-                  Easter EGG!
-                </motion.button>
-              </Link>
-            </div>*/}
+           
           </div>
         </div>
       </section>

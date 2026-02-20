@@ -43,7 +43,7 @@ export default function App() {
                 <Route path="/devpage" element={<DevPage />} />
                 <Route path="/departments/:departmentId" element={<DepartmentEventsPage />} />
                 <Route path="/departments/:departmentId/events/:eventId" element={<EventDetailsPage />} />
-                <Route path="/KarnakGame" element={<KarnakGame />} />
+                <Route path="/karnakgame" element={<KarnakGame />} />
                 
                 {/* Admin Routes */}
                 <Route path="/karmin" element={<AdminLoginPage />} />

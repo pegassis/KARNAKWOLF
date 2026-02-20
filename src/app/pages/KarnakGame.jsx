@@ -424,8 +424,8 @@ const SnakeGame = () => {
       >
          KARNAK SNAKE
       </h1>
-      <p style={{ color: "#35D935", fontSize: isMobile ? "0.9rem" : "1.1rem", marginBottom: isMobile ? "12px" : "20px" }}>
-        Easter Egg: Try to beat the high scores!
+      <p style={{ color: "#35D935", fontSize: isMobile ? "1.5rem" : "1.5rem", marginBottom: isMobile ? "12px" : "20px" }}>
+        Easter Egg!
       </p>
 
       <div style={{ position: "relative", display: "inline-block", marginBottom: isMobile ? "20px" : "30px" }}>
@@ -612,7 +612,7 @@ const SnakeGame = () => {
 
       <div style={{ marginTop: "40px" }}>
         <p style={{ color: "#B0B0B0", fontSize: "0.9rem" }}>
-          Beat your high score and reach the highest level! 🎮
+          Beat your high score!
         </p>
       </div>
     </div>
