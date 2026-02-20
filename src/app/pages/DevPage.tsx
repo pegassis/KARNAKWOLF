@@ -47,7 +47,7 @@ export function DevPage() {
       status: 'Coordinator',
       image: 'https://res.cloudinary.com/dts9wynrs/image/upload/v1771421285/rehab_wvcd9y.jpg',
       contactText: 'Contact',
-      url: 'instagram.com/rrrrrehab',
+      url: 'https://www.instagram.com/rrrrrehab?igsh=dHNtMG01cWlqZTk=',
       borderColor: '#10B981',
       gradient: 'linear-gradient(145deg,#10B981,#000)'
       
@@ -81,7 +81,7 @@ export function DevPage() {
     {
       name: 'AbuTahir F',
       title: 'Media Wing',
-      handle: 'S4 ',
+      handle: 'S2 CSE AI/ML',
       status: 'Media Wing',
       image: 'https://res.cloudinary.com/dts9wynrs/image/upload/v1771421290/abutahir_rosx4c.jpg',
       contactText: 'Contact',
@@ -92,7 +92,7 @@ export function DevPage() {
     {
       name: 'Abraham Hayden Joseph',
       title: 'Media Wing',
-      handle: 'S4',
+      handle: 'S4 CSE A',
       status: 'Media Wing',
       image: 'https://res.cloudinary.com/dts9wynrs/image/upload/v1771423187/abraham_ezuffz.jpg',
       contactText: 'Contact',

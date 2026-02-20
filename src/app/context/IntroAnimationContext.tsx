@@ -9,13 +9,13 @@ const IntroAnimationContext = createContext<IntroAnimationContextType | undefine
 
 export function IntroAnimationProvider({ children }: { children: React.ReactNode }) {
   const [hasShown, setHasShown] = useState(() => {
-    // Check localStorage on mount to persist across page reloads
-    return localStorage.getItem('introAnimationShown') === 'true';
+    // Check sessionStorage on mount - animation shows once per browser session
+    return sessionStorage.getItem('introAnimationShown') === 'true';
   });
 
   const markAsShown = () => {
     setHasShown(true);
-    localStorage.setItem('introAnimationShown', 'true');
+    sessionStorage.setItem('introAnimationShown', 'true');
   };
 
   return (
