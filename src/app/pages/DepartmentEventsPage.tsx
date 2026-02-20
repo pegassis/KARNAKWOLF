@@ -174,7 +174,7 @@ const departmentEvents: Record<string, any> = {
       {
       id: 9,
         name: 'CODE REWIND (Reverse Coding Challenge)',
-        description: 'CODE REWIND is a unique reverse coding challenge where participants are given the expected output and must determine the correct input to generate it through a valid program. The event tests logical thinking, analytical skills, and problem-solving ability. If the exact output is not achieved, judges will evaluate the logic and approach used. Accuracy and clarity matter.\n\n1st price : ₹1000\n2nd price : ₹500\n\nRules & Regulations\n1. \tParticipation may be individual or in teams consisting of a maximum of 2 members\n 2. \tThe expected output will be provided at the start of the event.\n3. Participants must determine suitable input and write a program that produces the given output.\n4. \tOnly C programming or Python programming languages are permitted.\n5. \tThe program must be completed within the allotted time.\n6.\tIf the output does not match exactly, logic and approach will be evaluated.\n7. \tParticipants may be asked to explain their code and reasoning.\n8. \tInternet access and external assistance are strictly prohibited.\n9. \tPlagiarism or copying from others will lead to immediate disqualification.\n 10. \tWinners will be decided based on:\n• Accuracy of the output\n• Logical correctness\n• Efficiency of the solution\n• Explanation and clarity.\n11. \tThe decision of the judges and coordinators will be final and binding.',
+        description: 'CODE REWIND is a unique reverse coding challenge where participants are provided with the expected output and must determine the correct input and logic to generate it using a valid C program. The event evaluates logical thinking, analytical ability, and problem-solving skills. If the exact output is not achieved, the judges will assess the participant’s logic, approach, and program structure. Accuracy, clarity, and correctness of the C code are given importance.\n\n1st price : ₹1000\n2nd price : ₹500\n\nRules & Regulations:\n1. Participation may be individual or in teams consisting of a maximum of two members.\n2. The expected output will be provided at the start of the event.\n3. Participants must determine suitable input values and write a program that produces the given output.\n4. Only C or Python programming languages are permitted.\n5. The program must be completed within the allotted time.\n6. If the output does not match exactly, judges will evaluate the logic and approach used.\n7. Participants may be asked to explain their code and reasoning.\n8. Internet access and external assistance are strictly prohibited.\n9. Plagiarism or copying from others will lead to immediate disqualification.\n10. Winners will be decided based on:\n\t\t• Accuracy of the output\n\t\t• Logical correctness\n\t\t• Efficiency of the solution\n\t\t• Clarity of explanation\n11. The decision of the judges and coordinators will be final and binding.',
         date: 'February 28, 2026',
         time: 'Forenoon',
         prizepool: '1500',
@@ -913,7 +913,7 @@ const departmentEvents: Record<string, any> = {
         prizepool:'1500',
         badge: 3,
         image: '/depfolds/eee/wiring.jpeg',
-        registrationUrl: 'https://makemypass.com/event/bomb-diffusal',
+        registrationUrl: 'https://makemypass.com/event/wiring-competition-1',
         registerOption: 1,
         contact: [{ name: 'Anjal', phone: '9400090728' },{ name: 'Ljin', phone: '9074807202' }]
       },
