@@ -13,36 +13,36 @@ const DEFAULT_ITEMS = [
   },
   {
     title: 'Auto Show',
-    description: '.',
+    description: '',
     id: 2,
     image: '/mainpic/mn2.jpg'
   },
   {
-    title: '',
+    title: 'BEYOND THOUGHTS',
     description: '',
     id: 3,
     image: '/mainpic/mn3.jpg'
   },
   {
-    title: '',
+    title: 'ROBO VERSE',
     description: '',
     id: 4,
     image: '/mainpic/mn4.jpg'
   },
   {
-    title: '',
+    title: 'FASHION SHOW',
     description: '',
     id: 5,
     image: '/mainpic/mn5.jpg'
   },
   {
-    title: '',
+    title: 'PRO SHOW',
     description: '',
     id: 6,
     image: '/mainpic/mn6.jpg'
   },
   {
-    title: '',
+    title: 'THANDAV',
     description: '',
     id: 7,
     image: '/mainpic/mn7.jpg'

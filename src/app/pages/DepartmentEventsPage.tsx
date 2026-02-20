@@ -351,6 +351,57 @@ const departmentEvents: Record<string, any> = {
       ,
       badge: 1
       },
+      {
+        id: 20,
+        name: 'RALLY RAID (RC Off-road Challenge)',
+        description: 'Test your driving skills in our Rally Offroad Challenge, where precision, control, and nerves of steel take center stage. Tackle rugged terrain, sharp turns, and unpredictable obstacles in a thrilling race built for speed and strategy.\n\nRules & Regulations\n1.Only Madness',
+        date: 'February 27-28, 2026',
+        time: 'FULL DAY',
+        fee: '50',
+        discount: 1,
+        discountedFee: '40',
+        venue: 'Waiting room near cafeteria',
+        image: '/depfolds/comps/rally.jpeg',
+        registrationUrl: 'https://makemypass.com/event/rally-raid',
+        registerOption: 1,
+        contact: [{ name: 'Eldho', phone: '8590616499' },{ name: 'Sain', phone: '8139879470' }]
+      ,
+      badge: 3
+      },
+        {
+        id: 21,
+        name: 'Steel Storm',
+        description: 'Witness pure mechanical madness as battling robots clash in an arena of sparks, destruction, and chaos. It’s a no-mercy showdown of power, strategy, and engineering brilliance — where only the toughest machine survives.',
+        date: 'February 27-28, 2026',
+        time: 'FULL DAY',
+        fee: '50',
+        discount: 1,
+        discountedFee: '40',
+        venue: 'Classroom 231',
+        image: '/depfolds/comps/steel.jpeg',
+        registrationUrl: 'https://makemypass.com/event/robo-war-1',
+        registerOption: 1,
+        contact: [{ name: 'Manna', phone: '8089581794' },{ name: 'Edwin', phone: '9778305942' }]
+      ,
+      badge: 3
+      },
+      {
+        id: 22,
+        name: 'Deadlock',
+        description: '*Deadlock* is a spine-chilling horror escape room set inside a corrupted system controlled by a mysterious entity. Surrounded by dark visuals, eerie sounds, and glitch effects, teams must uncover clues, crack codes, and solve intense puzzles before time runs out. Only the bravest can break the deadlock and escape.\n\nRules and Regulations:\n1.Mobile phones are strictly prohibited\n2.Guests are strictly forbidden to harm the actors\n3.Light Sources: Lighters, flashlights, or laser pointers are forbidden as they ruin the lighting effects.\n4.Outside Tools: Pocket knives, multi-tools, or even pen/paper are not allowed; everything needed to solve the game will be provided inside.\n5.Do not use brute force. If a drawer or lock doesn’t open with two fingers, it’s not meant to be opened.\n6.Only two teams are allowed to participate at a time inside the escape room. Other team must wait for their turn outside the Arena.',
+        date: 'February 27-28, 2026',
+        time: 'FULL DAY',
+        fee: '90 for team of 3',
+        discount: 1,
+        discountedFee: '70 for team of 3',
+        venue: 'Room 229',
+        image: '/depfolds/comps/deadlock.jpeg',
+        registrationUrl: 'https://makemypass.com/event/deadlock',
+        registerOption: 1,
+        contact: [{ name: 'Vandana M P', phone: '7012334369' },{ name: 'Marwa', phone: '8301909588' }]
+      ,
+      badge: 3
+      },
       
     ]
   },
