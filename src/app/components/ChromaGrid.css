@@ -19,18 +19,12 @@
 
 /* Editor wrapper sizing helper */
 .editor-grid {
-  height: 1000px;
+  height: 600px;
 }
 
 @media (max-width: 500px) {
   .editor-grid {
-    height: 3000px; /* larger on tablets/phones */
-  }
-}
-
-@media (max-width: 500px) {
-  .editor-grid {
-    height: 3000px; /* mobile: increased height */
+    height: 1200px; /* mobile/tablet: reduced height */
   }
 }
 

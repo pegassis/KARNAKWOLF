@@ -10,7 +10,7 @@ export function DevPage() {
       title: 'Website Developer',
       handle: 'S6 CSE C',
       status: 'Website Developer',
-      image: 'https://res.cloudinary.com/dts9wynrs/image/upload/v1771437979/leen4_prxd8c.jpg',
+      image: 'https://res.cloudinary.com/dts9wynrs/image/upload/v1771571231/leen4_wkpxby.jpg',
       contactText: 'Contact',
       url: 'https://www.instagram.com/leochan_jr?igsh=YWFxMzBqNHFnODE=',
       borderColor: '#FF6B35',
@@ -186,7 +186,7 @@ export function DevPage() {
             >
             EDITORS
             </motion.h1>
-            <div className="dev-grid" style={{ position: 'relative', height: 'auto' }}>
+            <div  style={{ position: 'relative', height: 'auto' }}>
               <ChromaGrid
                 items={editors.map(d => ({
                   image: d.image,
@@ -198,7 +198,7 @@ export function DevPage() {
                   gradient: d.gradient
                 }))}
                 radius={300}
-                columns={2}
+                columns={3}
                 rows={1}
                 damping={0.45}
                 fadeOut={0.6}
