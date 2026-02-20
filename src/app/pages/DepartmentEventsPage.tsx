@@ -854,7 +854,7 @@ const departmentEvents: Record<string, any> = {
         prizepool:'1500',
         badge: 3,
         image: '/depfolds/eee/poster.jpeg',
-        registrationUrl: '',
+        registrationUrl: 'https://makemypass.com/event/poster-logo',
         registerOption: 1,
         contact: [{ name: 'Fathima Zahra', phone: '7560826349' },{ name: 'Achu T V', phone: '7306990697' }]
       },
@@ -886,6 +886,36 @@ const departmentEvents: Record<string, any> = {
         registrationUrl: 'https://makemypass.com/event/electrical-quizz',
         registerOption: 1,
         contact: [{ name: 'Alvin Saju', phone: '7012877401' },{ name: 'Deva Surya', phone: '8078472116' }]
+      },
+      {
+        id: 5,
+        name: 'MISSION: BOMB DEFUSE',
+        description: 'The campus is under threat, and the countdown has begun at Karnak 26! We need the brightest minds to step up, solve the puzzles, and save the day. Do you have the nerves to handle the pressure?\n\nRULES AND REGULATIONS:\n * Go Solo or Squad Up: You can take on this mission alone or participate as a group.\n* The Scavenger Hunt: Find all the clues hidden across the campus to progress.\n* The Final Stage: The last clue will reveal the secret location of the bomb and the code required to unlock it.\n* The Ultimate Test: When you face the actual bomb, it will challenge you with questions that only the sharpest minds can decode.\n* Zero Margin for Error: Only 3 errors will be tolerated. One wrong move and it’s game over,be sure to save the campus!\n\nDont wait until the timer hits zero! Contact our mission lead',
+        date: 'February 27, 2026',
+        time: '11:00 AM',
+        fee: '50',
+        venue: 'M22',
+        prizepool:'2000',
+        badge: 3,
+        image: '/depfolds/eee/bomb.jpeg',
+        registrationUrl: 'https://makemypass.com/event/bomb-diffusal',
+        registerOption: 1,
+        contact: [{ name: 'Basil Mathew Eldho', phone: '8281207566' }]
+      },
+      {
+        id: 6,
+        name: 'Wiring wizards (wiring Competition)',
+        description: '🛠️ “Every wire has a purpose and every connection has a consequence. Excellence comes from understanding both.\n”In the part of celebration of Karnak26 The department of electrical and electronics engineering presents the Wiring competition. A thrilling experience for speed,technical skill etc...\n\nRules and regulations\n●Phones are not allowed on arena \n●There will be a digital exam conducted before the competition \n●The team should come with their own tools\n●Teams must consit of one or two people ',
+        date: 'February 28, 2026',
+        time: '10:30 AM',
+        fee: '50',
+        venue: 'EEE Workshop',
+        prizepool:'1500',
+        badge: 3,
+        image: '/depfolds/eee/wiring.jpeg',
+        registrationUrl: 'https://makemypass.com/event/bomb-diffusal',
+        registerOption: 1,
+        contact: [{ name: 'Anjal', phone: '9400090728' },{ name: 'Ljin', phone: '9074807202' }]
       },
     
     ]
