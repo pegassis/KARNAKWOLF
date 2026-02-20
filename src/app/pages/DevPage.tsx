@@ -152,7 +152,7 @@ export function DevPage() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
               className="text-5xl md:text-5xl lg:text-7xl font-bold text-center mb-8 md:mb-16"
-              style={{ textAlign: 'center', paddingTop: '50px', color: '#0fc40c' }}
+              style={{ textAlign: 'center', paddingTop: '50px', color: '#2f88f5' }}
             >
             COORDINATORS
             </motion.h1>
