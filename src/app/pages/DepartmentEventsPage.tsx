@@ -36,7 +36,7 @@ interface Event {
 // Mock events data for each department
 const departmentEvents: Record<string, any> = {
   'computer-science': {
-    name: 'Computer Science',
+    name: 'Computer Science (DS, AI & ML)',
     color: '#FF6B35',
     events: [
       {
@@ -266,7 +266,7 @@ const departmentEvents: Record<string, any> = {
         time: 'FULL DAY',
         fee: 'FREE',
         venue: 'Room M10',
-        image: '/depfolds/comps/lpsg.jpeg',
+        image: '/depfolds/comps/lpsc.jpeg',
         registrationUrl: 'https://t4.ftcdn.net/jpg/17/77/94/27/360_F_1777942761_UTY0WxIs5of7FgsgrkLmzqFdCapwHHgN.jpg',
         registerOption: 2,
         contact: [{ name: 'Aleena', phone: '9048847676' }, { name: 'Gouripriya', phone: '9447290587' }]
@@ -323,36 +323,6 @@ const departmentEvents: Record<string, any> = {
       },
       {
         id: 18,
-        name: 'Funfinity (Mini Games)',
-        description: 'Funfinity – Where Fun Has No Limits! \nFunfinity is a fun-filled mini-games zone at our Techfest, packed with exciting quick challenges. It features interactive games like Walker Bottle, Balloon Pyramid, Circle Switch, and Flip & Find — each designed to test balance, speed, focus, and memory in a thrilling way. It’s all about friendly competition, energy, and enjoying simple yet exciting challenges with endless fun!\nNo rules& regulations',
-        date: 'February 27-28, 2026',
-        time: 'FULL DAY',
-        fee: 'FREE',
-        venue: 'CSE Block Corridors',
-        image: '/depfolds/comps/minigames.jpeg',
-        registrationUrl: 'https://t4.ftcdn.net/jpg/17/77/94/27/360_F_1777942761_UTY0WxIs5of7FgsgrkLmzqFdCapwHHgN.jpg',
-        registerOption: 2,
-        contact: [{ name: 'Vismaya', phone: '9544251901' }, { name: 'Vinayathri', phone: '9778140400' }]
-      ,
-      badge: 4
-      },
-      {
-        id: 19,
-        name: 'Mechamorphosis (E-Waste Sculpture)',
-        description: 'Mechamorphosis is a sustainable art installation that transforms electronic waste into a life-size robotic sculpture. It reimagines discarded technology as creative expression, promoting responsible recycling and sustainability.\nSymbolizing technological rebirth, it stands as a mechanical guardian, highlighting innovation, environmental awareness, and the power of reuse in the digital age',
-        date: 'February 27-28, 2026',
-        time: 'FULL DAY',
-        fee: 'FREE',
-        venue: 'Open Area CSE Block',
-        image: '/depfolds/comps/mecha.jpeg',
-        registrationUrl: 'https://t4.ftcdn.net/jpg/17/77/94/27/360_F_1777942761_UTY0WxIs5of7FgsgrkLmzqFdCapwHHgN.jpg',
-        registerOption: 2,
-        contact: [{ name: 'Manna', phone: ' 8089581794' }]
-      ,
-      badge: 1
-      },
-      {
-        id: 20,
         name: 'RALLY RAID (RC Off-road Challenge)',
         description: 'Test your driving skills in our Rally Offroad Challenge, where precision, control, and nerves of steel take center stage. Tackle rugged terrain, sharp turns, and unpredictable obstacles in a thrilling race built for speed and strategy.\n\nRules & Regulations\n1.Only Madness',
         date: 'February 27-28, 2026',
@@ -369,7 +339,7 @@ const departmentEvents: Record<string, any> = {
       badge: 3
       },
         {
-        id: 21,
+        id: 19,
         name: 'Steel Storm',
         description: 'Witness pure mechanical madness as battling robots clash in an arena of sparks, destruction, and chaos. It’s a no-mercy showdown of power, strategy, and engineering brilliance — where only the toughest machine survives.',
         date: 'February 27-28, 2026',
@@ -386,7 +356,7 @@ const departmentEvents: Record<string, any> = {
       badge: 3
       },
       {
-        id: 22,
+        id: 20,
         name: 'Deadlock',
         description: '*Deadlock* is a spine-chilling horror escape room set inside a corrupted system controlled by a mysterious entity. Surrounded by dark visuals, eerie sounds, and glitch effects, teams must uncover clues, crack codes, and solve intense puzzles before time runs out. Only the bravest can break the deadlock and escape.\n\nRules and Regulations:\n1.Mobile phones are strictly prohibited\n2.Guests are strictly forbidden to harm the actors\n3.Light Sources: Lighters, flashlights, or laser pointers are forbidden as they ruin the lighting effects.\n4.Outside Tools: Pocket knives, multi-tools, or even pen/paper are not allowed; everything needed to solve the game will be provided inside.\n5.Do not use brute force. If a drawer or lock doesn’t open with two fingers, it’s not meant to be opened.\n6.Only two teams are allowed to participate at a time inside the escape room. Other team must wait for their turn outside the Arena.',
         date: 'February 27-28, 2026',
@@ -401,6 +371,36 @@ const departmentEvents: Record<string, any> = {
         contact: [{ name: 'Vandana M P', phone: '7012334369' },{ name: 'Marwa', phone: '8301909588' }]
       ,
       badge: 3
+      },
+      {
+        id: 21,
+        name: 'Funfinity (Mini Games)',
+        description: 'Funfinity – Where Fun Has No Limits! \nFunfinity is a fun-filled mini-games zone at our Techfest, packed with exciting quick challenges. It features interactive games like Walker Bottle, Balloon Pyramid, Circle Switch, and Flip & Find — each designed to test balance, speed, focus, and memory in a thrilling way. It’s all about friendly competition, energy, and enjoying simple yet exciting challenges with endless fun!\nNo rules& regulations',
+        date: 'February 27-28, 2026',
+        time: 'FULL DAY',
+        fee: 'FREE',
+        venue: 'CSE Block Corridors',
+        image: '/depfolds/comps/minigames.jpeg',
+        registrationUrl: 'https://t4.ftcdn.net/jpg/17/77/94/27/360_F_1777942761_UTY0WxIs5of7FgsgrkLmzqFdCapwHHgN.jpg',
+        registerOption: 2,
+        contact: [{ name: 'Vismaya', phone: '9544251901' }, { name: 'Vinayathri', phone: '9778140400' }]
+      ,
+      badge: 4
+      },
+      {
+        id: 22,
+        name: 'Mechamorphosis (E-Waste Sculpture)',
+        description: 'Mechamorphosis is a sustainable art installation that transforms electronic waste into a life-size robotic sculpture. It reimagines discarded technology as creative expression, promoting responsible recycling and sustainability.\nSymbolizing technological rebirth, it stands as a mechanical guardian, highlighting innovation, environmental awareness, and the power of reuse in the digital age',
+        date: 'February 27-28, 2026',
+        time: 'FULL DAY',
+        fee: 'FREE',
+        venue: 'Open Area CSE Block',
+        image: '/depfolds/comps/mecha.jpeg',
+        registrationUrl: 'https://t4.ftcdn.net/jpg/17/77/94/27/360_F_1777942761_UTY0WxIs5of7FgsgrkLmzqFdCapwHHgN.jpg',
+        registerOption: 2,
+        contact: [{ name: 'Manna', phone: ' 8089581794' }]
+      ,
+      badge: 1
       },
       
     ]
@@ -897,7 +897,7 @@ const departmentEvents: Record<string, any> = {
       {
         id: 2,
         name: '𝗣𝗼𝘀𝘁𝗲𝗿 & 𝗟𝗼𝗴𝗼 𝗖𝗼𝗺𝗽𝗲𝘁𝗶𝘁𝗶𝗼𝗻',
-        description: '💡𝗧𝗵𝗲𝗺 𝗶𝗻 𝗟𝗼𝗴𝗼 & 𝗣𝗼𝘀𝘁𝗲𝗿𝗘𝗹𝗲𝗰𝘁𝗿𝗶𝗰𝗮𝗹 𝗕𝗮𝘀𝗶𝗰 \n\nRules & Regulations- \n•Individual participation only\n•Arrange text and images neatly.\n•Font size should be readable from a distance.\n•Proper Colors\n•Use images that match the topic.\n•Keep equal spacing.\n🖼️ Poster & Logo Design Time Duration:\n* Time Duration : 2 hours\n* Use A 3 Paper',
+        description: 'Rules & Regulations- \n•Individual participation only\n•Arrange text and images neatly.\n•Font size should be readable from a distance.\n•Proper Colors\n•Use images that match the topic.\n•Keep equal spacing.\n🖼️ Poster & Logo Design Time Duration:\n* Time Duration : 2 hours\n* Use A 3 Paper',
         date: 'February 27, 2026',
         time: '12:30 PM',
         fee: '50',
@@ -1140,7 +1140,25 @@ const departmentEvents: Record<string, any> = {
         contact: [{ name: 'Aiswarya', phone: '+91 751082 2516' }, { name: 'Aryalakshmi', phone: ' +91 956201 5498' }]
       }
     ]
-  }
+     
+  },
+   'fun': {
+    name: 'Fun-Games',
+    color: '#FF6B35',
+    events: [
+       {
+        id: 1,
+        name: 'Working....',
+        description: 'UPCOMING',
+        
+       
+        image: 'https://tse2.mm.bing.net/th/id/OIP.GQi-K_Xw97-Krhwn3MxopQHaIy?rs=1&pid=ImgDetMain&o=7&rm=3',
+        registerOption: 2,
+        
+      }
+      
+    ]
+  },
 };
 
 export function DepartmentEventsPage() {
@@ -1542,7 +1560,18 @@ export function DepartmentEventsPage() {
           <div className="absolute inset-0 bg-black/60"></div>
         </div>
       )}
-
+      {/* LetterGlitch Background for Computer Science Department */}
+      {departmentId === 'fun' && (
+        <div className="fixed inset-0 top-0 left-0 w-full h-full z-0 opacity-15 pointer-events-none">
+          <LetterGlitch
+            glitchSpeed={50}
+            centerVignette={true}
+            outerVignette={false}
+            smooth={true}
+            glitchColors={['#22C55E', '#16A34A', '#86EFAC']}
+          />
+        </div>
+      )}
   
 
       <div className="max-w-7xl mx-auto px-4 sm:px-8 relative z-10">

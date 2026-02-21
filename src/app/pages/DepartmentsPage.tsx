@@ -1,6 +1,6 @@
 import { motion } from 'motion/react';
 import { Link } from 'react-router-dom';
-import { Cpu, Zap, Cog, Building2, Lightbulb, Hammer } from 'lucide-react';
+import { Cpu, Zap, Cog, Building2, Lightbulb, Hammer, PartyPopper } from 'lucide-react';
 // import StarBorder from '../components/StarBorder';
 
 const departments = [
@@ -38,7 +38,7 @@ const departments = [
   },
   {
     id: 'computer-science',
-    name: 'Computer Science',
+    name: 'Computer Science ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ (DS, AI & ML)',
     icon: Cpu,
     color: '#C65D3B',
     description: 'Coding, AI, Web Dev, Cybersecurity',
@@ -51,7 +51,16 @@ const departments = [
     color: '#5BA3A3',
     description: 'Cross-domain, Workshops, Talks',
     gradient: 'from-[#5BA3A3]/20 to-[#5BA3A3]/5'
+  },
+  {
+    id: 'fun',
+    name: 'Fun-Games',
+    icon: PartyPopper,
+    color: '#775ba3',
+    description: 'Fun And Fun Only',
+    gradient: 'from-[#775ba3]/20 to-[#5BA3A3]/5'
   }
+ 
 ];
 
 export function DepartmentsPage() {
@@ -84,16 +93,17 @@ export function DepartmentsPage() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {departments.map((dept, index) => {
             const Icon = dept.icon;
+            const isFunGames = dept.id === 'fun';
             
             return (
-              <div key={dept.id} className="w-full h-full">
-                <Link to={`/departments/${dept.id}`} className="block w-full h-full">
+              <div key={dept.id} className={`w-full h-full ${isFunGames ? 'md:col-span-1 lg:col-span-3' : ''}`}>
+                <Link to={`/departments/${dept.id}`} style={{textAlign:'center'}} className="block w-full h-full">
                   <motion.div
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.5, delay: index * 0.1 }}
                     whileHover={{ y: -8, scale: 1.02 }}
-                    className="group relative h-80 rounded-3xl overflow-hidden cursor-pointer shadow-lg hover:shadow-2xl transition-all duration-300"
+                    className={`group relative ${isFunGames ? 'h-48' : 'h-80'} rounded-3xl overflow-hidden cursor-pointer shadow-lg hover:shadow-2xl transition-all duration-300`}
                   >
                   {/* Background Gradient */}
                   <div className={`absolute inset-0 bg-gradient-to-br ${dept.gradient}`} />
