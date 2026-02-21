@@ -916,7 +916,7 @@ const departmentEvents: Record<string, any> = {
         date: 'February 27, 2026',
         time: '10:00 AM',
         fee: '50',
-        venue: 'Lab 5',
+        venue: 'Lab 1',
         badge: 2,
         image: '/depfolds/eee/cad.jpeg',
         registrationUrl: 'https://makemypass.com/event/eee-cad-workshop',
