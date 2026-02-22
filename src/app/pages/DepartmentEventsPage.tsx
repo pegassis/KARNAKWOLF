@@ -956,7 +956,7 @@ const departmentEvents: Record<string, any> = {
       {
         id: 6,
         name: 'Wiring wizards (wiring Competition)',
-        description: '🛠️ “Every wire has a purpose and every connection has a consequence. Excellence comes from understanding both.\n”In the part of celebration of Karnak26 The department of electrical and electronics engineering presents the Wiring competition. A thrilling experience for speed,technical skill etc...\n\nRules and regulations\n●Phones are not allowed on arena \n●There will be a digital exam conducted before the competition \n●The team should come with their own tools\n●Teams must consit of one or two people ',
+        description: '🛠️ “Every wire has a purpose and every connection has a consequence. Excellence comes from understanding both.\n”In the part of celebration of Karnak26 The department of electrical and electronics engineering presents the Wiring competition. A thrilling experience for speed,technical skill etc...\n\n1st price : ₹1000\n2nd price : ₹500\n\nRules and regulations\n●Phones are not allowed on arena \n●There will be a digital exam conducted before the competition \n●The team should come with their own tools\n●Teams must consit of one or two people ',
         date: 'February 28, 2026',
         time: '10:30 AM',
         fee: '50',
