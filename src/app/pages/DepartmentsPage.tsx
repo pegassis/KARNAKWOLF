@@ -38,7 +38,7 @@ const departments = [
   },
   {
     id: 'computer-science',
-    name: 'Computer Science ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ (DS, AI & ML)',
+    name: 'Computer  Science,‎ ‎ ‎ ‎ ‎ ‎ ‎ Data Science, AI & ML',
     icon: Cpu,
     color: '#C65D3B',
     description: 'Coding, AI, Web Dev, Cybersecurity',

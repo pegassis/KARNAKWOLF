@@ -1148,14 +1148,94 @@ const departmentEvents: Record<string, any> = {
     events: [
        {
         id: 1,
-        name: 'Working....',
-        description: 'UPCOMING',
-        
-       
-        image: 'https://tse2.mm.bing.net/th/id/OIP.GQi-K_Xw97-Krhwn3MxopQHaIy?rs=1&pid=ImgDetMain&o=7&rm=3',
+        name: '🪵 DISK ROLLER',
+        description: '“Speed, angle, and perfect control — that’s the key to victory.Disk Roller challenges you to roll with precision and aim for the winning slot.\nIt looks simple, but the perfect roll demands focus and skill.\nCan you strike the perfect balance?”\n\nRules & Regulations:\n1.Starting Position\n>The player must stand behind the starting line.\n>Crossing the line while rolling is not allowed.\n\n2.Rolling the Disk\n>The disk must be rolled along the ground, not thrown.\n>Only one hand is used to roll the disk.\n\n3.Turns\n>Each player gets a fixed number of turns (usually 3–5).\n>Players take turns one by one.\n\n4.Scoring\n>Disk must completely rest inside a scoring zone to count.\n\n5.Fouls\n>Stepping over the line → turn cancelled.\n>Throwing or lifting the disk → no score.\n>Touching the disk after release → foul.\n\n6.Winning\n>The player who scores two out of three turns will be the winner',
+        date: 'February 27-28, 2026',
+        time: 'FULL DAY',
+        fee: '30',
+        venue: 'TBA',
+        badge: 4,
+        image: '/depfolds/fun/disk.jpeg',
+        registrationUrl: '',
         registerOption: 2,
-        
-      }
+
+        contact: [{ name: 'James', phone: '9846035018' }]
+      },
+      {
+        id: 2,
+        name: '🎯 Bean Bag Toss 🎯',
+        description: 'Bean Bag Toss is an exciting precision-based fun game where focus meets fun! Step up to the board, aim carefully, and toss your bean bags to score maximum points. Sounds simple? Think again! It takes sharp concentration, steady hands, and perfect accuracy to win.\nChallenge your friends, compete for the top score, and prove your throwing skills. Only the most accurate players will dominate the board and claim victory!\n\nRules and Regulations:\n1. Each participant will receive three bean bags.\n2. Participants must stand behind the designated throw line.\n3. At least two bean bags must pass completely through the hole to win.\n4. Crossing the throw line during an attempt will lead to disqualification of that throw.\n5. The decision of the event coordinators will be final.',
+        date: 'February 27-28, 2026',
+        time: 'FULL DAY',
+        fee: 'FREE',
+        venue: 'TBA',
+        badge: 4,
+        image: '/depfolds/fun/bean.jpeg',
+        registrationUrl: '',
+        registerOption: 2,
+
+        contact: [{ name: 'Arjun K R', phone: '9961070206' }]
+      },
+      {
+        id: 3,
+        name: '🎲 Poke A Prize 🎲',
+        description: 'Poke A Prize is a fun and thrilling mystery game where luck meets excitement. Choose one cup from the set and reveal the hidden surprise beneath. One right pick could win you an amazing prize — trust your intuition and take the chance!\n\nRules & Regulations:\n1. Each participant gets only one chance to pick a cup.\n2. Cups cannot be lifted or touched before confirming your choice.\n3. Once a cup is chosen, the decision cannot be changed.\n4. Participants must follow the instructions given by the coordinators.\n 5. The organizing team’s decision will be final in all cases.',
+        date: 'February 27-28, 2026',
+        time: 'FULL DAY',
+        fee: '20 per person',
+        venue: 'TBA',
+        badge: 4,
+        image: '/depfolds/fun/poke.jpeg',
+        registrationUrl: '',
+        registerOption: 2,
+
+        contact: [{ name: 'Anagha', phone: '8848300368' }]
+      },
+      {
+        id: 4,
+        name: 'Stand The Bottle',
+        description: 'Think you have steady hands and perfect focus? Stand The Bottle is a thrilling balance challenge that tests your control, patience, and precision. Using a lifting rod, participants must carefully raise and perfectly position the bottle without losing balance. It may look simple — but only the sharpest minds and steadiest hands can make it stand!\n\nCan you lift it?\nCan you control it?\nCan you stand it?\n\nRules & Regulations:\n1. Each participant will get only one attempt per entry.\n2. The bottle must be lifted and placed upright without dropping.\n3. Direct hand contact with the bottle is not allowed.\n4. Time limit will be strictly followed.\n5. Judges decision will be final.\n6. Any unfair means will lead to immediate disqualification.',
+        date: 'February 27-28, 2026',
+        time: 'FULL DAY',
+        fee: '20',
+        venue: 'TBA',
+        badge: 4,
+        image: '/depfolds/fun/stand.jpeg',
+        registrationUrl: '',
+        registerOption: 2,
+
+        contact: [{ name: '', phone: '9495874057' }]
+      },
+      {
+        id: 5,
+        name: '🎯 ZIG ZAG BALL RAMP 🎯',
+        description: 'Test your precision, focus, and steady hands in this exciting skill-based challenge! Zig Zag Ball Ramp is a fun yet competitive game where participants must guide the ball through a twisting zig-zag pathway using a control stick. One wrong move and the ball slips off track! With increasing turns and tricky angles, only those with perfect balance and control can score big.Simple to play, tough to master — are you ready to take the challenge?\n\nRules and Regulations:\nEach participant gets one attempt per entry.\nThe ball must stay within the designated zig-zag path.\nTouching the ball with hands is not allowed.\nUse only the provided stick/controller to guide the ball.\nDecision of the coordinators will be final.\nAny damage to the equipment will lead to disqualification.',
+        date: 'February 27-28, 2026',
+        time: 'FULL DAY',
+        fee: '30',
+        venue: 'TBA',
+        badge: 4,
+        image: '/depfolds/fun/zig.jpeg',
+        registrationUrl: '',
+        registerOption: 2,
+
+        contact: [{ name: 'Febin', phone: '6235684635' }]
+      },
+      {
+        id: 6,
+        name: '🏏 CRICKET BAWLING MACHINE',
+        description: 'The Cricket Bowling Machine Challenge is here to test your reflexes, precision, and pure batting instincts!\nFeel the adrenaline as deliveries come flying at you with speed and accuracy. Whether youre a casual player or a cricket enthusiast, this is your chance to prove your timing, power, and composure.\n\nRules and Regulations\n1.Each participant gets 6 balls per round.\n2.Runs are scored based on clean hits and target zones.\n3.Basic safety gear must be worn.\n4.Only one participant in the net at a time.\n5.No practice balls before the official attempt.\n6.Misconduct or equipment damage leads to disqualification.\n7.Follow all instructions from event coordinators.\n8.Organizers may modify rules if needed.',
+        date: 'February 27-28, 2026',
+        time: 'FULL DAY',
+        fee: '30',
+        venue: 'Cricket Net Area',
+        badge: 4,
+        image: '/depfolds/fun/cricket.jpeg',
+        registrationUrl: '',
+        registerOption: 2,
+
+        contact: [{ name: '', phone: '8590262698' }]
+      },
       
     ]
   },
