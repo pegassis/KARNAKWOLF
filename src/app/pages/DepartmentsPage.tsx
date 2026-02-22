@@ -1,9 +1,17 @@
 import { motion } from 'motion/react';
 import { Link } from 'react-router-dom';
-import { Cpu, Zap, Cog, Building2, Lightbulb, Hammer, PartyPopper } from 'lucide-react';
+import { Cpu, Zap, Cog, Building2, Lightbulb, Hammer, PartyPopper,Star } from 'lucide-react';
 // import StarBorder from '../components/StarBorder';
 
 const departments = [
+    {
+    id: 'all',
+    name: 'Registration for All Events',
+    icon: Star,
+    color: '#5acc40',
+ 
+    gradient: 'from-[#5acc40]/20 to-[#5BA3A3]/5'
+  },
    {
     id: 'civil',
     name: 'Civil',
@@ -58,7 +66,7 @@ const departments = [
     icon: PartyPopper,
     color: '#775ba3',
     description: 'Fun And Fun Only',
-    gradient: 'from-[#775ba3]/20 to-[#5BA3A3]/5'
+    gradient: 'from-[#775ba3]/20 to-[#775ba3]/5'
   }
  
 ];
@@ -88,22 +96,37 @@ export function DepartmentsPage() {
             <div className="w-2 h-2 rounded-full bg-[#5BA3A3]" />
           </div>
         </motion.div>
+        
 
         {/* Department Cards Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {departments.map((dept, index) => {
             const Icon = dept.icon;
             const isFunGames = dept.id === 'fun';
+            const isAllEvents = dept.id === 'all';
+            const isWide = isFunGames || isAllEvents;
+            
+            const CardLink = isAllEvents 
+              ? ({ children }: { children: React.ReactNode }) => (
+                  <a href="https://org.makemypass.com/web/karnak-26" target="_blank" rel="noopener noreferrer" style={{textAlign:'center'}} className="block w-full h-full">
+                    {children}
+                  </a>
+                )
+              : ({ children }: { children: React.ReactNode }) => (
+                  <Link to={`/departments/${dept.id}`} style={{textAlign:'center'}} className="block w-full h-full">
+                    {children}
+                  </Link>
+                );
             
             return (
-              <div key={dept.id} className={`w-full h-full ${isFunGames ? 'md:col-span-1 lg:col-span-3' : ''}`}>
-                <Link to={`/departments/${dept.id}`} style={{textAlign:'center'}} className="block w-full h-full">
+              <div key={dept.id} className={`w-full h-full ${isWide ? 'md:col-span-1 lg:col-span-3' : ''}`}>
+                <CardLink>
                   <motion.div
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.5, delay: index * 0.1 }}
                     whileHover={{ y: -8, scale: 1.02 }}
-                    className={`group relative ${isFunGames ? 'h-48' : 'h-80'} rounded-3xl overflow-hidden cursor-pointer shadow-lg hover:shadow-2xl transition-all duration-300`}
+                    className={`group relative ${isWide ? 'h-48' : 'h-80'} rounded-3xl overflow-hidden cursor-pointer shadow-lg hover:shadow-2xl transition-all duration-300`}
                   >
                   {/* Background Gradient */}
                   <div className={`absolute inset-0 bg-gradient-to-br ${dept.gradient}`} />
@@ -186,12 +209,12 @@ export function DepartmentsPage() {
                     </svg>
                   </div>
                 </motion.div>
-                </Link>
+                </CardLink>
               </div>
             );
           })}
         </div>
-
+       
         {/* Info Box */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}

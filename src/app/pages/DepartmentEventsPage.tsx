@@ -1562,7 +1562,7 @@ export function DepartmentEventsPage() {
           />
         </div>
       )}
-
+      
       {/* GridMotion Background for Civil Department */}
       {departmentId === 'civil' && (
         <div className="fixed inset-0 top-0 left-0 w-full h-full z-0  opacity-35 pointer-events-none">
