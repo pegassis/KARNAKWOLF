@@ -349,7 +349,7 @@ const departmentEvents: Record<string, any> = {
         discountedFee: '40',
         venue: 'Room M231',
         image: '/depfolds/comps/steel.jpeg',
-        registrationUrl: 'https://makemypass.com/event/robo-war-1',
+        registrationUrl: 'https://makemypass.com/event/steelstorm',
         registerOption: 1,
         contact: [{ name: 'Manna', phone: '8089581794' },{ name: 'Edwin', phone: '9778305942' }]
       ,
