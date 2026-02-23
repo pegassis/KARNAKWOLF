@@ -294,7 +294,7 @@ const departmentEvents: Record<string, any> = {
       {
         id: 16,
         name: 'VIBE.EXE(Vibe Coding)',
-        description: 'Code the vibe. Build the future. ⚡💻Step into the world of fast-paced coding where creativity meets logic! Vibe Coding – vibe.exe is all about solving fun and challenging problems in a high-energy environment. Whether you are a beginner or a pro, this is your chance to test your skills, learn new tricks, and vibe with fellow coders.Think quick. Code smart. Let your vibe do the talking. 🚀\n\nRules & Regulations\n* Participants must bring their own laptops.\n* Reporting time: 27th Feb – Afternoon session.\n* The event will be conducted in Lab 8.\n* Basic guidelines and problem statements will be explained at the venue.\n* Fair play is mandatory; any malpractice may lead to disqualification.',
+        description: 'Code the vibe. Build the future. \n💻Step into the world of fast-paced coding where creativity meets logic! Vibe Coding – vibe.exe is all about solving fun and challenging problems in a high-energy environment. Whether you are a beginner or a pro, this is your chance to test your skills, learn new tricks, and vibe with fellow coders.Think quick. Code smart. Let your vibe do the talking.\n\nRules & Regulations\n* Participants must bring their own laptops.\n* Reporting time: 27th Feb – Afternoon session.\n* The event will be conducted in Computer Lab 7.\n* Basic guidelines and problem statements will be explained at the venue.\n* Fair play is mandatory; any malpractice may lead to disqualification.',
         date: 'February 27, 2026',
         time: 'Afternoon',
         fee: '*For IEEE Members – ₹0 ( Free ) \n  *For Non-IEEE Members – ₹30',
