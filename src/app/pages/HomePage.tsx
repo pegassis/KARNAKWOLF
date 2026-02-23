@@ -338,6 +338,46 @@ export function HomePage() {
           </div>
         </div>
       </section>
+
+      {/* Sponsors Section */}
+      <section className="py-24 bg-[#0F0F0F] relative">
+        <div className="max-w-7xl mx-auto px-4 sm:px-8 text-center">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="text-center mb-16"
+          >
+            <h2 className="text-5xl mb-4 text-[#E8E8E8]">Sponsors</h2>
+            <div className="w-24 h-1 bg-[#FF6B35] mx-auto" />
+          </motion.div>
+
+          {/* Placeholder logos - replace with real images later */}
+          <div className="mt-12 flex flex-wrap justify-center items-center gap-12">
+            <a href="https://dentandzkin.com/#home" target="_blank" rel="noopener noreferrer" className="flex">
+              <img
+                src="sponsers/dent1.jpeg"
+                alt="Sponsor 1"
+                className="h-24 w-auto object-contain"
+            />
+            </a>
+           
+              <img
+                src="sponsers/eye.jpeg"
+                alt="Sponsor 2"
+                className="h-24 w-auto object-contain"
+              />
+          
+            <a href="https://gymqofitness.com/" target="_blank" rel="noopener noreferrer" className="flex">
+              <img
+                src="sponsers/gymoo.jpeg"
+                alt="Sponsor 3"
+                className="h-32 w-auto object-contain"
+              />
+            </a>
+          </div>
+        </div>
+      </section>
       </motion.div>
     </div>
   );
