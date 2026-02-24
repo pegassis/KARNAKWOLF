@@ -558,7 +558,7 @@ const departmentEvents: Record<string, any> = {
         id: 11,
         name: 'ROYALE WARFARE (E GAME – BGMI )',
         description: 'Prepare for an adrenaline-charged clash where survival meets strategy and legends are forged. Conquerer unites the explosive intensity of BGMI with the precision and brilliance of eFootball in one unstoppable championship. \nDominate the battleground. Command the pitch. Outplay, outlast, and outshine the competition. This is more than a tournament — it’s your moment to claim glory and prove you belong at the top.\n Register now and rise as the true Conquerer.\n\n1st Prize: Rs.1500 \n2nd Prize: Rs.1000 \n\nRules and Regulations:  \n• 🕗 Everyone must join the room at 8:00 PM sharp. \n• 🎮 Match will start exactly at 8:15 PM. \n• 🗺 Map: Erangle. \n• 🏆 Only one match will be played to select the winner \n• 🚫 Late entries will not be allowed.\n • 🎯 Play fair – no teaming or cheating.\n • 📶 Ensure a stable internet connection. \n• 🔕 Maintain mic discipline during the match \n\nLast date for reg: 23/02/2026',
-        date: 'February 24, 2026',
+        date: 'March 1, 2026',
         time: '08:00 PM',
         fee: '110 per team',
         prizepool:'₹2500',
