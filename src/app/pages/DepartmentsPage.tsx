@@ -694,7 +694,7 @@ const departmentEvents: Record<string, any> = {
       {
         id: 11,
         name: 'ROYALE WARFARE (E GAME – BGMI)',
-        date: 'February 24, 2026',
+        date: 'March 1, 2026',
         fee: '₹110',
         badge: 'Competition',
         image: '/depfolds/ec/bgmi.jpeg',
