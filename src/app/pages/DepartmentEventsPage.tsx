@@ -253,7 +253,7 @@ const departmentEvents: Record<string, any> = {
         venue: 'Computer Lab 9',
         image: '/depfolds/comps/thinktank.jpeg',
         registrationUrl: 'https://makemypass.com/event/the-thinktank',
-        registerOption: 2,
+        registerOption: 1,
         contact: [{ name: 'Samuel', phone: '8137897726' }, { name: 'Helvin', phone: '8590018466' }]
       ,
       badge: 3
