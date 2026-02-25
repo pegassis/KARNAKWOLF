@@ -645,7 +645,7 @@ const departmentEvents: Record<string, any> = {
         fee: '30',
         badge: 4,
         image: '/depfolds/mec/5.jpeg',
-        registrationUrl: '',
+        registrationUrl: 'https://makemypass.com/event/pull-up-bar-hanging',
         registerOption: 1,
         contact: [{ name: 'Eldhose', phone: '9061022005' }, { name: '', phone: '' }]
       },
