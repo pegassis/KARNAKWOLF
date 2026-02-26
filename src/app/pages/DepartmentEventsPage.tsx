@@ -387,7 +387,7 @@ const departmentEvents: Record<string, any> = {
         registerOption: 1,
         contact: [{ name: 'Anandhu', phone: '6235445090' },{ name: 'Rehab', phone: '7907844588' }]
       ,
-      badge: 3
+      badge: 4
       },
       {
         id: 22,
