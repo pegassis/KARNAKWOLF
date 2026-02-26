@@ -288,6 +288,17 @@ const departmentEvents: Record<string, any> = {
         contact: [{ name: 'Vandana M P', phone: '7012334369' }, { name: 'Marwa', phone: '8301909588' }]
       },
       {
+        id: 2,
+        name: 'FILMFEST',
+        date: 'February 27-28, 2026',
+        fee: '₹25',
+        badge: 'Entertainment',
+        image: '/depfolds/comps/film.jpeg',
+        registrationUrl: 'https://makemypass.com/event/filmfest',
+        contact: [{ name: 'Anandhu', phone: '6235445090' },{ name: 'Rehab', phone: '7907844588' }]
+      },
+
+      {
         id: 22,
         name: 'Funfinity (Mini Games)',
         date: 'February 27-28, 2026',
@@ -695,7 +706,7 @@ const departmentEvents: Record<string, any> = {
         id: 11,
         name: 'ROYALE WARFARE (E GAME – BGMI)',
         date: 'March 1, 2026',
-        fee: '₹110',
+        fee: '₹110 per team',
         badge: 'Competition',
         image: '/depfolds/ec/bgmi.jpeg',
         registrationUrl: 'https://makemypass.com/event/royalwarfare',

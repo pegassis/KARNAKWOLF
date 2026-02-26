@@ -374,6 +374,23 @@ const departmentEvents: Record<string, any> = {
       },
       {
         id: 21,
+        name: 'FILMFEST',
+        description: 'We are proud to host our FilmFest — a power-packed 15-minute cinematic ride featuring high-intensity moments, iconic rewatched scenes, and favorite songs. A blend of energy, emotion, and nostalgia, this experience promises nonstop entertainment.',
+        date: 'February 27-28, 2026',
+        time: 'FULL DAY',
+        fee: '25',
+        discount: 2,
+        discountedFee: '',
+        venue: 'Room M232',
+        image: '/depfolds/comps/film.jpeg',
+        registrationUrl: 'https://makemypass.com/event/filmfest',
+        registerOption: 1,
+        contact: [{ name: 'Anandhu', phone: '6235445090' },{ name: 'Rehab', phone: '7907844588' }]
+      ,
+      badge: 3
+      },
+      {
+        id: 22,
         name: 'Funfinity (Mini Games)',
         description: 'Funfinity – Where Fun Has No Limits! \nFunfinity is a fun-filled mini-games zone at our Techfest, packed with exciting quick challenges. It features interactive games like Walker Bottle, Balloon Pyramid, Circle Switch, and Flip & Find — each designed to test balance, speed, focus, and memory in a thrilling way. It’s all about friendly competition, energy, and enjoying simple yet exciting challenges with endless fun!\nNo rules& regulations',
         date: 'February 27-28, 2026',
@@ -388,7 +405,7 @@ const departmentEvents: Record<string, any> = {
       badge: 4
       },
       {
-        id: 22,
+        id: 23,
         name: 'Mechamorphosis (E-Waste Sculpture)',
         description: 'Mechamorphosis is a sustainable art installation that transforms electronic waste into a life-size robotic sculpture. It reimagines discarded technology as creative expression, promoting responsible recycling and sustainability.\nSymbolizing technological rebirth, it stands as a mechanical guardian, highlighting innovation, environmental awareness, and the power of reuse in the digital age',
         date: 'February 27-28, 2026',
