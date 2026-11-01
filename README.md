@@ -20,7 +20,7 @@ React · TypeScript · Vite · Tailwind CSS · React Router · GSAP · Three.js 
 
 Built by a team. We designed the page structure in **Figma**, then built the site in VS Code using **Antigravity** and **GitHub Copilot** as AI coding assistants.
 
-**Team:** [number] students. **My part:** [what you built, e.g. the Departments and event pages, the registration form, animations].
+**Team:** Leen Leo, Aryan C S, Christepher C Biju
 
 ## Run it locally
 
